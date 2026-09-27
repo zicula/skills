@@ -1,53 +1,43 @@
-# agency-sop-library (Agent Skill)
+# Agency SOP Library — Agent Skill
 
-An [Agent Skill](https://agentskills.io) that gives your coding/AI agent a complete operating system for running a 1–10 person digital agency: **24 done-for-you SOPs** covering the full client lifecycle — Sales → Onboarding → Delivery → Retention → Offboarding — plus a 14-day install playbook.
+![Agency SOP Library](https://agency-sop-library.zicula.trade/og-image.png)
 
-## What this skill does
+An [Agent Skill](https://agentskills.io) that runs the full client lifecycle of a 1–10 person digital agency: **Sales → Onboarding → Delivery → Retention → Offboarding.**
 
-Once installed, the agent can pull the right SOP for almost any agency situation and hand you a usable asset (a filled scorecard, an email, an agenda, a table) — not a summary:
-
-- **Sales:** lead qualification scorecard, discovery call script, proposal structure, pricing calculator logic, follow-up cadence
-- **Onboarding:** welcome packet, kickoff agenda, access & asset checklist, comms rules, project plan & milestones
-- **Delivery:** weekly status updates, revision & change policy, pre-delivery QA checklists, scope change estimates, escalation path
-- **Retention:** monthly report skeleton, QBR agenda, upsell triggers & pitches, retainer health review, client feedback pulse
-- **Offboarding:** handover checklist, testimonial request, alumni referral program, win-back sequence
-
-Every SOP follows the same anatomy: *when to use → the process → copy-paste assets → rules & red flags → what good looks like → an AI prompt to adapt it to your agency*.
-
-## Install
-
-Copy this folder into your agent's skills directory:
+Install it into any skill-compatible agent (Claude Code, Codex, Cursor, Gemini CLI, …):
 
 ```bash
-# Claude Code / general agents (~/.agents/skills)
-git clone https://github.com/zicula/skills.git
-cp -R skills/agency-sop-library ~/.agents/skills/
-
-# or for Claude Code's project/user skills dir
-cp -R skills/agency-sop-library ~/.claude/skills/
+npx skills add zicula/skills/agency-sop-library
 ```
 
-That's it — the skill is self-contained. `SKILL.md` is the entry point; `references/` holds the 24 SOPs, the 14-day playbook, the lifecycle index, the manifest, a Notion-import CSV, and the license.
+…or copy the `agency-sop-library/` folder into your skills directory.
 
-## Honest note: what's in the skill vs. the full kit
+## What's inside (free)
 
-This skill is the **SOP/playbook layer extracted from the paid Agency SOP Library kit** — all 24 SOPs and the 14-day playbook are here in full, in Markdown. The **full kit** (sold at [agency-sop-library.zicula.trade](https://agency-sop-library.zicula.trade)) is broader: it ships the same library in more consumer-friendly form (Notion-ready import, Spanish & Brazilian-Portuguese quickstarts, buyer setup guides) and includes the single-agency commercial license in its buyer form. If you just want the operating system as agent-consumable files, this skill has you covered; if you want the complete buyer package and support the project, grab the kit.
+| File | What it gives you |
+|---|---|
+| `SKILL.md` | The lifecycle decision guide — which process to run for every client situation |
+| `references/INDEX.md` | The lifecycle map of all 24 SOPs with triggers |
+| `references/PLAYBOOK-14D.md` | A 14-day plan to install the whole system without breaking delivery |
+| `references/samples/` | 3 complete sample SOPs (lead qualification, comms rules, weekly status update) |
 
-## Files
+Every SOP follows the same anatomy: *when to use → the process → copy-paste assets → rules & red flags → what good looks like → an AI prompt to adapt it to your agency.*
 
-```
-agency-sop-library/
-├── SKILL.md            # skill entry point (spec: agentskills.io)
-├── README.md           # this file
-└── references/
-    ├── INDEX.md        # lifecycle map + install routes
-    ├── PLAYBOOK-14D.md # 14-day install plan
-    ├── MANIFEST.md     # file-by-file table
-    ├── notion-import.csv
-    ├── LICENSE.txt
-    └── sop/            # 24 SOPs, 01–24
+## Full library (paid kit)
+
+The complete kit adds **all 24 SOPs**, `notion-import.csv` (one-click Notion database), pricing calculator logic, escalation ladders, and every copy-paste email pack:
+
+**[Agency SOP Library — $79 one-time](https://agency-sop-library.zicula.trade)** · free v1.x updates · 14-day money-back
+
+## Sample SOP preview
+
+```markdown
+# 09 — Communication Rules
+When to use: before work starts.
+You get: the 7-clause comms contract clients sign at kickoff.
+Red flag: "we can just message each other anytime" — no you can't.
 ```
 
 ## License
 
-Single-agency commercial license (see `references/LICENSE.txt`). Not for redistribution or resale.
+Skill: free to use and share. The linked kit is a single-agency license — don't redistribute the paid files.
