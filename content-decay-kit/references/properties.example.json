@@ -1,0 +1,29 @@
+{
+  "brand": {
+    "agency": "YOUR AGENCY NAME",
+    "logo_text": "YOUR LOGO",
+    "accent": "#1D4ED8",
+    "digest_title": "Weekly Content Health Digest",
+    "intro_line": "What slipped, why it slipped, and the refresh we suggest first."
+  },
+  "thresholds": {
+    "decay_pct": 20,
+    "min_impressions": 200,
+    "recent_days": 28,
+    "baseline_first_day": 29,
+    "baseline_last_day": 120
+  },
+  "service_account_file": "config/service-account.json",
+  "digest_max_pages": 10,
+  "clients": [
+    {
+      "name": "Acme Home Services",
+      "property": "sc-domain:acme-homes.example",
+      "notes": "Copy the property string EXACTLY as it appears in Search Console (sc-domain:... or https://...)."
+    },
+    {
+      "name": "Bright Dental Group",
+      "property": "https://www.brightdental.example/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Scheduling recipes for the Content Decay Kit — copy ONE of these.
+# The scan is weekly by design: Search Console data lags ~2-3 days and the
+# digest compares a 28-day window against a ~92-day baseline, so a weekly
+# cadence is plenty (and keeps you far inside the free API quota).
+
+# ── Recipe A: crontab on any host with Node 18+ ─────────────────────────────
+# Edit paths, then `crontab -e` and paste:
+5 7 * * 1 cd /opt/content-decay-kit && /usr/bin/node decay/decay.mjs --config config/properties.json --quiet >> out/cron.log 2>&1
+
+# Optional: get a Slack-style nudge when pages are flagged (create an incoming
+# webhook in your workspace first, then export it in the cron environment):
+#   5 7 * * 1 cd /opt/content-decay-kit && CRON_NOTIFY_WEBHOOK="https://hooks.example.com/T000/B000/XXXX" /usr/bin/node decay/decay.mjs --config config/properties.json --quiet >> out/cron.log 2>&1
+
+# Optional: fail the job when decay is flagged (useful with monitoring that
+# reads cron exit codes):
+#   5 7 * * 1 cd /opt/content-decay-kit && /usr/bin/node decay/decay.mjs --config config/properties.json --quiet --fail-on-decay >> out/cron.log 2>&1
+
+# ── Recipe B: GitHub Actions (free, no server) ──────────────────────────────
+# Use the bundled cron/decay.yml — push this repo to a PRIVATE GitHub repo and
+# store your service-account JSON in the repo secret GSC_SERVICE_ACCOUNT_JSON.
+# The workflow runs Mondays 07:00 UTC and uploads the digest as an artifact.
+
+# ── After each run ──────────────────────────────────────────────────────────
+#   out/dashboard.html                      internal overview (keep internal)
+#   out/digest/<client>-weekly-digest.html  white-label — attach to your client email
+#   out/history.json                        run history, append-only

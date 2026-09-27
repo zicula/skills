@@ -1,0 +1,43 @@
+Content Decay Kit — Single-Agency Commercial License
+Copyright (c) 2026 Zicula
+
+1. GRANT
+   One buyer (an individual or one legal company) may install and run this
+   kit on infrastructure they control and use it to monitor, report on, and
+   deliver outputs for ALL client properties that buyer serves ("client
+   work"). The digests, dashboards and other outputs you generate are yours
+   to brand, deliver and print for your clients.
+
+2. RESTRICTIONS
+   You may not redistribute, resell, sublicense, or publish the kit files
+   themselves — each agency needs its own license. You may not present the
+   kit (or a trivially modified version) as your own product for sale.
+
+3. YOUR DATA AND CREDENTIALS
+   The kit runs on YOUR Google credentials (a service account you create)
+   and reads only the Search Console properties you were granted access to.
+   Property data is fetched from Google's official Search Console API,
+   processed locally, and stored in the kit's out/ directory. The kit makes
+   no network calls other than to Google's documented endpoints, sends no
+   telemetry, and includes no vendor-hosted component. You are responsible
+   for handling client data in line with your agreements with those clients
+   and with Google's API terms (including the Google API Services User Data
+   Policy).
+
+4. DATA SOURCES
+   Traffic metrics come from Google Search Console via the official API
+   (read-only scope). Google remains the data owner; per-property access is
+   granted and revocable by the property owner in Search Console's Users and
+   permissions settings.
+
+5. NO WARRANTY / LIABILITY
+   The kit is provided "as is". It monitors and reports; it does not promise
+   any ranking, traffic, or business outcome. To the maximum extent
+   permitted by law, the author is not liable for damages arising from use
+   of the kit. Quotas, APIs and data availability are Google's and may
+   change.
+
+6. UPDATES
+   v1.x updates are included. Re-download from your original purchase page.
+
+Questions: Zicula06@gmail.com
