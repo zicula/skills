@@ -1,0 +1,1537 @@
+"Title","Category","Body"
+"SOP-01 · Lead Qualification Scorecard","Sales","# SOP-01 · Lead Qualification Scorecard
+
+| | |
+|---|---|
+| **Stage** | Sales |
+| **Owner** | Whoever answers the inbox (founder by default) |
+| **Trigger** | New inquiry arrives: form, email, referral, DM |
+| **Time** | 10 minutes per lead |
+| **Output** | Score 0–100 + one decided next action (fast-track / nurture / decline) |
+
+## When to use
+
+The moment a lead arrives — **before** you reply with enthusiasm. Bad-fit clients cost 3× their revenue in revisions, chasing, and stress. This scorecard takes 10 minutes and replaces gut feel (""they seemed nice"") with a number you can defend.
+
+Score every lead the same way, even referrals. Especially referrals.
+
+## The scorecard (fill in per lead)
+
+Six factors, 0–100. Score what the inquiry proves; anything unknown stays unknown — see the cap rule below.
+
+| Factor | Points | How to score |
+|---|---|---|
+| **Budget** | 0–25 | States a range at/above your floor = 25 · vague (""depends on results"") = 8 · states a number below your floor = 0 |
+| **Authority** | 0–20 | Inquirer is the decision-maker = 20 · names a decision path (""partner signs off"") = 12 · ""gathering info for my boss"" = 6 |
+| **Need & timeline** | 0–20 | Concrete problem + date (""relaunch before the March expo"") = 20 · real problem, ""soon"" = 12 · ""exploring options"" = 5 |
+| **Fit** | 0–15 | Inside your stated niche/service = 15 · adjacent = 8 · outside = 3 |
+| **Capacity** | 0–10 | You could start in their window = 10 · startable in 3+ weeks = 5 · you're full = 0 (say so honestly) |
+| **Working signals** | 0–10 | Replies within 24h, answers directly, respects your process = 10 · one-word replies, wants a call *before* saying anything = 3 |
+
+**Deductions, −10 each:** ""cheapest quote wins"" language · asks for spec work or a paid test task · reseller who hides the end client · NDA demanded before they'll say what the project is · already left 2+ agencies in a year (dig into why before scoring).
+
+## Thresholds
+
+| Score | Action | SLA |
+|---|---|---|
+| **70–100** | Fast-track: reply + booking link for discovery call (SOP-02) | Within 4 business hours |
+| **40–69** | Nurture: reply with the two qualifying questions below; re-score on every reply | Within 1 business day |
+| **0–39** | Polite decline + refer somewhere better-fit | Within 1 business day |
+
+**The cap rule:** any *unknown* on Budget or Authority caps the lead at 59. Don't fast-track an unknown — ask, then re-score. This single rule kills most ""great call, then total ghost"" outcomes.
+
+## Copy-paste assets
+
+**Fast-track reply (70+):**
+
+> Hi [NAME] — thanks for the detail in your note; it makes this easy.
+>
+> Short version: this looks like a fit. I do [SERVICE] for [NICHE], and [SPECIFIC THING THEY SAID] is exactly the problem [OUTCOME] solves.
+>
+> Two things before we book time so I don't waste yours:
+> 1. What budget range are you working with? A rough range is fine.
+> 2. Besides you, who weighs in on the final decision — and when do you want this live?
+>
+> If the answers are what I expect, here's my calendar for a 30-minute call this week: [BOOKING LINK]
+
+**Two-question nurture (40–69):**
+
+> Hi [NAME] — thanks for reaching out. Before I can tell you whether we're a fit, two quick questions:
+>
+> 1. What budget range are you working with? (It tells me what's realistic, and I'd rather be straight with you than waste your time.)
+> 2. Who besides you signs off, and when are you hoping to start?
+>
+> With those two answers I'll give you a clear yes/no and a suggested next step — even if that step isn't me.
+
+**Polite decline (0–39):**
+
+> Hi [NAME] — thanks for thinking of me. Honestly, I'm not the right fit for this one: [REASON — e.g., ""my floor for a site like this is $X, and it sounds like you're working below that""].
+>
+> Rather than leave you empty-handed: [REFERRAL NAME] does exactly this range and does it well — tell them [YOUR NAME] sent you.
+>
+> If scope or budget changes down the road, my door is open.
+
+## Rules & red flags
+
+- Score **before** the first reply, not after. First-reply enthusiasm is how boundaries die.
+- Never skip the score for a referral. Write down who referred; score anyway.
+- A 70+ score is permission to spend a discovery call, not an obligation to close. If the call reveals dealbreakers, you may decline later.
+- Log score + action in your pipeline (a simple Notion database is enough). After ~20 leads you'll see which band actually converts — tighten the weights then.
+
+## What good looks like
+
+- 100% of inquiries have a logged score and a decided action within 1 business day.
+- Every decline includes a referral. Goodwill compounds; declined leads send you better leads.
+- 70+ leads convert to proposals at a visibly higher rate than 40–69 — that's the scorecard paying rent.
+
+## Adapt it with AI
+
+> ""Here is my lead qualification scorecard: [PASTE THIS SOP]. My agency does [SERVICES] for [NICHE]. My floor project price is [$X] and I can run [N] concurrent projects. Rewrite the factor descriptions and the three reply emails to match my positioning. Keep the 0–100 structure and the cap rule. Make the decline email warm, not apologetic."""
+"SOP-02 · Discovery Call Script","Sales","# SOP-02 · Discovery Call Script
+
+| | |
+|---|---|
+| **Stage** | Sales |
+| **Owner** | Founder / sales lead |
+| **Trigger** | Qualified lead (70+) books a discovery call (SOP-01) |
+| **Time** | 30 minutes live + 10 minutes prep |
+| **Output** | Decision: send proposal (SOP-03) / nurture / decline — and notes written in the client's own words |
+
+## When to use
+
+On every discovery call. The script's job is not to sell — it's to find out whether their problem, money, and timeline are real, and to collect the exact words they use to describe the problem so the proposal mirrors them.
+
+## Prep (10 minutes before the call)
+
+- Re-read their inquiry and your SOP-01 score. Write your **walk-away floor** on paper: below $[FLOOR] you decline on the call.
+- Open a notes doc with these headings already typed: *Current state · Success metric · Decision path · Budget · Timeline · Their words*.
+- Camera on, agenda stated in the invite: ""30 minutes: your situation, what success looks like, and whether we're a fit.""
+
+## Copy-paste: the script (30 minutes, timeboxed)
+
+**Minutes 0–2 · Frame it.**
+""Thanks for making time. Plan for our 30 minutes: I'll ask about where you are and what success looks like, you'll ask about how I work, and by the end we'll each know if this is worth pursuing — a no is a fine outcome for both of us."" (Permission for honesty lowers everyone's guard.)
+
+**Minutes 2–10 · Current state.**
+- ""Walk me through how [PROCESS/WEBSITE/CAMPAIGN] works today.""
+- ""What made you look for help **now** — what happened?"" (The *now* is the real budget qualifier.)
+- ""What have you already tried?""
+
+**Minutes 10–18 · Success metric.**
+- ""Six months from now, if this worked, what's different? Give me the number or the moment.""
+- ""What happens if you do nothing for six months?"" (Cost of inaction = your value ceiling in SOP-04.)
+- Push once: ""Is that a nice-to-have or a board-level must?""
+
+**Minutes 18–24 · Money and decision path.**
+- ""Projects like this typically land between $[LOW] and $[HIGH] depending on scope. Does that range work with your budget?"" (Anchoring here filters tire-kickers before you write a proposal.)
+- ""Who else weighs in before a decision like this is final, and what does that process look like?""
+- ""If we started [MONTH], when would you need to see results by?""
+
+**Minutes 24–30 · Close the loop.**
+- ""Here's what I heard: [2–3 sentences in THEIR words]. Did I get that right?""
+- ""I'll send a proposal by [DAY +2 business days]. It'll have three options with different scopes — [NAME] is the one I'd recommend, but you'll see the trade-offs.""
+- ""One question so the proposal lands right: [LEFTOVER UNKNOWN from SOP-01 — usually budget or authority].""
+- Book the follow-up **on the call**: ""Can we hold 15 minutes [DAY +4] to walk through it together?"" Never end without that slot.
+
+**Bail-out line** (any time it's a no): ""I don't think I'm the right partner for this, and I'd rather tell you now than in a proposal — [REASON]. [REFERRAL] would serve you better.""
+
+## Rules & red flags during the call
+
+- Won't discuss budget even after you anchor a range → likely 40–69 lead; send no proposal without budget confirmed in writing.
+- ""Our last agency just didn't get us"" with no specifics → probe: ""What would 'getting you' have looked like, concretely?"" If they can't answer, they can't be kept happy either.
+- Third party silently present who won't speak → name it: ""I see we have [NAME] with us — love to hear your take at some point.""
+- Asks you to start ""small and free, then we'll scale"" → decline politely; free pilots anchor your price at zero.
+
+## What good looks like
+
+- Notes doc filled **during** the call, with at least 3 verbatim client phrases — those phrases become the proposal's opening.
+- Every call ends with a scheduled proposal-walkthrough slot or a decided no.
+- Proposal-sent → proposal-accepted rate above 50%. Below that: you're proposing to unqualified leads — tighten SOP-01, not this script.
+
+## Adapt it with AI
+
+> ""Adapt this discovery call script for a [NICHE] agency selling [SERVICES] at a typical project range of $[LOW]–$[HIGH]. Keep the timeboxes, the anchoring line, and the booked follow-up rule. Add 3 industry-specific questions that surface hidden costs my clients don't know they have."""
+"SOP-03 · Proposal Template Structure","Sales","# SOP-03 · Proposal Template Structure
+
+| | |
+|---|---|
+| **Stage** | Sales |
+| **Owner** | Founder / sales lead |
+| **Trigger** | Discovery call ends with ""send the proposal"" agreed (SOP-02) |
+| **Time** | 60–90 minutes per proposal |
+| **Output** | 8-section proposal with 3 priced options + a booked walkthrough |
+
+## When to use
+
+Every proposal, no exceptions. The structure below exists because proposals fail for predictable reasons: they describe you instead of the client, they present one take-it-or-leave-it price, and they die in the ""looks good, let me think"" inbox.
+
+## The 8 sections (in this order)
+
+1. **Their world (100 words).** Open with the problem in *their* words from SOP-02 notes — at least two verbatim phrases. Zero sentences about your company.
+2. **The outcome.** One paragraph: what will be true after the work, tied to the success metric they named. Name the metric in their units (revenue, leads, hours saved) — never in yours (pages, features).
+3. **Scope — what's included.** Deliverables as a bulleted list, each starting with a verb. Under it, **""What's not included""** — 3–5 bullets of adjacent things you're explicitly *not* doing. This list is what saves you in month two (see SOP-12).
+4. **Three options.** See pricing logic in SOP-04. Same layout for each: name, one-line promise, bullet scope, price. Middle option is the one you recommend — say so: ""Most clients in your situation choose Option B.""
+5. **Timeline with client-side dependencies.** Week-by-week table, with a **""We need from you""** column on every phase. The timeline is honest only if their homework has dates too.
+6. **Proof.** Two mini case snippets (situation → action → number) and one testimonial quote. If you have no numbers yet, use process proof: relevant work samples + how you de-risk (weekly updates, revision rounds).
+7. **Terms that matter.** Payment [50/50 or 3 milestones] · [2] revision rounds included per deliverable · IP transfers on final payment · response times on both sides (SOP-09). Plain language, no legalese walls.
+8. **One call to action + expiry.** ""Reply 'Option B' and I'll send the contract today — pricing held until [DATE +14 days]."" One button, one choice. No ""let us know if you have questions"" endings.
+
+## Copy-paste skeleton
+
+> **Proposal: [PROJECT NAME] for [CLIENT]**
+> Prepared for [CONTACT, TITLE] · [DATE] · Valid until [DATE +14]
+>
+> **1. Where you are today.** [VERBATIM PHRASE 1]. [VERBATIM PHRASE 2]. The cost of leaving this alone for another six months: [CONSEQUENCE THEY NAMED].
+>
+> **2. What ""done"" looks like.** By [END DATE]: [SUCCESS METRIC IN THEIR UNITS].
+>
+> **3. Included / Not included.** [BULLETS] / [BULLETS]
+>
+> **4. Three ways to do this.** Option A [SCOPE] — $[PRICE] · Option B (recommended) [SCOPE] — $[PRICE] · Option C [SCOPE] — $[PRICE]
+>
+> **5. Timeline.** [TABLE: phase | weeks | we deliver | we need from you]
+>
+> **6. Why me.** [2 case snippets + 1 quote]
+>
+> **7. Terms.** [PAYMENT] · [REVISION ROUNDS] · [IP ON FINAL PAYMENT] · [COMMS SLAs]
+>
+> **8. Next step.** Reply ""Option [A/B/C]"" → contract and invoice within 24 hours. Pricing held until [DATE].
+
+## Rules & red flags
+
+- Send within **48 hours** of the call — acceptance rates decay hard after that.
+- Never send a proposal without a **booked walkthrough** (SOP-02 close). Email-only proposals die silently.
+- One proposal = one PDF/link, three options inside it. Never email pricing piecemeal.
+- If they ask you to ""just send a rough number"" before a call: give the SOP-02 range verbally, then insist on the call. Ranges before calls, prices after.
+- Reuse the skeleton, never the client paragraphs. Personalized sections 1, 2 and 5; the rest stays standard.
+
+## What good looks like
+
+- Proposals sent per month, and % accepted, tracked in one sheet.
+- Client opens by quoting your ""not included"" list back to you approvingly — that's when scope trouble is already dead.
+- Accepted proposals quote the outcome section in the client's first reply: ""Can't wait to hit [METRIC].""
+
+## Adapt it with AI
+
+> ""Here's my proposal skeleton: [PASTE SECTION LIST]. I sell [SERVICES] to [NICHE]. Draft section 2 (outcome) and section 3 (included/not included) for this project: [PASTE DISCOVERY NOTES]. Write 'not included' as 5 adjacent services my clients commonly assume are part of the deal."""
+"SOP-04 · Pricing Calculator Logic","Sales","# SOP-04 · Pricing Calculator Logic
+
+| | |
+|---|---|
+| **Stage** | Sales |
+| **Owner** | Founder |
+| **Trigger** | Building any proposal (SOP-03) or retainer quote |
+| **Time** | 20 minutes per quote — after the one-time setup |
+| **Output** | Three option prices with a defensible floor and a margin guard |
+
+## When to use
+
+Before you write a single price. Pricing from vibes (""feels like about $8k"") is how small agencies subsidize their clients. This SOP is the math behind every quote: a personal floor rate, a risk multiplier for estimate optimism, and a three-option structure (SOP-03 §4).
+
+## Step 1 — Your floor rate (set once, revisit every 6 months)
+
+```
+Target income        = [ANNUAL INCOME YOU WANT, e.g. $80,000]
++ business overhead  = [TOOLS/INSURANCE/ACCOUNTANT, e.g. $12,000]
++ tax buffer         = [0.25–0.35 × income, e.g. $24,000]
+= revenue needed     →  $116,000
+
+Billable hours/year  = [WORKING WEEKS 46 × HOURS/WEEK × UTILIZATION]
+  · realistic utilization for a 1–10 person agency: 50–60%
+  · example: 46 × 30 × 0.55 ≈ 760 → round planning number: [800]
+
+FLOOR RATE = revenue needed ÷ billable hours  →  $116,000 ÷ 800 = $145/hr
+```
+
+Never quote an hourly rate below your floor. The floor is not your price — it's the line under which you are paying to work.
+
+## Step 2 — Estimate hours, then apply the risk multiplier
+
+Estimate hours per deliverable (be honest, line by line). Then:
+
+```
+PROJECT PRICE = estimated hours × floor rate × 1.3
+```
+
+**Why 1.3:** small-agency estimates are systematically optimistic by ~30% — client feedback loops, access delays (SOP-08), and one inevitable surprise per project. The multiplier prices the *real* project, not the imaginary smooth one. If your last 5 projects overran budget, raise it to 1.4; if you hit estimates 4 of 5 times, 1.25.
+
+## Step 3 — Build the three options (copy-paste table)
+
+| Option | Scope | Price rule | Example |
+|---|---|---|---|
+| **A — Core** | The one deliverable that produces the outcome, nothing else | base price × 1.0 | Landing page + copy polish → $6,000 |
+| **B — Target (recommended)** | Core + the 2–3 things that make it actually perform | base price × 1.35–1.5 | + full site, analytics setup, 60-day iteration → $9,500 |
+| **C — Full** | Target + extras with clear standalone value | base price × 1.8–2.0 | + content system, quarterly optimization → $13,500 |
+
+- Anchoring works in your favor: C makes B look reasonable; A gives a floor answer to price-sensitive buyers instead of a lost deal.
+- Write one line under each option naming **who it's for** (""A is right if you mainly need X"").
+
+## Step 4 — Sanity checks (all three must pass)
+
+1. **Value ceiling:** price ≤ 25–30% of the client's expected 12-month value of the outcome. Their discovery-call number (""this is worth $120k/yr to us"") → cap ≈ $36k. Below the ceiling, price on value; never above it — that's how you get fired.
+2. **Floor check:** price ÷ realistic hours ≥ floor rate. If Option A breaks the floor, cut scope, not the rate.
+3. **Sticker check:** would you say ""$[PRICE]"" out loud, level-voiced, on a call? If you'd mumble it, the market is telling you something — either your floor math or your positioning (niche, proof, SOP-03 §6) needs work. Usually the second.
+
+## Retainers
+
+```
+RETAINER = (hours/month × floor rate) × 0.9   ← 10% predictable-revenue discount
+… but never below: hours/month × floor rate × 0.95 unless 6+ month commitment.
+Track usage monthly (SOP-19): >90% used 2 months running → propose a bigger tier;
+<50% used 2 months running → they'll churn; right-size or re-scope first.
+```
+
+## Rules & red flags
+
+- **Never discount, cut scope.** ""We can do 10% less"" > ""we can do it 10% cheaper."" A discount above 10% without a scope cut trains clients to squeeze you every cycle.
+- Rush jobs: +25–50% surcharge, stated plainly (""rush is +30% because it displaces other work"").
+- ""Can you match a cheaper quote?"" → ""I'd rather lose the project at an honest price than win it and both of us regret it."" Then hold. One client in five respects it and stays; the ones who leave were your SOP-01 deductions anyway.
+- Publish ranges, never rate cards. ""Projects typically land $[X]–$[Y]"" filters leads before they cost you a discovery call.
+
+## What good looks like
+
+- Effective hourly rate per project (price ÷ actual hours) tracked on every closed project — your agency's true KPI. Target: ≥ floor rate; investigate any project below 0.9 × floor.
+- Zero prices invented mid-call. ""Let me build the options and come back Thursday"" is a professional answer.
+
+## Adapt it with AI
+
+> ""My floor rate is $[RATE]/hr. Estimate hours and three options (1.0 / 1.4 / 1.9 multipliers) for this scope: [PASTE SCOPE]. Then list 5 risks that would make me overrun these estimates, so I can decide if 1.3 is the right risk multiplier for this project type."""
+"SOP-05 · Proposal Follow-Up Cadence","Sales","# SOP-05 · Proposal Follow-Up Cadence
+
+| | |
+|---|---|
+| **Stage** | Sales |
+| **Owner** | Founder / sales lead |
+| **Trigger** | Proposal sent (SOP-03) |
+| **Time** | 15 minutes per touch × 4 touches |
+| **Output** | A yes, a no, or an archived lead — within 14 days, every time |
+
+## When to use
+
+The instant a proposal goes out. Most small agencies lose winnable deals by *not following up* — then feel awkward and stop. The fix is a fixed cadence where each touch adds value or asks a question. ""Bumping this to the top of your inbox"" is banned; it's the follow-up equivalent of sighing.
+
+## The cadence
+
+| Day | Move | Goal |
+|---|---|---|
+| **0** | Send proposal + walkthrough is already booked (SOP-02). Same day: send the link again with a 3-line ""what to look at first"" note. | Set the reading order |
+| **3** | Value nudge: a relevant case study, article, or one insight about their industry — **not** ""just checking in"". | Stay useful while they circulate it internally |
+| **7** | Walkthrough call (already booked) or, if they cancelled and won't rebook, the *question* email below. | Force a direction |
+| **14** | Close-the-loop: ""Should I close the file?"" | Get a real no instead of an infinite maybe |
+| **30** | Breakup → archive to nurture list (they re-enter via SOP-24 or the quarterly value email). | Protect your attention |
+
+## Copy-paste assets
+
+**Day 3 — value nudge:**
+
+> Hi [NAME] — no update from me, just something useful: [CASE STUDY / ARTICLE / ONE INSIGHT — one that maps to their exact situation, e.g. ""a client in [ADJACENT INDUSTRY] saw [NUMBER] after fixing exactly the [ISSUE] we discussed""].
+>
+> Might be handy context while the team goes through the proposal. Option B's [SECTION] covers this on page [X].
+
+**Day 7 — the question email (if no walkthrough happened):**
+
+> Hi [NAME] — I know these decisions involve other people. One question to make sure I'm building the right thing, even if the answer changes shape: which of the three options is closest to what you're imagining?
+>
+> If none of them are, tell me what's missing and I'll rework it — that's a normal part of the process, not a hassle.
+
+**Day 14 — close the loop:**
+
+> Hi [NAME] — I don't want to nag, so let me make this easy: if it's a no (timing, budget, or you went another way), just reply ""no"" and I'll close the file gracefully — genuinely no hard feelings, and I'll send over [ONE MORE FREEBIE — e.g. ""that checklist""] anyway.
+>
+> If it's a yes, reply ""Option [B]"" and I'll have the contract to you within the day. If I don't hear back by [DATE +5], I'll assume timing isn't right and check back next quarter.
+
+**Day 30 — breakup (archive after this):**
+
+> Hi [NAME] — closing the loop as promised. I'll stop emailing about the proposal; the pricing in it holds until [DATE] if things change sooner.
+>
+> I'll keep sending the occasional [NICHE] insight your way — if [PROBLEM THEY NAMED] comes back onto the agenda, you know where I am.
+
+## Rules & red flags
+
+- **Four touches maximum.** Each must contain new value or a question. Anything less is noise, and noise burns the referral bridge (SOP-23 starts here, win or lose).
+- A *real no* is a win: you got information in 14 days instead of hoping for 6 months. Thank them and log the reason — ""no"" reasons are your pricing/positioning data.
+- Ghosted after a booked walkthrough no-show: one reschedule offer, then straight to Day 14 email. Don't chase humans who booked and vanished; the score (SOP-01) was probably wrong somewhere.
+- Track sent → won, sent → lost, sent → ghosted per month. If ghosted > 50%, your proposals are fine and your qualification isn't — back to SOP-01.
+
+## What good looks like
+
+- Every open proposal has a next dated touch in the calendar. Nothing sits ""waiting to hear back"" — that phrase is banned in your pipeline tool.
+- Median days-to-decision under 21.
+- At least a third of ""no""s name the reason, because your Day 14 email made it safe to be honest.
+
+## Adapt it with AI
+
+> ""Rewrite these four follow-up emails in my voice: [2 EXAMPLES OF YOUR WRITING]. My agency sells [SERVICES] to [NICHE]. Keep the day-0/3/7/14/30 structure, the 'close the file' permission, and the no-freebie hook on day 14. Replace [ONE MORE FREEBIE] with a lead magnet idea my niche would actually want."""
+"SOP-06 · Client Welcome Packet","Onboarding","# SOP-06 · Client Welcome Packet
+
+| | |
+|---|---|
+| **Stage** | Onboarding |
+| **Owner** | Founder / project lead |
+| **Trigger** | Contract signed + first invoice paid (or same day, whichever comes first) |
+| **Time** | 30 minutes (mostly template fill) |
+| **Output** | Welcome email + one-page packet that kills buyer's remorse before it starts |
+
+## When to use
+
+Same day the contract is signed. Between signing and kickoff there's a silence, and silence is where buyer's remorse, anxiety emails, and ""quick question — also can you…"" live. The welcome packet fills that silence with structure and quietly installs your rules (SOP-09) while goodwill is at its peak.
+
+## The packet (one page, PDF or Notion link)
+
+1. **What happens next** — dated: ""Kickoff call within 5 business days (you'll get a booking link today) · Access items due 3 days before kickoff (checklist attached) · First weekly update arrives [DAY] of kickoff week.""
+2. **Who does what** — your side (named human, not ""the team"") and their side (named human + who is backup). One point of contact per side, stated twice, in bold.
+3. **How we communicate** — the SOP-09 contract in five lines: channels, update day, response times both ways, and the phrase ""anything outside scope gets a quick estimate — never a surprise invoice.""
+4. **Money schedule** — invoice dates, amounts, what each payment unlocks. No client should ever be surprised by an invoice you sent 30 days ago.
+5. **Your first homework** — top 3 access items with the due date (full list via SOP-08).
+
+## Copy-paste welcome email
+
+> Subject: Welcome aboard, [NAME] — here's exactly what happens next
+>
+> Hi [NAME],
+>
+> Contract's signed — we're officially working together, and I'm glad about it.
+>
+> Everything you need is in the one-pager attached, but the short version:
+>
+> 1. **Kickoff:** book 60 minutes here → [LINK] (please pick a slot in the next 5 business days)
+> 2. **First homework:** 3 access items listed at the bottom of the packet — due [DATE], so kickoff starts warm
+> 3. **How we'll talk:** I send a short written update every [DAY] — and you can always reach me at [EMAIL] for anything that can't wait
+>
+> One promise and one ask. Promise: you will never wonder what's happening on the project — if you do, that's my failure, say so. Ask: single feedback channel through [CONTACT NAME] on your side, so nothing gets decided in a hallway without me.
+>
+> [YOUR NAME]
+
+## The three moments the packet must answer
+
+Every buyer's-remorse email is one of these three — answer them before they're asked:
+
+| The moment | The unspoken question | The packet's answer |
+|---|---|---|
+| Day 1 after signing | ""Did I just make a mistake?"" | Dated ""what happens next"" + the promise line in the welcome email |
+| Day 2–4, quiet | ""So… what's happening? Should I be doing something?"" | First homework with a due date + update day named |
+| End of week 1 | ""Who do I even talk to about X?"" | Named contacts both sides + channels + the emergency line |
+
+## Rules & red flags
+
+- Send the packet **the same day** the contract signs — its power decays by the hour. Automate the trigger if you can.
+- Name humans on both sides. ""The team will…"" is where accountability goes to die.
+- Never put passwords in the packet. Access credentials travel only through a password-manager share (SOP-08).
+- Keep it to one page. A 12-page ""welcome deck"" is read by no one and signals process-heavy in the wrong way.
+
+## What good looks like
+
+- Zero ""just checking what's happening?"" emails in the pre-kickoff week.
+- Client completes the top-3 homework before kickoff at a rate above 70%. Below that: your packet is too long or buried in the email.
+- New clients use your channels correctly from week one — because the contract was installed before the work started, not negotiated during a crisis.
+
+## Adapt it with AI
+
+> ""Write my one-page welcome packet for [SERVICE] projects: [PASTE THE 5 SECTION HEADINGS]. My update day is [DAY], my response SLA is [X hours], typical project length is [X weeks]. Warm, confident, no corporate speak — a busy owner should absorb it in 3 minutes."""
+"SOP-07 · Kickoff Meeting Agenda","Onboarding","# SOP-07 · Kickoff Meeting Agenda
+
+| | |
+|---|---|
+| **Stage** | Onboarding |
+| **Owner** | Project lead |
+| **Trigger** | Welcome packet sent (SOP-06); kickoff booked within 5 business days of signing |
+| **Time** | 60 minutes live + 20 minutes prep |
+| **Output** | Confirmed success metrics, confirmed scope, dated access list, comms contract — in a doc the client saw being written |
+
+## When to use
+
+On every project start, even for clients you've worked with for years — scope creep enters through un-kicked-off projects.
+
+## Prep (20 minutes)
+
+- Send agenda 24h before: ""60 minutes: goals (10) · scope walk (15) · how we work (10) · access (10) · risks (5) · next steps (5). Please bring whoever signs off on feedback.""
+- Pre-fill the access checklist (SOP-08) with what you already have; bring the gaps as named asks with owners.
+- Open a live doc during the call and type in front of them — decisions written live get remembered; decisions from your memory afterward get renegotiated.
+
+## The agenda (60 minutes, timeboxed)
+
+| Time | Block | What happens |
+|---|---|---|
+| 0–5 | **Why we're here** | Restate the project in one sentence from the proposal. ""Correct?"" — get the yes. |
+| 5–15 | **Goals, out loud** | ""Six months from now, [METRIC FROM SOP-02] — is that still the number?"" Fix the number *and* the measurement method now (""we'll read it from GA4, goal X""). |
+| 15–30 | **Scope walk** | Walk the included/not-included lists (SOP-03 §3) bullet by bullet. Every ""oh, and also…"" gets written into the parking lot, not the scope: ""Good idea — noted; I'll send an estimate for it separately (SOP-14)."" |
+| 30–40 | **How we work** | SOP-09 live: update day, channels, feedback SLA (2 business days), single contact per side, revision rounds (SOP-12). Client reads the same rules they got in the welcome packet — confirmation, not revelation. |
+| 40–50 | **Access & dependencies** | Walk the gap list: item → owner name → date. ""Whom do I chase if [ITEM] is late?"" — get a name. |
+| 50–55 | **Risks, spoken early** | Name 2–3 things that could slip this project and what you'll do about each (e.g., ""approval rounds are the usual culprit — that's why feedback has an SLA""). |
+| 55–60 | **Read-back** | ""Three things we agreed: [1, 2, 3]. Two things you owe me, by [DATE]: [A, B]. Next update lands [DAY]."" End 2 minutes early. |
+
+## Copy-paste kickoff confirmation email (same day)
+
+> Subject: Kickoff recap — what we agreed, what we need by [DATE]
+>
+> Hi [NAME] — great session. Recap so we're locked in:
+>
+> **Success metric:** [METRIC], measured via [METHOD].
+> **Scope:** as walked through — attached doc includes the not-included list (it's there to protect both of us).
+> **You owe us by [DATE]:** [ITEM 1 — OWNER], [ITEM 2 — OWNER].
+> **We owe you:** first weekly update on [DAY], access chase on [DATE] if anything's missing.
+>
+> Anything mis-stated above, reply and I'll correct the doc. Otherwise this is our baseline. Onward —
+> [YOUR NAME]
+
+## Rules & red flags
+
+- Kickoff happens **before** any production work. Work that starts before kickoff gets re-litigated in month two.
+- No kickoff without the decision-influencer present or a named proxy for feedback. ""We'll fill in the boss later"" is a dated risk in your risk block.
+- Parking-lot every out-of-scope idea visibly — clients behave when they watch their idea get *estimated later* instead of silently swallowed.
+- If the client shows up having ""quickly chatted with the team and we were thinking bigger…"" — stop, re-scope on the call, and re-confirm in writing before proceeding. Ten minutes of awkward now, or ten hours of scope arbitration later.
+
+## What good looks like
+
+- The recap email is answered with zero corrections (or corrected within a day — even better, it proves they read it).
+- Access items arrive by the promised dates at a rate above 80% (chase the rest on the promised date — see SOP-15).
+- First weekly update (SOP-11) needs no new information beyond what kickoff already established.
+
+## Adapt it with AI
+
+> ""Adapt this kickoff agenda for [SERVICE] projects with [NICHE] clients. Keep the 60-minute timeboxes and the live-doc rule. Replace the risk block with the 3 most common failure modes of projects like mine, each with a prevention line I can say out loud."""
+"SOP-08 · Access & Asset Collection Checklist","Onboarding","# SOP-08 · Access & Asset Collection Checklist
+
+| | |
+|---|---|
+| **Stage** | Onboarding |
+| **Owner** | Project lead (chasing), client contact (delivering) |
+| **Trigger** | Welcome packet sent (SOP-06); items due 3 days before kickoff |
+| **Time** | 15 minutes to send + the discipline to chase |
+| **Output** | Every account, file, and credential you need — verified working, before production starts |
+
+## When to use
+
+On every project. Late access is the #1 hidden project-delay cause for small agencies, and it's 100% a chasing game. This SOP makes the chase mechanical instead of personal.
+
+## The checklist (send as a table, tick per project type)
+
+| Item | Why we need it | How to send it |
+|---|---|---|
+| Domain registrar login | DNS/launch control | Password-manager share (1Password/Bitwarden link) — never email |
+| Hosting / server access | Deploy, staging | Password-manager share |
+| CMS admin account | Build & content | Invite to your work email with editor/admin role |
+| Analytics (GA4 or similar) | Measure the metric you promised (SOP-07) | Admin invite + confirm goal/events exist |
+| Ad accounts (if applicable) | Campaigns + history | Admin invite — do **not** accept ""just use ours on your laptop"" |
+| Brand assets: logo vector, fonts + font licenses | So outputs are legal and sharp | Shared drive folder |
+| Brand guidelines / past campaign results | Consistency + what worked before | Shared drive folder |
+| Content: copy, photos, product data | Everything blocks on content | Shared drive, named files (`homepage-hero.jpg` not `IMG_4021.jpg`) |
+| Social accounts (if in scope) | Publishing | Admin invite via platform's official flow |
+| Third-party tools in the stack | Integrations | Admin invite or API key via password manager |
+| Named contact for each + a deadline date | So chasing has a face | Filled in the table itself |
+
+**Two columns the client fills:** *Owner (name)* and *Date*. An ask without a name and a date is a wish.
+
+## Copy-paste request email
+
+> Subject: Access checklist — [N] items, due [DATE], so we start warm
+>
+> Hi [NAME] — attached is the access list for the project. Each row has an owner column; please put a name (yours is fine for most) and a date.
+>
+> Two ground rules that keep everything safe:
+> 1. **Credentials** go through a password-manager share only — [LINK TO YOUR SHARE REQUEST]. Never email or chat. If you don't use a password manager, we'll send you a temp share link — 2-minute setup.
+> 2. **Invites** go to [WORK EMAIL]. If a platform says ""request sent"", I'll confirm receipt within a day — silence from me means check spam.
+>
+> We test every login the day we get it and confirm in the weekly update. Missing items don't block the whole project, but they block the parts that need them — so the earlier, the cheaper.
+
+## The chasing loop (the actual SOP)
+
+- **Verify within 24h** of receiving each item: log in, screenshot, confirm in the weekly update. ""Received"" ≠ ""works"".
+- **Nudge 1** (on due date): one-line reply in the thread + the missing rows re-pasted. No judgment, just the list.
+- **Nudge 2** (+3 business days): email the named owner, cc your client contact, with the *consequence stated*: ""Without [ITEM], [PHASE] starts [DATE+X] later.""
+- **+3 more days:** escalate per SOP-15 — impact summary, timeline shifted in writing, never silently absorbed. **A delay you don't put on the record is a delay you own.**
+
+## Rules & red flags
+
+- The **80% rule**: production starts when 80% of *critical-path* items are in. Don't hold the whole project for one laggard — resequence around it, in writing.
+- Never work inside a client's personal account as ""them"" (their Facebook profile, their Google login). If an official invite flow doesn't exist, that platform gets a documented workaround — or a written risk acceptance from the client.
+- Store everything in your password manager from day one. The client-fired-us-then-demanded-access scenario (SOP-21) is rare but career-scarring; be the agency whose access hygiene is boring.
+- Offboarding a platform (client keeps it): transfer *ownership*, not just sharing (SOP-21).
+
+## What good looks like
+
+- Median days from contract to full access: under 7.
+- Every login verified within 24h with a confirmation to the client — clients start believing your operations are as marketed.
+- Escalations are rare and never a surprise, because the consequence was attached to nudge 2 in writing.
+
+## Adapt it with AI
+
+> ""Generate my access checklist table for a [SERVICE] project on [STACK — e.g., WordPress + GA4 + Meta Ads]: rows = item, why we need it, how to send it, owner, date. Add any platform-specific items I'd forget for this stack, and flag which items are usually critical-path."""
+"SOP-09 · Communication Rules of Engagement","Onboarding","# SOP-09 · Communication Rules of Engagement
+
+| | |
+|---|---|
+| **Stage** | Onboarding |
+| **Owner** | Founder sets it; every client agrees to it at kickoff (SOP-07) |
+| **Trigger** | Welcome packet (SOP-06); re-stated at every kickoff |
+| **Time** | 10 minutes to walk through |
+| **Output** | The comms contract — fewer interruptions, predictable updates, decisions that don't evaporate |
+
+## When to use
+
+Before the first work session, with every client — installed once at onboarding, then it governs the whole relationship. Without a comms contract, you get 23:47 WhatsApp voice notes, decisions made in a hallway, and ""per my last email"" resentment. With one, clients *thank* you for being structured. This SOP is the single highest-leverage document in this library for a 1–10 person agency.
+
+## Copy-paste: the contract (client sees this exact text)
+
+> **How we work together — [AGENCY] × [CLIENT]**
+>
+> 1. **Channels.** Email = anything that is a decision, an approval, or a scope change (it's our shared memory). [SLACK/TEAMS] = quick questions, ""is this on track?"", heads-ups. Calls = anything that has survived two email rounds, or anything with feelings in it.
+> 2. **One contact each.** [NAME] decides for you; [NAME] decides for us. Others are welcome to watch, not to steer.
+> 3. **Update day.** Every [DAY], a short written update lands in your inbox (SOP-11) — done, next, needs-from-you, risks. Read it and you never have to ask ""how's it going?""
+> 4. **Response times.** Us: same business day acknowledgment, real answer within 24h. You: feedback within 2 business days — the project calendar depends on it, and deadlines shift by whatever feedback is late, in writing, before it shifts.
+> 5. **New ideas.** ""Can we also…"" gets this reply: ""Great idea — I'll scope it and send an estimate (SOP-14)."" Never a surprise invoice, never a silent freebie.
+> 6. **Hours.** We reply [9–18 MON–FRI, TIMEZONE]. If it's a true emergency (site down, campaign spending wrong), [EMERGENCY CHANNEL] reaches us anytime.
+> 7. **No decisions in meetings we didn't both attend.** If your team discusses the project without us, whatever they decided is a proposal, not a decision.
+
+## Installing it
+
+- Welcome packet (SOP-06) carries the short version; kickoff (SOP-07) walks it live; the kickoff recap quotes it.
+- When a client breaks a rule — and they will — reply **inside the rule**, gently: scope-idea → ""Great idea — estimate coming Thursday""; hallway decision → ""Happy to treat that as a proposal — here's what it changes""; weekend WhatsApp → answer in Monday's update unless it's the emergency line. The contract does the talking; you never scold.
+
+## Rules & red flags (clients who will fight the contract)
+
+- Insists on WhatsApp-only from day one → offer the emergency channel as the compromise; if they refuse, note it as a risk at kickoff and mirror their channel for *non-decisions* only.
+- Multiple stakeholders emailing contradictory feedback → ""To keep the calendar honest, I need one consolidated reply per round from [NAME] — happy to join a 15-minute internal sync to collect it.""
+- Client ignores the update email three weeks running → switch format, not frequency: 5 bullets, one question at the end they *must* answer to proceed. Engagement question forces the read.
+
+## What good looks like
+
+- 80%+ of client feedback arrives within the 2-day SLA by project's end (it starts worse; the contract trains it up).
+- You work evenings zero times per week for ""communication"" reasons. Evenings spent on craft are yours to choose; evenings spent on channel chaos mean the contract isn't installed.
+- Decisions survive: when a dispute appears, you paste the email thread instead of reconstructing memory.
+
+## Adapt it with AI
+
+> ""Rewrite this comms contract for my agency: [PASTE]. We are [N] people, timezone [TZ], tools [EMAIL/SLACK/etc.], typical client [NICHE]. Keep all 7 clauses and the gentle-reply examples. Make clause 4's SLA numbers mine and add one clause for [YOUR SITUATION — e.g., 'shared retainer clients who also get support requests']."""
+"SOP-10 · Project Plan & Milestone Baseline","Onboarding","# SOP-10 · Project Plan & Milestone Baseline
+
+| | |
+|---|---|
+| **Stage** | Onboarding |
+| **Owner** | Project lead |
+| **Trigger** | Kickoff done (SOP-07); before any production work |
+| **Time** | 45 minutes per project |
+| **Output** | A dated milestone table with client dependencies pinned — the baseline every later date conversation refers to |
+
+## When to use
+
+Right after kickoff. A project without a baseline has no such thing as ""late"" — only feelings. This table is what lets you say ""the launch moved because the content arrived on the 14th, not the 3rd"" without a single awkward word.
+
+## Building the plan (45 minutes)
+
+1. **Slice the scope into 3–7 milestones** — each ends in something the client can *see* (a reviewed design, a staging link, a launched campaign). Never ""work on X, 60%"".
+2. **Sequence with dependencies named**: ""Staging site → *needs* final content (CLIENT)"". Client-side dependencies get an owner and a date, same as agency work (SOP-08 rule, continued).
+3. **Add the 20% calendar buffer**: a 4-week project is planned to ship in 5. Buffer is *internal* — the client sees the buffered date as the date. Buffer absorbs reality; it is not slack to spend on free extras.
+4. **Pin the feedback SLA into the dates**: every review milestone shows ""client review due [DATE+2 business days]"" — the plan itself teaches SOP-09.
+5. **Set the baseline** = the table as sent. Every change is a *re-baseline* with a one-line reason in the update email (SOP-11). History stays visible.
+
+## Copy-paste plan table
+
+> **Project plan — [PROJECT] (baseline [DATE])**
+>
+> | # | Milestone (client sees) | Done by | We need from you | Owner | Due |
+> |---|---|---|---|---|---|
+> | M1 | [e.g., Design directions — 2 options to choose from] | [DATE] | Brand assets + font licenses | [NAME] | [DATE] |
+> | M2 | [e.g., Staging site live] | [DATE] | Final homepage copy | [NAME] | [DATE] |
+> | M3 | [e.g., QA passed, launch-ready] | [DATE] | Staging review feedback | [NAME] | [DATE+2d] |
+> | M4 | **[LAUNCH]** | [DATE+buffer] | Launch approval | [NAME] | [DATE] |
+>
+> Dates shift only for three reasons, and you'll hear about each in the weekly update *the day it's clear*: scope added in writing (SOP-14), access/materials late (the table says which), or a genuine unknown we'll name — never silence.
+
+## Re-baselining (when reality moves)
+
+- Client dependency late: new date for the dependent milestone + one line: ""Content arrived [DATE]; M2 moves from [A] to [B]. Everything else holds.""
+- Scope added: SOP-14 estimate approved **before** dates change. No estimate, no new dates — otherwise you're negotiating against yourself.
+- Your own overrun: say it at the first signal (SOP-11 at-risk protocol) with a recovery option. Self-reported slippage costs trust once; hidden slippage costs the account.
+
+**Worked micro-example:** a 4-week website rebuild ships as: M1 design directions (week 1, needs brand assets) → M2 staging live (week 2, needs final copy) → M3 QA passed (week 3, needs staging review in 2 days) → M4 launch (week 4 + buffer). Client dates sit in *every* row — that's what makes the plan enforceable without being confrontational.
+
+## Rules & red flags
+
+- Milestones the client can't see (internal sprints, refactors) exist in your tracker, never in the client plan. The client plan is a *contract of visible moments*.
+- Don't plan week-by-week past 6 weeks. Far milestones are named, near milestones are dated precisely; re-date the far ones as they approach (""rolling wave"").
+- Two clients, same week, both ""launching""? Your capacity row (SOP-01 §capacity) was wrong — fix the plan now, not the week of.
+
+## What good looks like
+
+- Every date conversation starts by opening the table, not opening a debate.
+- Zero ""silent"" delays: every shift has a line in a weekly update explaining it.
+- You can show a prospective client this exact table format in a sales call and watch them relax — that's the sales value of delivery discipline.
+
+## Adapt it with AI
+
+> ""Build my milestone table for this scope: [PASTE SCOPE FROM PROPOSAL]. Start [DATE], launch target [DATE], include a 20% buffer. Mark every client-side dependency with owner+date columns. Then list the 3 milestones most likely to slip for a [NICHE] client and the prevention line for each."""
+"SOP-11 · Weekly Project Status Update","Delivery","# SOP-11 · Weekly Project Status Update
+
+| | |
+|---|---|
+| **Stage** | Delivery |
+| **Owner** | Project lead — same person, same weekday, every week |
+| **Trigger** | Every [DAY] from kickoff week to launch, even when ""nothing happened"" |
+| **Time** | 10–15 minutes per week per project |
+| **Output** | A 5-minute client read that kills the ""how's it going?"" email forever |
+
+## When to use
+
+Every week, every active project, same weekday — even in weeks where the only honest content is ""we were blocked; here's what we did about it."" **Consistency beats content.** The update's real product is the client's *never having to wonder*.
+
+## The template (email or client's shared doc — pick one and never switch)
+
+> **[PROJECT] — Weekly update #14 — [DATE]**
+>
+> **Status: 🟢 On track** (🟡 at risk / 🔴 blocked — never bury a yellow)
+> *One line on why: on track for [MILESTONE] on [DATE].*
+>
+> **Done this week**
+> - [Outcome-worded, 3–5 bullets: ""Checkout flow redesigned and sent for your review"" — not ""worked on checkout""]
+> - [ … ]
+>
+> **Next week**
+> - [2–3 bullets with the milestone each rolls up to]
+>
+> **Need from you**
+> - [MAX 2 items, each with a name and a date: ""Homepage copy approval — [NAME] — by [DATE] (M2 dependency)""]
+>
+> **Risks & changes**
+> - [Anything 🟡/🔴 goes here at the FIRST signal, with what we're doing about it]
+
+## The at-risk protocol (the part that saves accounts)
+
+Raise it **at the first signal, not at the deadline**, with options — never apologies alone:
+
+> **Status: 🟡 at risk** — font licenses are still pending (asked [DATE], chased [DATE]). M1 design sign-off may slip from [A] to [B].
+> Two options: (a) proceed with a licensed lookalike now, swap later — no date impact, or (b) hold for originals and we re-baseline M1 together. Your call by [DATE] and I'll lock either path.
+
+A yellow raised early with options reads as competence. A red discovered at deadline reads as negligence. Same facts, opposite outcome — the difference is only when you spoke.
+
+## Copy-paste: the ""quiet week"" update
+
+> **Status: 🟢 On track** — heads-up that this week looks quiet from outside: [REASON — e.g., ""we're in the content-production block for M3""].
+> Done: [1–2 real things]. Next: [THING] lands [DATE]. Need from you: [ITEM or the word ""nothing this week""].
+
+Even ""nothing"" gets sent. The one week you skip is the week their boss asks.
+
+## The update that saved an account (filled example)
+
+> **[PROJECT] — Weekly update #9 — Tue 14 Oct**
+>
+> **Status: 🟡 at risk** — analytics verification found the checkout event was double-counting since launch; real conversion is ~12% lower than reported.
+> *Why it's yellow, not red: fix ships Thursday; we'll re-issue last month's numbers corrected (SOP-16 will reconcile the same way your dashboard does).*
+>
+> **Done:** double-count traced to the tag firing on both page and event · fix staged on production mirror · 90-day corrected trend built
+> **Next week:** corrected dashboard live · funnel review call (booked Friday)
+> **Need from you:** none this week.
+>
+> One bad-looking yellow, honestly raised with the fix already staged, beats a green that collapses at audit time. Clients renew agencies that catch their own errors.
+
+## Rules & red flags
+
+- Max 2 ""need from you"" items. If you need five things, the plan (SOP-10) is wrong or the client is over-flexible — re-baseline instead of demanding five dates at once.
+- No new scope, pricing, or grievances in the update — those get their own thread (SOP-12/14/15). The update stays the place the client *wants* to open.
+- Send it even if the client stopped reading; the archive is your timeline for SOP-15 escalations and year-end reviews (SOP-17).
+- For retainers, this template becomes the monthly report skeleton (SOP-16) — same muscles, longer horizon.
+
+## What good looks like
+
+- ""How's it going?"" emails: zero by week 3.
+- Client replies reference the update (""saw the yellow — let's do option a"") — that's the format working as a decision channel.
+- When someone new joins the client side, they read updates #1–N and are fully caught up in ten minutes, no meeting.
+
+## Adapt it with AI
+
+> ""Adapt this weekly update template for [SERVICE] projects. My update day is [DAY]. Rewrite the 'done' bullets to be outcome-worded for my deliverable types: [LIST]. Then write the at-risk paragraph template for my most common blocker: [BLOCKER]."""
+"SOP-12 · Revision & Change Request Policy","Delivery","# SOP-12 · Revision & Change Request Policy
+
+| | |
+|---|---|
+| **Stage** | Delivery |
+| **Owner** | Project lead |
+| **Trigger** | Any client feedback that isn't plain approval |
+| **Time** | 10 minutes to triage each feedback batch |
+| **Output** | A clean line between ""included revision"", ""new request"", and ""new scope"" — and invoices that match |
+
+## When to use
+
+From the first design draft to the last site fix. Revision chaos is the #1 profit leak in small agencies — not because clients are evil, but because nobody defined the units. This SOP defines the units, and the proposal (SOP-03 §7) and kickoff (SOP-07) already told the client about them.
+
+## The definitions (put these in every proposal)
+
+> **Revision round** = one consolidated set of feedback on one deliverable, from one contact, within the feedback SLA (SOP-09). Each deliverable includes **[2] rounds**.
+> **New request** = feedback on something already approved, or additions inside the deliverable's spirit (""make the hero animation too""). Small ones are goodwill; a pattern of them is scope.
+> **New scope** = new pages/features/channels/audiences, or reworking approved work after the client's own goals changed. New scope gets an estimate (SOP-14). Always friendly, always in writing.
+
+## Triage (10 minutes per batch)
+
+1. **De-merge the pile.** Client emails arrive as one anxious stream. Split into: revision items on deliverable X (round 1 or 2?), new requests, and scope.
+2. **Count the round.** Round 1 and 2: do the work, no conversation needed. Round 3+: this is either a new request (goodwill, once) or new scope (SOP-14 email). Name which, kindly.
+3. **One contact rule.** Feedback from five stakeholders in one round counts as *five rounds* only if you let it. Reply: ""To spend your rounds well, I need one consolidated list from [NAME] — here's what I have from everyone so far, merged."" Then you merge it *for* them. This one email saves more hours than any other message in this library.
+4. **Ambiguous items get a clarifying question before work starts.** ""Tweak the tone"" costs a question to scope and three days to guess.
+
+## Copy-paste assets
+
+**The merge email (multiple stakeholders):**
+
+> Hi [NAME] — collecting everyone's thoughts on the homepage draft: I've merged [PERSON 1]'s and [PERSON 2]'s notes with yours into one list (attached). Anything missing? Once you confirm this is the complete round-1 list, we'll turn it around in [X days].
+
+**The round-3 pivot:**
+
+> Hi [NAME] — happy to keep shaping this. Round 2 was the last of the two included in the proposal, so here's how I suggest we handle the new items: [SMALL ONES] I'll just do them, no charge — call it polish. [BIGGER ONES] feel like new scope; I'll send a short estimate by [DATE] so you can decide with the price visible. Sound right?
+
+**The new-scope reply (fast, friendly, firm):**
+
+> Hi [NAME] — good idea, and it's outside what we scoped, so here's the estimate instead of a surprise: [DESCRIPTION] → [HOURS × RATE = PRICE], [DAYS] of work. Reply ""approved"" and it joins the current sprint; the current milestone dates hold either way.
+
+## Rules & red flags
+
+- **Approve before you build on it.** Work stacked on unapproved work multiplies rework. ""Marking [X] approved in the doc — shout within [SLA] if not"" is how approvals get un-stuck.
+- Goodwill is a budget, not a habit: free small requests are fine at ~1 per project *visibly* (""that one's on me""). Invisible freebies become the baseline.
+- Never argue taste. If it's round 3 and pure preference (""I just don't like it""), that's what round 3 pricing is *for* — quote it without resentment. The policy absorbs the emotion.
+- The client who ""didn't know"" about rounds: the policy was in the proposal §7 and kickoff §4. Re-send that section, not a lecture.
+
+## What good looks like
+
+- 90%+ of projects end within their included rounds.
+- Unbilled ""just one more thing"" hours: under 5% of project hours (track it once — the number will scare you into using the merge email).
+- Clients describe you as ""structured but not bureaucratic"" in testimonials (SOP-22) — that's this SOP, felt from the outside.
+
+## Adapt it with AI
+
+> ""Adapt this revision policy for [SERVICE — e.g., brand identity] projects: define a revision round for my deliverable types [LIST], set my included rounds at [N], and write my three emails (merge, round-3 pivot, new-scope estimate) in a warm, non-lawyerly tone. Keep the 'one contact' and 'goodwill budget' rules."""
+"SOP-13 · Pre-Delivery QA Checklist","Delivery","# SOP-13 · Pre-Delivery QA Checklist
+
+| | |
+|---|---|
+| **Stage** | Delivery |
+| **Owner** | Maker's teammate if you have one; otherwise the maker after a 24h cool-off |
+| **Trigger** | Any deliverable is ""done"" and one step from the client's eyes |
+| **Time** | 30–60 minutes per deliverable |
+| **Output** | Deliverables that never generate a ""small thing I noticed"" email |
+
+## When to use
+
+Before every delivery: staging link, design files, report, campaign launch. QA's job is not perfection — it's making sure the client's *first impression* contains zero nits, because the first nit sets the trust level for everything after.
+
+**The one-person rule:** QA by the maker is weak (you see what you meant). If you're solo: finish today, QA tomorrow morning against the checklist below, ideally after viewing the work as the client would (their laptop, their phone, their email client).
+
+## Copy-paste: the QA checklist by deliverable type
+
+**Website / app**
+- [ ] Every link returns 200s (crawl, don't click — 20 minutes saves a launch-day blush)
+- [ ] Mobile: hero, nav, forms, and footer checked on a real phone, not just a resized browser
+- [ ] Forms: submit a real test entry — did the email arrive? did the CRM record it? did the confirmation show?
+- [ ] Meta titles/descriptions + OG images on every page (client's first share is the day after launch, always)
+- [ ] 404 page exists and is branded; redirects from old URLs mapped
+- [ ] Analytics firing: pageviews + the conversion event you promised in SOP-07's metric
+- [ ] Cross-browser spot check: Chrome, Safari (iOS text-size quirks!), one Firefox
+
+**Design assets**
+- [ ] Correct logo versions, margins/bleed per spec, export formats the client will actually use
+- [ ] Contrast passes AA for body text (check, don't assume)
+- [ ] Fonts embedded/licensed for the client's use cases
+- [ ] Files named like a professional: `client-logo-primary-rgb.svg`, not `final_v3_REAL.svg`
+
+**Content**
+- [ ] Proofread one pass *backwards* (catches typos your brain autocorrects forward)
+- [ ] Every fact, name, and number checked against source (a wrong price on a launched page is the classic)
+- [ ] Links open where they claim; external links open in new tabs
+- [ ] Brand-voice pass against their guidelines (SOP-08 assets)
+
+**Campaign / launch**
+- [ ] UTM scheme consistent and matches the report skeleton's columns (SOP-16) — future-you says thanks
+- [ ] Test transaction/test lead through the *entire* funnel, including the email the client receives
+- [ ] Budget caps + schedule verified in-platform
+- [ ] Approval log complete: every launch asset has a written client approval in the thread
+
+## The delivery wrapper
+
+Ship with a one-line QA note: *""QA'd per checklist — forms tested end-to-end, links crawled, analytics verified at [DATE].""*
+One sentence, huge signal: it tells the client what ""done"" means at your shop and pre-answers ""did anyone actually test this?""
+
+## Rules & red flags
+
+- The maker never announces their own work as QA'd without walking the list. The list is short; walk it.
+- Found a bug after sending? Fix + report before they find it: ""One correction to this morning's link check: [X] — fixed and re-verified."" Self-reported nits cost minutes; client-found nits cost the account's tone.
+- Launch-day QA is *re*-QA on production, not a copy of staging sign-off. Different server, different env vars, new ways to be wrong.
+- Keep the checklist in the repo/pack per project type — after three projects, add the nits you actually shipped. Your checklist becomes your agency's fingerprint.
+
+## What good looks like
+
+- ""Small thing I noticed"" emails: under one per project.
+- Launch-day bug count: zero (staging QA + production re-QA).
+- The QA line in your delivery email starts getting quoted back by clients in *their* internal updates — meaning trust arrived.
+
+## Adapt it with AI
+
+> ""Build my QA checklist for [DELIVERABLE TYPE] in [STACK]. Include everything above that applies, add the 5 failure modes specific to this stack that I'd forget, and mark which 5 items are the ones clients actually notice first. Output as a copy-paste checkbox list."""
+"SOP-14 · Scope Change Estimate (Change Orders)","Delivery","# SOP-14 · Scope Change Estimate (Change Orders)
+
+| | |
+|---|---|
+| **Stage** | Delivery |
+| **Owner** | Project lead |
+| **Trigger** | Any ""can you also just…"" during delivery |
+| **Time** | 30–60 minutes per estimate |
+| **Output** | A priced, approved-or-declined change order within 1 business day — and a project margin that survives contact with clients |
+
+## When to use
+
+The moment an out-of-scope idea appears (kickoff parking lot, SOP-07; mid-delivery requests, SOP-12). The fatal moves are the two extremes: silently absorbing it (your margin dies) or getting legalistic (the relationship sours). The middle path is a *fast, friendly, priced* reply — every time, the same way, so clients learn the pattern by week two.
+
+## The flow
+
+1. **Acknowledge warmly, on the spot** (in the meeting or the same day): *""Great idea — I'll scope it and send an estimate by [TOMORROW].""*
+2. **Estimate within 1 business day**, using SOP-04 math: hours × floor rate × risk. Nothing exotic — speed matters more than precision here.
+3. **Minimum change-order value: $[150–250].** Smaller items get bundled: keep a running ""parking lot"" list per client and offer it monthly as one line item, or fold it into a retainer tier (SOP-18). Estimating a $40 task costs you $80 of admin — that math is the whole reason for the floor.
+4. **Get approval in writing before work starts.** ""Reply 'approved' and it joins this sprint"" — no approval, no work, no exceptions, no resentment (this is SOP-09 clause 5 doing its job).
+5. **Log it.** Every change order gets a row in the project plan (SOP-10) with date, price, and approval link. At project close, the change-order total is your best pricing evidence for the next proposal to this client.
+
+## Copy-paste assets
+
+**The estimate one-pager (email body is enough):**
+
+> Hi [NAME] — estimate for [CHANGE], as discussed:
+>
+> **What:** [1–2 sentence description of the deliverable, outcome-worded]
+> **Not included:** [The adjacent thing they'll assume next — pre-empt it]
+> **Price:** $[X] ([HOURS] × $[RATE]) · **Time:** [DAYS], starting on approval · **Effect on current dates:** none / [M2 moves by X days]
+>
+> Reply ""approved"" and I'll start [DAY]. If you'd rather park it, it goes on your parking-lot list — no expiry, just honesty.
+
+**The decline-with-alternatives (when it's a bad idea or bad timing):**
+
+> Hi [NAME] — straight answer on [CHANGE]: I'd advise against it right now, because [REASON — e.g., ""it adds a second analytics setup mid-campaign and muddies the data we're using to hit your Q3 number""]. If you want it anyway, it's $[X] and [DAYS] — your call. Alternative that gets most of the value for a third of the cost: [SIMPLER OPTION].
+
+**The monthly bundle offer (for small-item accumulators):**
+
+> Hi [NAME] — your parking lot has 6 small items now (list attached). Two options: I bundle them into one change order at $[X] this sprint, or we fold a monthly allowance of [HOURS] hours into your retainer at [PRICE] starting next month — then small ideas just flow without paperwork. Most clients prefer the second; want me to set it up?
+
+## Rules & red flags
+
+- **The pattern is the product.** After two or three identical replies, clients start pre-filtering: ""this is probably a change order, right?"" That sentence means the SOP is installed and your margin is safe.
+- Never estimate a change order mid-meeting. ""By tomorrow"" is the professional answer; live estimates are wrong and then owned.
+- Track your unbilled change-order hours monthly (time you absorbed before the SOP caught it). Aim: → zero within one quarter.
+- If the same client generates 5+ change orders per project: their budget structure doesn't match projects — pitch the retainer conversion (SOP-18), which is what the bundle email is really for.
+
+## What good looks like
+
+- Every out-of-scope request has a written estimate within 1 business day, 100% of the time.
+- Change-order revenue: 10–20% of project revenue (below 5%: you're absorbing; above 30%: your original scoping is too thin — fix SOP-03 §3).
+- Zero surprise invoices. The client's accountant never discovers your invoice before the client does.
+
+## Adapt it with AI
+
+> ""Adapt this change-order flow for my [SERVICE] agency. Set my minimum change-order value given my floor rate of $[RATE]. Write my three emails (estimate, decline-with-alternatives, monthly bundle) in my voice: [PASTE A WRITING SAMPLE]. Add the 'not included' line for my most commonly assumed-but-extra item: [ITEM]."""
+"SOP-15 · Client Escalation Path","Delivery","# SOP-15 · Client Escalation Path
+
+| | |
+|---|---|
+| **Stage** | Delivery |
+| **Owner** | Project lead → founder |
+| **Trigger** | Unanswered nudges · blocked dependency · sentiment shift · overdue invoice |
+| **Time** | 20 minutes per escalation, done early |
+| **Output** | Problems de-escalated with a paper trail — never a surprise confrontation |
+
+## When to use
+
+At the **first signal** of any of these four:
+
+| Trigger | Signal |
+|---|---|
+| Silence | 2 nudges unanswered (SOP-08 chasing loop exhausted) |
+| Blockage | A missed client dependency blocks work ≥ 2 days |
+| Sentiment shift | Tone turns cold; ""as per my last email""; boss suddenly cc'd; feedback arrives at 23:00 marked ""urgent"" |
+| Money | Invoice overdue > 7 days |
+
+Small agencies get hurt by escalations they *feel* but never *write down*. This SOP converts discomfort into dated, quotable facts — which is what lets both sides stay professional.
+
+## The ladder (one rung at a time, each rung documented)
+
+**Rung 1 — Project-lead nudge (in writing).** The chasing email from SOP-08, with the consequence attached: *""Without [ITEM], [PHASE] slips to [DATE] — flagging now so we can decide together.""* Wait [2 business days].
+
+**Rung 2 — Owner call (voice, not email).** Fifteen minutes, human to human: *""Wanted to make sure nothing's wrong on your side — [ITEM] is holding M2 and I'd rather solve it with you than around you.""* Sentiment shifts get solved here or they don't get solved. Send a 3-line recap email after the call.
+
+**Rung 3 — Written impact summary.** One page, facts only, copied to whoever now needs to see it:
+
+> **Impact summary — [PROJECT], [DATE]**
+> **Situation:** [Dependency X due DATE — not received; 2 emails (DATES) + call (DATE)].
+> **Effect:** [M2 slips A→B; launch C→D; cost effect if any — e.g., ""the paid campaign's booked flight time lapses""].
+> **Options:** (a) [ITEM] by [DATE] → original plan mostly holds, (b) [ALTERNATIVE], (c) re-baseline.
+> **Our ask:** pick a path by [DATE].
+
+**Rung 4 — Formal pause notice (rare; founder sends it).** For unpaid invoices > 14 days or a relationship that's genuinely stuck:
+
+> Per our agreement, we're pausing work on [PROJECT] as of [DATE] until [PAYMENT RECEIVED / DEPENDENCY RESOLVED]. Work in flight is safe; [WHAT PAUSES]. We value this project and pause to keep the math honest rather than absorb it silently and let it sour the relationship. One call reopens everything: [BOOKING LINK].
+
+## Copy-paste: the sentiment-shift opener (rung 2, adapted)
+
+> Hi [NAME] — the last few exchanges felt off, and I'd rather ask than guess: did something in the [REVIEW/LAUNCH/REPORT] land wrong? If we missed the mark, tell me straight — I'd rather fix a real complaint than a polite silence. 15 minutes this week?
+
+## Rules & red flags
+
+- **One rung at a time, and never skip to rung 4 by surprise.** The power of the pause notice comes from the three documented rungs before it.
+- Emotions get calls; facts get emails. Do them in that order — call first, then the recap email that makes the facts permanent.
+- Never absorb silently. Every week you absorb a blockage quietly is a week the client's memory records as *the project going fine* — until the invoice or the deadline surfaces the difference, and then *you* look like the surprise.
+- If YOU are the one who slipped (missed a date, shipped a bug): skip the ladder, self-report immediately with the fix plan (SOP-11 at-risk protocol). Escalation SOPs are for two-way streets; your own slippage is a one-way obligation.
+- Two escalations in one project = a health flag: schedule an SOP-19 review and ask the account question (""is this project structured right for both of us?"").
+
+## What good looks like
+
+- Escalations resolved at rung 1–2 at a rate above 80%; rung 4 happens less than once a year and is never a shock when it does.
+- Every escalation above rung 1 has a dated paper trail you could hand to an accountant — or a lawyer — without editing.
+- Clients later say some version of ""you were tough to work with in exactly the right ways."" That's this SOP, remembered fondly.
+
+## Adapt it with AI
+
+> ""Adapt this escalation ladder for my agency ([N] people, I am both owner and project lead). Merge rungs where the separation doesn't exist, keep the 4-trigger table, and write my rung-3 impact summary template for my most likely scenario: [SCENARIO — e.g., 'client content 3 weeks late blocking a launch with a fixed event date']."""
+"SOP-16 · Monthly Report Skeleton","Retention","# SOP-16 · Monthly Report Skeleton
+
+| | |
+|---|---|
+| **Stage** | Retention |
+| **Owner** | Account owner |
+| **Trigger** | Same day every month per retainer client ([1st business day] is common) |
+| **Time** | 45–60 minutes per client |
+| **Output** | A one-page report the client actually reads — and that makes the retainer look like the best line in their budget |
+
+## When to use
+
+Every month, every retainer. The monthly report is not documentation — it is your **retention weapon**. Retainers don't die from bad work; they die from invisible value. One well-made page per month is the difference between ""why are we paying them?"" and the QBR upgrade conversation (SOP-17/18).
+
+## Copy-paste: the skeleton (one page, always this order)
+
+> **[CLIENT] × [AGENCY] — Monthly report — [MONTH]**
+>
+> **1. The verdict (2 sentences).** What moved, what it means, and the one decision to make. *""Leads from the campaign are up 34% at a lower cost per lead — the win here is [X]; the decision is whether we scale spend in [MONTH].""*
+> Never start with traffic charts. Start with ""so what"".
+>
+> **2. Numbers vs. targets.** A table of [3–7] KPIs — the ones from SOP-07's success metric, nothing else:
+>
+> | KPI | This month | Last month | Target | Read |
+> |---|---|---|---|---|
+> | [Leads] | [128] | [95] | [110] | ✅ beat |
+>
+> Rule: every number gets a **Read** cell — ✅ beat / ⚠️ watch / ❌ miss + five words why. Vanity metrics (impressions, followers) are banned unless tied to the goal.
+>
+> **3. What we did.** 4–6 bullets, outcome-worded: *""Rebuilt onboarding email flow (5 emails) — live [DATE]""*, not *""worked on emails""*.
+>
+> **4. What we learned.** 1–2 real observations with evidence: *""Visitors from LinkedIn convert 2× those from search — worth shifting [X].""* This section is why you're a partner, not a vendor.
+>
+> **5. Next month + asks.** The plan in 3 bullets + anything you need (""a quote from your ops team for the case study — 10 minutes"").
+
+## Copy-paste: filled example (the two hardest sections)
+
+> **1. The verdict.** *Leads beat target for the second month (128 vs 110) at a cost-per-lead 18% lower — the campaign is scaling predictably now. The decision this month: approve the +30% budget test for November; the report below shows why the risk is low.*
+>
+> **2. Numbers vs. targets.**
+>
+> | KPI | This month | Last month | Target | Read |
+> |---|---|---|---|---|
+> | Qualified leads | 128 | 95 | 110 | ✅ 2nd beat in a row |
+> | Cost per lead | $41 | $53 | ≤$50 | ✅ down 3 months straight |
+> | Lead → call rate | 22% | 31% | ≥25% | ⚠️ volume up, follow-up lagging — fix is on your side (SLA), script attached |
+> | Retainer hours used | 38/40 | 40/40 | — | 🟢 healthy |
+
+Note what the ⚠️ row does: it raises the client's own follow-up SLA problem *with a fix attached*, in a document they forward to their boss. That's the report doing account management while you sleep.
+
+## Rules & red flags
+
+- **Send before the monthly call, never present it cold.** The call then starts at ""you've read the report — what stood out?"" — thirty minutes of decisions instead of thirty minutes of narration.
+- A miss gets reported like a win with a plan: ❌ row + five words + one line in the verdict about the fix. Hiding a miss for one cycle costs you the account on discovery; reporting it with a plan builds more trust than a clean month.
+- Numbers must reconcile with whatever the client sees in their own dashboard. If your GA4 and their CRM disagree, name the discrepancy in section 2 — the month they catch an unexplained mismatch, every previous number becomes suspect.
+- 45-minute cap per report. If it takes longer, you're reporting from too many sources — fix the UTM/tracking setup (SOP-13), not the report.
+
+## What good looks like
+
+- Client forwards the report to their boss with no edits. That forward is the KPI of this SOP.
+- ""The report is great but we have questions"" meetings: shrinking, because the Reads answer them pre-emptively.
+- Renewal conversations (SOP-19) reference reports, not memory: *""In your March report we flagged X…""* — six months of forwarded PDFs are your renewal argument, pre-written.
+
+## Adapt it with AI
+
+> ""Build my monthly report skeleton for [SERVICE — e.g., SEO retainer] clients in [NICHE]. Pick the 5 KPIs that map to real business outcomes (not vanity), draft the Reads vocabulary, and write the 2-sentence verdict formula with one filled example. My reporting stack is [GA4/SEARCH CONSOLE/etc.]."""
+"SOP-17 · Quarterly Business Review (QBR) Agenda","Retention","# SOP-17 · Quarterly Business Review (QBR) Agenda
+
+| | |
+|---|---|
+| **Stage** | Retention |
+| **Owner** | Founder / account owner |
+| **Trigger** | Every 90 days per retainer or multi-project client — booked 3 weeks ahead |
+| **Time** | 60 minutes live + 60 minutes prep |
+| **Output** | A re-anchored relationship: goals re-confirmed, roadmap pitched, renewal smoothed, upsell door opened (SOP-18) |
+
+## When to use
+
+Quarterly, for every retainer and every client past project #2. The QBR is the highest-ROI hour in agency retention: it converts monthly reports (SOP-16) into a strategic story, surfaces churn risk while it's still fixable, and is the single best venue to pitch bigger work — from the client's side of the table.
+
+## Prep (60 minutes, the day before)
+
+- Pull the 3 monthly reports (SOP-16) into one trend line: what's the *story* of the quarter?
+- Ask the honest internal question: *""If this QBR went badly, what would they cut first?""* Build that answer into the agenda.
+- Prep ONE roadmap pitch (SOP-18 grammar) tied to their stated goal — never a services menu.
+- Send agenda 3 days ahead; ask them to add one agenda item: *""What should we add? It's your hour.""*
+
+## The agenda (60 minutes, timeboxed)
+
+| Time | Block | What happens |
+|---|---|---|
+| 0–10 | **Results vs. goals** | The quarter in one trend line + the 3 KPI reads that matter. Numbers they can't see in monthly slices. |
+| 10–20 | **Stop / Start / Continue** | You go first (vulnerability licenses honesty): one thing you'd stop, one start, one double-down on. Then theirs. Write it live. |
+| 20–25 | **What changed on your side** | Their market, team, priorities. The quarter's roadmap is worthless if their goal moved — re-anchor first. |
+| 25–40 | **Next-quarter roadmap pitch** | One proposal: *""Given [THEIR GOAL], I'd focus next quarter on [PLAN]. It targets [METRIC]. Options and prices in the follow-up.""* This block is why the QBR exists. |
+| 40–50 | **Commercial housekeeping** | Renewal date, scope tweaks, budget reality — stated plainly: *""Contract renews [DATE]; based on today, I'd propose [SHAPE].""* No renewal conversation should ever happen in the renewal month for the first time. |
+| 50–60 | **The honest question** | *""Last 5 minutes, off the record: how are we doing as a partner — honestly? What would make this a 10?""* Then the last word: *""Anything we should start doing for someone ELSE on your team?""* (referral seed, SOP-23). |
+
+## Copy-paste: the QBR invite + follow-up
+
+> **Invite (3 weeks out):** Subject: [CLIENT] × [AGENCY] — Q3 review & next-quarter plan
+> Hi [NAME] — 60 minutes to look at the quarter together: what the numbers say, what we'd each stop/start, and a concrete plan for next quarter. [BOOKING LINKS — offer 3]. Add anything you want covered; it's your hour.
+>
+> **Follow-up (same day):** Thanks [NAME] — recap in one line each: results: [X] · stop: [X] · start: [X] · next quarter: [PITCH ONE-LINER] (estimate by [DATE]) · renewal: [SHAPE, DATE]. And thanks for the straight answer on the last question — [COMMITMENT FROM IT].
+
+## Rules & red flags
+
+- Never cancel a QBR for delivery pressure. The cancelled QBR is how the client's boss concludes the agency is ""just execution"" — and execution gets outsourced to the cheapest bidder.
+- If the client won't come (""just send it over""), send the report stack + a 5-bullet QBR-in-writing and flag the account yellow in SOP-19: a client who won't spend an hour per quarter on the partnership is already halfway out.
+- One pitch per QBR. Two pitches turn a strategy hour into a sales meeting.
+- The honest question block is the churn radar: anything said there gets an SOP-19 action within the week — asking and ignoring is worse than not asking.
+
+## What good looks like
+
+- QBR attendance rate above 80% — clients protect the hour because it produces their own quarterly plan.
+- At least half of QBRs produce a next-quarter pitch that becomes signed work (that's the SOP-18 funnel, fed).
+- Renewals signed before the renewal month, without discount pressure, referencing ""what we planned at the QBR"".
+
+## Adapt it with AI
+
+> ""Adapt this QBR agenda for [SERVICE] retainers with [NICHE] clients. Keep the 6 blocks and timeboxes. Draft my 'stop/start/continue' opener for a quarter where [SITUATION — e.g., 'results were flat but we fixed tracking mid-quarter'], and the next-quarter pitch frame for [YOUR MOST COMMON UPSELL]."""
+"SOP-18 · Upsell Triggers & Pitch Grammar","Retention","# SOP-18 · Upsell Triggers & Pitch Grammar
+
+| | |
+|---|---|
+| **Stage** | Retention |
+| **Owner** | Anyone who spots the trigger; founder prices it |
+| **Trigger** | One of the six trigger events below happens on an active account |
+| **Time** | 15 minutes to log, one email + one call to pitch |
+| **Output** | Expansion offers that feel like service — because they arrive as answers to the client's own events |
+
+## When to use
+
+Upselling isn't a quota activity; it's a *listening* activity. This SOP is a standing table: when the trigger fires on the left, the pitch on the right is already written. Agencies that ""don't like selling"" don't need to — they need to notice and connect.
+
+## The trigger table
+
+| # | Trigger (event) | The pitch (connect it to their goal, always) |
+|---|---|---|
+| 1 | **KPI beats target 2 consecutive months** (SOP-16 shows it) | Scale the engine: *""Leads beat target 2 months running — this is when scaling spend compounds instead of gambles. Want the 30% scale plan?""* |
+| 2 | **Client mentions a new initiative** in any call (launch, new market, new hire, funding) | Map your services to *their* news: *""That launch is exactly what [SERVICE] is for — want me to sketch what it'd look like for it?""* |
+| 3 | **Support/requests cluster outside scope** (SOP-14 parking lot ≥ 4 items, or change orders repeating) | Retainer conversion: *""These keep coming as one-offs — a monthly [HOURS]-hour retainer makes them flow without estimates. Here's what it'd include.""* |
+| 4 | **Contract end within 60 days** (calendar is a trigger) | Renewal + expansion together: *""Before renewal on [DATE]: what worked, what's next — I'd propose [BIGGER SHAPE] for [PRICE]."" (delivered via SOP-17)* |
+| 5 | **Your champion changes jobs / new stakeholder appears** | Re-anchor immediately: new stakeholder inherits your QBR deck, a 30-minute intro, and the results story. An un-anchored new boss is a churn event on a timer. |
+| 6 | **They reference a competitor's move** (""[RIVAL] just launched X"") | Counter-move framing: *""Want the 2-week version of that for us? Here's what it'd take.""* |
+
+## Pitch grammar (every pitch, all three moves)
+
+1. **Their goal, not your service.** *""Since you want [GOAL]…""* — never *""We also offer…""*
+2. **Smallest next step.** A sketch, a 2-week pilot, an estimate — not a $40k proposal. Reduce the yes to something that costs them a reply.
+3. **Range before detail.** *""Typically lands $[X]–$[Y] — want the sketch?""* Interest confirmed before you invest hours in scope.
+
+## Copy-paste: the trigger email (trigger #1 shown; pattern is universal)
+
+> Subject: Your leads beat target again — worth scaling?
+>
+> Hi [NAME] — second month in a row above target (report attached). Two months of data changes this from ""nice"" to ""signal"": the campaign scales predictably right now.
+>
+> The smallest next step if you're curious: I'll sketch a 30%-higher-spend plan with projected [METRIC] and a stop-loss — one page, no commitment. Typically this kind of plan lands in the $[X]–$[Y]/month range.
+>
+> Want the sketch by [DAY]?
+
+## Rules & red flags
+
+- **One open pitch per account at a time.** Pitch-stacking reads as quota behavior and cheapens the next legitimate one.
+- Deliver bad news in the same season as pitches. An agency that only calls when selling trains clients to dread your calls; the honest ❌ row in SOP-16 buys the right to trigger #1.
+- Trigger #5 is a fire alarm, not a drip campaign: new decision-maker who doesn't know you is how 18-month accounts die in month 19. Book the intro within 2 weeks of their arrival.
+- Log every trigger + pitch + outcome in the account sheet. After a quarter you'll see which triggers actually convert — work those harder and let the dead ones rest.
+
+## What good looks like
+
+- Expansion revenue at 20–30% of total revenue — the cheapest revenue in the business, won without a single cold call.
+- Clients hear pitches as *""they noticed""* rather than *""they're selling""* — that's the grammar working.
+- Every retainer account has exactly zero triggers sitting unactioned for more than a week.
+
+## Adapt it with AI
+
+> ""Build my trigger table for a [SERVICE] agency with [NICHE] clients: 6 triggers with matching pitch openers. Then draft the trigger email for [WHICH TRIGGER] in my voice, using my metrics ([KPIs]) and my typical range $[X]–$[Y]. Keep the 3-move grammar: their goal, smallest next step, range before detail."""
+"SOP-19 · Retainer Health & Renewal Review","Retention","# SOP-19 · Retainer Health & Renewal Review
+
+| | |
+|---|---|
+| **Stage** | Retention |
+| **Owner** | Founder (for a 1–10 person agency, this is a founder job) |
+| **Trigger** | Monthly, first Friday: review ALL retainer accounts · per-account deep dive 60 days before any renewal |
+| **Time** | 10 minutes per account monthly · 45 minutes per renewal review |
+| **Output** | Churn caught quarters early, renewals started 60 days out, save-attempts that are honest |
+
+## When to use
+
+On a fixed monthly date. Retainer churn for small agencies is almost never sudden — it's a slow sentiment drift that nobody scored. This SOP is a 10-minute monthly instrument panel. The rules: **usage numbers, sentiment signals, money dates — scored every month, no exceptions.**
+
+## The monthly scorecard (per account, 10 minutes)
+
+| Signal | Healthy 🟢 | Watch 🟡 | Alarm 🔴 |
+|---|---|---|---|
+| **Hours used vs. allocated** | 70–90% | >90% (scope creep risk) or 50–70% (downgrade risk) | <50% two months running |
+| **Sentiment** | Client initiates; praise; forwards reports | Slower replies; shorter emails | ""As per my last email""; boss cc'd; QBR deferred (SOP-17) |
+| **Money** | Invoices paid on time | Paid after a nudge | Late twice or queries an invoice |
+| **Strategic involvement** | Invited to planning; roadmap requested | Updates only answered | Cancels 1:1s; ""just email me"" |
+| **Champions** | Contact responds + a second ally exists | Single point of contact | Your champion went quiet / changed jobs |
+
+**Score:** 🟢 = 0, 🟡 = 1, 🔴 = 2 per row. **0–3 healthy · 4–7 act this month · 8+ fire drill.**
+
+## Acting on the score
+
+- **🟡 >90% usage:** pitch the bigger tier *now* (SOP-18 trigger #3 inverted — this is the good problem): *""We've used 95%+ two months running — you're outgrowing this tier.""*
+- **🟡/🔴 low usage:** call, don't email — *""We're using half the hours. Either we're scoping wrong or your priorities moved — which is it?""* A right-sized retainer survives; a padded one dies at renewal with resentment.
+- **🔴 sentiment/money:** SOP-15 rung 2 call within the week. Name it kindly, fix it in writing.
+- **🔴 champion left:** SOP-18 trigger #5 — re-anchor with the successor inside 2 weeks.
+
+## The renewal deep dive (60 days out, 45 minutes)
+
+1. **Evidence:** line up 3 monthly reports (SOP-16) + QBR recap (SOP-17) — the renewal case is already written; assemble it.
+2. **Score trend:** last 3 monthly scorecards. A renewal pitched during a 🔴 month is a negotiation; during a 🟢 quarter it's a signature.
+3. **The ask (in this order):** renew at current shape → expand (tie to a trigger, SOP-18) → multi-quarter discount for cash-flow certainty (your 10% floor rule from SOP-04 applies).
+4. **If you don't want the renewal** (wrong-fit client, margin-burner): decline *yourself*, with a referral (SOP-01 muscle). Firing a bad client before they fire you is a growth move dressed as a loss.
+
+## Copy-paste: the save attempt (score 8+, honest version)
+
+> Hi [NAME] — shooting straight, because I'd rather fix this than lose it: from our side, the last two months look [USAGE/SIGNAL — e.g., ""like we're solving fewer of your problems than the retainer promises: 40% hours used, two invoices queried""]. My guess is [HYPOTHESIS]. If I'm wrong, tell me how you'd score us. If I'm right, I'd propose [FIX — resize/reshape/pause 1 month]. 30 minutes this week — and if the honest answer is ""it's not you, priorities moved"", I'll help you wind down gracefully and hand over everything clean (SOP-21).
+
+## Rules & red flags
+
+- The scorecard takes 10 minutes *because* you track usage monthly. If hours-vs-allocated isn't measured, this SOP runs on vibes — fix that first.
+- Never start a renewal conversation in the renewal month. 60 days is the minimum for a clean, unpressured yes (or a graceful, planned exit).
+- A save attempt that opens with billing threats (""invoices are late, contract says…"") ends the account. Open with the relationship; the contract is the last resort, in writing, via SOP-15 rung 4.
+- One page per account per month, one folder, reviewed same day monthly. Boring rhythm is the entire trick.
+
+## What good looks like
+
+- Retainer churn below 10% annually — and every churn that does happen was forecast on this scorecard at least 60 days ahead.
+- Renewals signed 30+ days before end date, half of them expanded.
+- The phrase ""they noticed before we said anything"" — from a client, about a 🟡 month — is this SOP working perfectly.
+
+## Adapt it with AI
+
+> ""Build my monthly retainer scorecard: I run [SERVICE] retainers at $[X]/month with [HOURS] allocated. Set the usage bands for my margin target of [Y]%, list my niche's specific sentiment signals, and draft the save-attempt email for a [SITUATION] account. Keep the 5-row structure and the 60-day renewal rule."""
+"SOP-20 · Client Feedback Pulse","Retention","# SOP-20 · Client Feedback Pulse
+
+| | |
+|---|---|
+| **Stage** | Retention |
+| **Owner** | Project lead (sends), founder (acts on low scores) |
+| **Trigger** | Automatically at every milestone (M1, M2, launch) and at project midpoint |
+| **Time** | 5 minutes to send · a 30-minute call when a score is low |
+| **Output** | Unhappiness surfaced while it's still a fixable moment — not saved up for the end-of-project survey, or worse, for the renewal call |
+
+## When to use
+
+At every milestone, mechanically. Waiting until project end to ask ""how did we do?"" is archaeology: the moment the client got frustrated in week 3 is long gone, and by then their story about you has already hardened. The pulse catches the week-3 moment in week 3.
+
+## The pulse (3 questions — no more, or response rate dies)
+
+Sent by the project lead, as a plain email (no survey links for a 1–10 person agency; the format should feel like a person, not a form):
+
+> Subject: 30 seconds of honesty about [MILESTONE]?
+>
+> Hi [NAME] — we just hit [MILESTONE]; before we move to the next phase, three quick questions:
+>
+> 1. 0–10: how likely are you to recommend us to another [THEIR INDUSTRY] after this phase?
+> 2. What should we do differently in the next phase?
+> 3. Anything about communication you'd change — frequency, format, channel?
+>
+> Straight answers only — a ""7"" with a reason is worth more to me than a polite ""10"". Takes 30 seconds.
+
+## The routing rule (this is the SOP)
+
+| Score | Meaning | Action |
+|---|---|---|
+| **9–10** | Promoter | Thank + ask the testimonial question *now* (SOP-22 — the peak-happiness moment is happening) |
+| **7–8** | Quiet doubt | Founder (not project lead) replies within 48h: *""Thanks for the 8 — what would make it a 9? Straight answer appreciated.""* Then actually change one thing and say so. |
+| **0–6** | Fire | **Call within 24h.** Email moves the account toward churn; only a voice call catches it. Script below. Log it in SOP-19's scorecard as a 🔴 sentiment signal. |
+
+## Copy-paste: the recovery call opener (score 0–6)
+
+> ""[NAME], thanks for taking this — I saw your score and I'm calling before anything else, because a [X] from you means we did something real. No defense, I just want the story straight: what happened, from your side?""
+
+Then: listen, take notes, repeat their three points back, propose ONE concrete fix with a date, and close with: *""I'll fix [X] by [DATE] and you'll see it in the next update (SOP-11). If it's not visibly better in two weeks, say the word.""*
+
+Follow up in writing the same day — 4 lines: what you heard, what you'll change, by when, how they'll see it.
+
+## Rules & red flags
+
+- **Never send the pulse and argue with the answer.** A client who takes the risk to be honest and gets a rebuttal teaches themselves to say ""10"" forever — and you lose the instrument.
+- Pulse fatigue is real: 3 questions, ≤ 4× per project, only at milestones. Two pulses with no visible response to feedback = you've trained them that surveys here are theater.
+- The 7–8 band is where accounts are *saved*; treat it with more urgency than the 0–6 (you can feel a 0–6; the 8 that quietly becomes a 6 is the one that kills retainers).
+- Non-responders are a signal too: two ignored pulses = flag in SOP-19 and ask about it directly at the next touch (""didn't want to spam you with the survey — how's it actually going?"").
+- Aggregate the scores quarterly: pulse trend per client feeds the SOP-19 scorecard and, at 9+ averages, the testimonial/case-study pipeline (SOP-22).
+
+## What good looks like
+
+- 70%+ pulse response rate (plain email, 3 questions, visible follow-through gets you there).
+- Every 0–6 has a same-week call and a written fix commitment — and most of those accounts finish the project as promoters.
+- At project end there are zero surprise-complaints, because every real complaint already had its moment.
+
+## Adapt it with AI
+
+> ""Adapt this 3-question pulse for [SERVICE] projects with [NICHE] clients. Rewrite the questions in my voice ([SAMPLE]), set my milestone trigger points for a typical [X]-week project, and draft the 7–8 reply for my most common source of quiet doubt: [EXAMPLE]."""
+"SOP-21 · Project Handover Checklist","Offboarding","# SOP-21 · Project Handover Checklist
+
+| | |
+|---|---|
+| **Stage** | Offboarding |
+| **Owner** | Project lead |
+| **Trigger** | Final milestone accepted or contract end date within 14 days |
+| **Time** | 2–3 hours spread over the final week |
+| **Output** | A client who owns *everything* — accounts, files, docs, credentials — and a clean close that protects you legally and reputationally |
+
+## When to use
+
+Every project end, including endings you didn't choose (fired, budget cut, project paused). A graceful handover after a firing is remembered by everyone in their network — it's marketing (SOP-23 runs on this).
+
+## Copy-paste: the checklist
+
+**1. Accounts: transfer ownership, don't share.**
+- [ ] Every platform where you created something: switch owner to the client, demote yourself to viewer (or remove)
+- [ ] Analytics (GA4): client becomes account owner; keep a viewer seat only if they offer
+- [ ] Ad accounts: client owns; remove your payment methods
+- [ ] Domains/registrars bought on their behalf: push to their registrar account
+- [ ] Social/tool admin seats: client admin, your seats removed
+- Shared access expires; ownership survives. The test: **cancel your agency tomorrow — does anything break for them?**
+
+**2. Files: they live in the client's storage, not yours.**
+- [ ] Working files (design sources, docs, spreadsheets) copied to the client's drive/folder, with edit rights
+- [ ] Final exports in the formats they'll actually need (SOP-13 list)
+- [ ] Content calendar, brand assets, and photo library with a named-folder structure
+- [ ] Email thread archive of decisions (a single exported PDF of the milestone approvals is enough)
+
+**3. Documentation pack (the part clients never expect and always remember).**
+- [ ] A 5–10 item ""how this works"" doc: where things live, how the site/flow was built, known quirks
+- [ ] 2–3 short screen-recording videos (5 minutes each): ""how to update X"", ""where Y lives"", ""what to do when Z""
+- [ ] Vendor/third-party contact list (hosting, plugins, freelancers)
+- [ ] Where passwords live now (their password manager — SOP-08 hygiene pays off here)
+
+**4. Money and IP, in this order.**
+- [ ] Final invoice sent; **IP/license transfer happens on final payment** (it's in your SOP-03 §7 terms — say it in the handover email: ""full ownership transfers on settlement, per the agreement"")
+- [ ] Retainer/paused subscriptions in your name cancelled — set a calendar reminder for every one before you close
+- [ ] Written statement of account: paid, outstanding, nothing hidden
+
+**5. The closing email.**
+
+> Subject: Handover complete — [PROJECT] is officially yours
+>
+> Hi [NAME] — everything is transferred. Attached: the handover doc (what lives where), the how-to videos [LINKS], and the statement of account.
+>
+> Three things that survive us: [SITE/CAMPAIGN] is fully in your accounts; the docs cover the 90% questions; and if something stumps you, email anyway — quick questions in the first 30 days are on the house.
+>
+> It was a pleasure building [OUTCOME] with you. When you get a moment in a few weeks, I'll ask you one small favor (it's a good one): [TEASE SOP-22 — testimonial ask].
+
+## Rules & red flags
+
+- Handover happens **even when the ending is ugly** — especially then. The fired-and-graceful agency gets referral calls within a year; the fired-and-petty agency gets a Reddit thread.
+- Never hold files hostage over a disputed invoice — it converts a billing dispute into a legal and reputational incident. IP transfer timing per contract; hostile hostage-taking is never in the contract.
+- Cancel every subscription you created *before* the final invoice, not ""eventually"" — a $29/mo tool leaking on your card for a dead project is the classic solo-agency tax.
+- The ""quick questions free for 30 days"" line costs minutes and buys the SOP-22 testimonial and SOP-23 referral. Keep the window, honor it.
+
+## What good looks like
+
+- Zero ""wait, you still have access to…"" emails, ever.
+- Handover pack delivered before final payment where trust is intact; simultaneously with it where it isn't.
+- The client's next agency/vendor compliments the documentation — that compliment travels back to you.
+
+## Adapt it with AI
+
+> ""Build my handover checklist for [SERVICE] projects on [STACK]: the account-transfer list with exact platform owner-change steps, the documentation pack outline, and the closing email in my voice. Add the 3 platform-specific transfer steps people forget for my stack."""
+"SOP-22 · Testimonial & Case Study Request","Offboarding","# SOP-22 · Testimonial & Case Study Request
+
+| | |
+|---|---|
+| **Stage** | Offboarding |
+| **Owner** | Founder |
+| **Trigger** | Within 24 hours of a compliment, a 9–10 pulse (SOP-20), or a results milestone the client celebrated |
+| **Time** | 10 minutes to ask · 20 minutes to shape · 2 hours to build the case study |
+| **Output** | Specific, quotable, number-carrying testimonials — and one case study per great project |
+
+## When to use
+
+The rule that does all the work: **ask within 24 hours of the compliment — never later.** ""That's amazing, thank you!!"" in your inbox is a perishable asset. Most agencies say ""thanks"" and move on; the disciplined one converts gratitude into proof within a day.
+
+## The ask (make it effortless — effort kills testimonials)
+
+Never ""could you write us a testimonial?"" (blank page = never happens). Give structure:
+
+> Hi [NAME] — that just made my week, thank you.
+>
+> Since you're happy (and only because you are): would you put a few words in writing? Three prompts, answer any or all, rough is perfect:
+>
+> 1. What was going on before we started? (the ""before"")
+> 2. What did we do that stood out — working style counts as much as the work?
+> 3. What's the result you'd point to? Numbers welcome, honesty over precision.
+>
+> Two lines per answer is plenty. If it's easier, reply in bullets and I'll shape a draft for your approval — you edit anything, nothing goes public without your sign-off.
+>
+> And to be clear: a ""not now"" costs nothing. [NAME]
+
+The **draft-for-edit** route converts best: busy clients approve-and-tweak; they don't compose.
+
+## Shaping what they send back
+
+- **Keep their words.** Light edits for length and typos only — polished marketing-speak reads fake and they'll notice their voice missing.
+- **Anchor specifics:** ""great to work with"" is worthless; ""they caught that our checkout was losing mobile sales — recovered about $4k/month"" is a weapon. If their draft is vague, one follow-up: *""Could you add the number that made you happiest? Even rough.""*
+- **Collect permissions explicitly:** full name, title, company, photo, and where it may appear (website, proposals, social). Log the permission date next to the quote.
+- **Quote bank:** one file/table — quote, who, permission, where used. Every proposal (SOP-03 §6) pulls from it; every listing too.
+
+## From testimonial to case study (within 30 days, best projects only)
+
+Structure (one page): **Before** (their words from the discovery notes, SOP-02) → **What we did** (3–5 moves, outcome-worded) → **The number** (their metric from SOP-07, before/after) → **Their quote** (the shaped testimonial) → **What it took** (timeline + price range if they permit — price ranges pre-qualify your future leads, SOP-01 bonus).
+
+## Copy-paste: the 30-day follow-up (if they went quiet)
+
+> Hi [NAME] — no rush and no pressure on the words from last month; your inbox is a war zone, I get it. If it's easier, just reply with the one number you'd brag about from [PROJECT] and one sentence why — I'll draft around it as before. If it's a no, we're completely good, and [RESULT] was a blast either way.
+
+## Rules & red flags
+
+- One nudge only, ~30 days later. A second chase converts goodwill into a favor they resent — the exact opposite of the asset's purpose.
+- Never write a fake testimonial or ghost-write one they don't edit. It's dishonest, it leaks, and clients talk.
+- Fresh testimonials beat old ones: rotate the two quotes in proposals (SOP-03 §6) quarterly; an agency whose newest proof is 3 years old is telling on itself.
+- The testimonial conversation is also the natural door to SOP-23 (referrals): the thank-you email after they approve the quote adds the ""one small favor"" — the referral ask.
+
+## What good looks like
+
+- 60%+ of happy clients provide a usable quote within a week (the 3-prompt + draft-for-edit format gets you there; the blank ""any chance you could…"" request doesn't).
+- Every proposal carries a quote from the last 2 quarters, with a number in it.
+- One case study per quarter enters the quote bank — your listing pages (Gumroad/Etsy/website) and SOP-01 nurture emails feed on these forever.
+
+## Adapt it with AI
+
+> ""Write my testimonial request email for [SERVICE] clients: 3 prompts tailored to what my work changes for [NICHE], plus the draft-for-edit line. Then turn this raw client feedback into 2 polished-but-in-their-voice quotes and one case study using the Before/Did/Number/Quote structure: [PASTE FEEDBACK + METRICS]."""
+"SOP-23 · Alumni Referral Program","Offboarding","# SOP-23 · Alumni Referral Program
+
+| | |
+|---|---|
+| **Stage** | Offboarding |
+| **Owner** | Founder |
+| **Trigger** | Handover complete (SOP-21) · testimonial approved (SOP-22) · quarterly value email cycle |
+| **Time** | 10 minutes at handover · 1 hour per quarter maintaining |
+| **Output** | A referral engine made of people who already know your work — the cheapest, warmest pipeline a small agency can own |
+
+## When to use
+
+At every project close and then once a quarter, forever. Past clients (""alumni"") refer more freely than current ones — the project's results are proven, and recommending you costs them nothing but a forward. Most agencies never ask because the project ""ended."" That's the entire opportunity: for the client, the relationship didn't end; the *invoice* did.
+
+## Copy-paste: the referral ask (at handover + testimonial approval, two separate asks)
+
+The referral ask is distinct from the testimonial ask — never bundle them into one email with two favors (you'll get neither):
+
+> Hi [NAME] — one more thing now that [PROJECT] is wrapped, and it's a good one: **who else do you know with the [PROBLEM YOU SOLVED] problem?**
+>
+> Not asking you to sell for me — one name and a ""you two should talk"" is the whole job. I'll take it from there with zero awkwardness (they'll get value from the first call whether we work together or not).
+>
+> If someone comes to mind, a one-line intro by email is perfect. And thank you — [RESULT] was a pleasure.
+
+## The forwardable blurb (give them the ammunition)
+
+People refer when it's effortless. Attach a 60-word blurb they can forward untouched:
+
+> *Forwarding this because [YOUR NAME] did [SPECIFIC RESULT, e.g., ""our site rebuild — leads up 40% in 3 months""] for us. [HE/SHE/THEY] run(s) [AGENCY], working with [NICHE] on [SERVICES]. First call is genuinely useful even if you don't hire — [HE/SHE/THEY] does a teardown of your [ASSET] with no strings. [YOUR EMAIL / CALENDAR LINK]*
+
+Refresh the blurb's headline number quarterly (newest case study, SOP-22). A stale number is a stale pipeline.
+
+## The thank-you (always, same week)
+
+> Hi [NAME] — [REFERRAL NAME] and I just talked; great human, exactly the kind of project I like. Thank you for the intro.
+>
+> Small token: [REFERRAL THANK-YOU — e.g., ""the next [X] hours on any future project for you are on me"" / a gift / a donation they'd like]. No obligation ever attaches to this — the intro was the gift.
+
+**Check the rules of your jurisdiction and their industry** before offering cash commissions (some regulated industries and government clients forbid it); a gift, discount, or free hours is the safe universal default.
+
+## The alumni rhythm (1 hour per quarter)
+
+1. **List:** every past client in one sheet: name, project, last result, last contact date.
+2. **One value email per quarter** — no pitch: the new case study, one insight useful to *their* business, one line of ""door's open"" (this doubles as SOP-24's nurture bed).
+3. **Three personal touches per quarter:** congratulate a launch, comment on their news, send a relevant article *they* specifically would use. alumni ≠ mailing list; alumni = 30 humans who know your work.
+4. **Annual audit:** who referred in the last 12 months? Thank them again (differently). Who went quiet 18+ months? They're SOP-24 candidates now.
+
+## Rules & red flags
+
+- Ask at the *high point* (handover, testimonial, results call) — never during a low, and never more than once per project cycle.
+- Treat referred leads like royalty, visibly: faster SLA on the first reply (SOP-01 fast-track), and report back to the referrer *with their permission to share progress* — referrers who see outcomes refer twice.
+- Never let a referred project go badly without telling the referrer first. Protect the referral triangle's trust above the single project's revenue.
+- Don't pay for referrals where it's prohibited (regulated industries, public sector) and always keep it transparent — sleazy referral economics eventually reach the client's ears.
+
+## What good looks like
+
+- 25%+ of new business arriving by referral within a year of running this rhythm (it starts slower; compounds fast).
+- Every quarter: one alumni email sent, three personal touches logged, blurb number refreshed.
+- The phrase ""I heard about you from [PAST CLIENT]"" — arriving monthly — is this SOP compounding.
+
+## Adapt it with AI
+
+> ""Write my referral ask, my 60-word forwardable blurb (latest result: [NUMBER/PROJECT]), and my quarterly alumni email for [NICHE] past clients. My referral thank-you is [GIFT/DISCOUNT/HOURS]. Warm, zero-pressure tone — these people liked working with me; the emails should feel like me, not a newsletter."""
+"SOP-24 · Win-Back Sequence","Offboarding","# SOP-24 · Win-Back Sequence
+
+| | |
+|---|---|
+| **Stage** | Offboarding |
+| **Owner** | Founder |
+| **Trigger** | 90+ days since project end, no retainer, no active conversation — and the account scored 🟢/🟡 when it ended |
+| **Time** | 20 minutes per touch × 3 touches, spaced ~6 weeks |
+| **Output** | Reactivated clients — or a clean archive after 3 touches, with the relationship intact for SOP-23 referrals |
+
+## When to use
+
+On the alumni list (SOP-23 rhythm) whenever an account goes quiet. Win-back is slower than referral but warmer than cold outreach: these people already know your work. The entire game is *patience + relevance* — three touches over ~18 weeks, each carrying something useful, never ""just checking in.""
+
+## The sequence (spaced ~6 weeks)
+
+| Touch | Angle | Content |
+|---|---|---|
+| **1 — Value** | Their world, not yours | One insight specific to *their* business/market (""saw [INDUSTRY THING] — this changes [THEIR ASSET] because…""). No offer, no ask beyond ""worth a look?"" |
+| **2 — Proof** | Show what's new | Your newest case study (SOP-22) with a one-line bridge: ""similar setup to yours — [NUMBER] in [TIMEFRAME]."" |
+| **3 — Direct** | The honest door-opener | The direct email below — a specific idea for their business and an easy way in. |
+
+## Copy-paste: the three emails
+
+**Touch 1 — value:**
+
+> Hi [NAME] — no agenda, saw [SOMETHING SPECIFIC: their launch / an industry shift / a competitor move] and thought of you: [2–3 SENTENCE INSIGHT that connects it to their business]. Might be useful, might not — seemed worth sending either way. How's [THEIR WORLD — e.g., the new store] treating you?
+
+**Touch 2 — proof:**
+
+> Hi [NAME] — we just closed [PROJECT] for a [SIMILAR PROFILE] client: [ONE NUMBER RESULT] in [TIMEFRAME]. Wrote it up here ([LINK], 2-minute read) — the middle section on [TOPIC] applies almost word-for-word to your [THEIR ASSET]. Anyway — no ask, just figured you'd find it interesting.
+
+**Touch 3 — direct:**
+
+> Hi [NAME] — last one from me for a while (not a guilt trip, just file-closing honesty): I keep having ideas for [THEIR BUSINESS] — the current one is [SPECIFIC IDEA, one sentence, tied to something you can see]. If it's interesting, reply and I'll shape it into a one-pager with a price range, no commitment. If the timing's wrong, reply ""not now"" and I'll check back next quarter — and either way, [GENUINE WISH — e.g., ""hope the expansion's going great""].
+
+Then act on the reply taxonomy: **""not now""** → archive to the quarterly alumni email (SOP-23), revisit in 2 quarters · **""maybe""** → book a 20-minute call, smallest next step (SOP-18 grammar) · **silence** → archive. Silence *is* an answer, and honoring it is what keeps the door unlocked for next year.
+
+## Stop conditions (hard rules)
+
+- **Explicit no, or a competitor signed** → archive immediately, congratulate them on the competitor signing if you hear (seriously — it's remembered).
+- **Two full sequences with zero replies** → this account is an alumni-email-only account now. A third sequence isn't persistence; it's the reason people mute senders.
+- **The ending was ugly** (fired mid-project, payment fight) → no sequence. One apology-and-clean-slate email if you owe one (SOP-21 grace rules), then referral-grade distance.
+
+## Rules & red flags
+
+- Every touch must be *about them*: an insight, a proof point, a specific idea. The moment a touch is about your pipeline targets, it reads as such and burns a cycle.
+- Personalize from public signals (their site, their LinkedIn, their industry news) — five minutes of homework per touch. A win-back you could have sent to anyone will be archived by everyone.
+- Space the touches; three emails in three weeks is pressure, not presence. ~6 weeks apart, ≤ 3 touches, then rest for at least 2 quarters.
+- Log everything in the alumni sheet: touch dates, angles used, replies. After two quarters you'll know which angle (value/proof/direct) wakes your kind of clients — lead with that one next cycle.
+
+## What good looks like
+
+- 10–20% of sequenced accounts re-engage within a year (small numbers, huge margin: these close in one call, no discovery-from-zero).
+- Every re-engagement starts with their reply, never with your discount. Leading with a discount teaches alumni your prices were padding all along (SOP-04 rule holds here hardest).
+- The alumni sheet never has an account sitting in ""should probably email them sometime"" — it's in a sequence, in the quarterly email pool, or archived. Three states, no limbo.
+
+## Adapt it with AI
+
+> ""Write my 3-touch win-back sequence for [NICHE] alumni clients. Touch 1 must reference something checkable on their website/LinkedIn; touch 2 bridges my best case study ([SUMMARY]); touch 3 proposes [IDEA TYPE]. My voice: [SAMPLE]. Add a 're-engaged' first-call agenda — these people skip discovery basics, so the call needs its own shape."""
