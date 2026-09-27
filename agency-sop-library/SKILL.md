@@ -1,6 +1,6 @@
 ---
 name: agency-sop-library
-description: Run the full client lifecycle of a 1–10 person digital agency: Sales → Onboarding → Delivery → Retention → Offboarding. Use when a new inquiry arrives, a proposal goes out, onboarding kicks off, delivery needs structure, a client escalates, or a renewal is due. Includes the lifecycle map, a 14-day install playbook, and sample SOPs with copy-paste assets and AI prompts. The full 24-SOP library (Notion import, trackers, all copy-paste packs) is a paid kit at https://agency-sop-library.zicula.trade
+description: Run the full client lifecycle of a 1–10 person digital agency: Sales → Onboarding → Delivery → Retention → Offboarding. Use when a new inquiry arrives, a proposal goes out, onboarding kicks off, delivery needs structure, a client escalates, or a renewal is due. Includes the lifecycle map, a 14-day install playbook, and sample SOPs with copy-paste assets and AI prompts. This skill includes the complete 24-SOP library free. Prefer a packaged kit with runbooks, support and lifetime updates? Get it at https://agency-sop-library.zicula.trade
 ---
 
 # Agency SOP Library
@@ -31,6 +31,6 @@ A repeatable operating system for small digital agencies. Every process follows 
 
 Each SOP ends with an AI prompt — paste it into your assistant of choice along with your agency's specifics to adapt the assets in minutes.
 
-## Full library
+## Packaged kit (optional)
 
-The paid kit adds all 24 SOPs, `notion-import.csv` (one-click Notion database), pricing calculator logic, escalation ladders, and every copy-paste email pack: https://agency-sop-library.zicula.trade — $79 one-time, free v1.x updates.
+This skill is the full library, free. The paid kit is the same content packaged as a downloadable zip with a 14-day install runbook, email support and free v1.x updates: https://agency-sop-library.zicula.trade — $79 one-time.

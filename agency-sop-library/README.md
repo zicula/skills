@@ -19,13 +19,15 @@ npx skills add zicula/skills/agency-sop-library
 | `SKILL.md` | The lifecycle decision guide — which process to run for every client situation |
 | `references/INDEX.md` | The lifecycle map of all 24 SOPs with triggers |
 | `references/PLAYBOOK-14D.md` | A 14-day plan to install the whole system without breaking delivery |
-| `references/samples/` | 3 complete sample SOPs (lead qualification, comms rules, weekly status update) |
+| `references/sop/` | **All 24 SOPs, complete and free** — lead qualification → comms rules → weekly updates → escalation → winback |
+| `references/notion-import.csv` | One-click Notion database import |
+| `references/samples/` | Start-here pointers to 3 SOPs worth reading first |
 
 Every SOP follows the same anatomy: *when to use → the process → copy-paste assets → rules & red flags → what good looks like → an AI prompt to adapt it to your agency.*
 
-## Full library (paid kit)
+## Prefer a packaged kit?
 
-The complete kit adds **all 24 SOPs**, `notion-import.csv` (one-click Notion database), pricing calculator logic, escalation ladders, and every copy-paste email pack:
+This skill is the complete library, free — use it as-is. The paid kit is for teams who want the same content as a downloadable zip with the 14-day install runbook, email support and lifetime updates:
 
 **[Agency SOP Library — $79 one-time](https://agency-sop-library.zicula.trade)** · free v1.x updates · 14-day money-back
 
