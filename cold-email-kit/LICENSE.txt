@@ -1,0 +1,44 @@
+Cold Email Kit — Single-Buyer Commercial License
+Copyright (c) 2026 Zicula. All rights reserved.
+
+1. GRANT
+   Upon purchase, the buyer (the individual or the single company named on
+   the receipt) receives a perpetual, non-exclusive, non-transferable
+   license to use the contents of this kit for their own business outreach,
+   including outreach conducted on behalf of their own clients.
+
+2. YOU MAY
+   - Use the templates, SOPs, checklists, tracker and tooling for
+     unlimited outreach across your own projects and client engagements.
+   - Modify the templates and documents freely for internal use.
+   - Install and run tools/dns-check.sh on any machines you control.
+
+3. YOU MAY NOT
+   - Redistribute, resell, sublicense, publish, or share the kit files
+     (modified or not) with any other person or company. Each buyer needs
+     their own license.
+   - Repackage any part of this kit as a product, course, or lead magnet.
+   - Present the kit or its outputs as created by anyone other than the
+     buyer and this vendor.
+
+4. NO DELIVERABILITY GUARANTEE
+   Email placement depends on factors outside anyone's control (mailbox
+   provider filters, list quality, sending behavior). This kit provides
+   process, templates, and tooling only, and makes no promise about inbox
+   placement, delivery rates, or business outcomes.
+
+5. COMPLIANCE IS YOURS
+   The buyer is responsible for complying with applicable laws and mailbox
+   provider policies when sending email (anti-spam laws such as CAN-SPAM,
+   CASL, GDPR/ePrivacy; Google, Yahoo and Microsoft sender requirements).
+   The kit deliberately excludes practices that violate those policies
+   (warmup networks, scraped or purchased lead lists); adding them back is
+   a violation of the spirit of this license and of the policies above.
+
+6. NO WARRANTY
+   The kit is provided "as is" without warranty of any kind. The vendor's
+   liability is limited to the purchase price paid.
+
+7. UPDATES AND REFUNDS
+   Version 1.x updates are free to the license holder via the purchase
+   download page. The refund policy stated at checkout (14 days) applies.
