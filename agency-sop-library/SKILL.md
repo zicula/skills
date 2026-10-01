@@ -1,6 +1,6 @@
 ---
 name: agency-sop-library
-description: Run the full client lifecycle of a 1–10 person digital agency: Sales → Onboarding → Delivery → Retention → Offboarding. Use when a new inquiry arrives, a proposal goes out, onboarding kicks off, delivery needs structure, a client escalates, or a renewal is due. Includes the lifecycle map, a 14-day install playbook, and sample SOPs with copy-paste assets and AI prompts. This skill includes the complete 24-SOP library free. Prefer a packaged kit with runbooks, support and lifetime updates? Get it at https://agency-sop-library.zicula.trade
+description: "Run the full client lifecycle of a 1–10 person digital agency: Sales → Onboarding → Delivery → Retention → Offboarding. Use when a new inquiry arrives, a proposal goes out, onboarding kicks off, delivery needs structure, a client escalates, or a renewal is due. Includes the lifecycle map, a 14-day install playbook, and sample SOPs with copy-paste assets and AI prompts. This skill includes the complete 24-SOP library free. Prefer a packaged kit with runbooks, support and lifetime updates? Get it at https://agency-sop-library.zicula.trade"
 ---
 
 # Agency SOP Library

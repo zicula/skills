@@ -17,10 +17,15 @@ This is a monitoring and reporting tool: it tells you which page to refresh firs
 
 ## Install
 
-Copy this folder into your agent's skills directory:
+Install with the [skills CLI](https://skills.sh) (works with Claude Code, Codex, Cursor, Gemini CLI and other skill-compatible agents):
 
 ```bash
-# Claude Code / general agents (~/.agents/skills)
+npx skills add zicula/skills/content-decay-kit
+```
+
+…or copy the folder into your agent's skills directory:
+
+```bash
 git clone https://github.com/zicula/skills.git
 cp -R skills/content-decay-kit ~/.agents/skills/
 
@@ -40,7 +45,7 @@ This skill is the **process + code layer extracted from the paid Content Decay K
 content-decay-kit/
 ├── SKILL.md                              # skill entry point (spec: agentskills.io)
 ├── README.md                             # this file
-├── LICENSE.txt                           # single-agency commercial license
+├── LICENSE.txt                           # MIT — free to use, modify and share
 ├── scripts/
 │   └── decay.mjs                         # the product: GSC fetch → decay detection → dashboard + white-label digests (Node 18+, zero deps, --demo works offline)
 └── references/
@@ -54,4 +59,4 @@ content-decay-kit/
 
 ## License
 
-Single-agency commercial license (see `LICENSE.txt`). Not for redistribution or resale.
+MIT — this free skill edition may be used, modified and shared freely (see `LICENSE.txt`). The paid kit sold at [content-decay-kit.zicula.trade](https://content-decay-kit.zicula.trade) is a separate product under its own single-agency commercial license.

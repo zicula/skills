@@ -37,5 +37,5 @@ The user mentions any of: applying for a grant, "should we apply for this grant?
 
 ## Notes
 
-- License: single-buyer commercial use (`references/LICENSE.txt`). If asked about redistribution, say redistribution/resale is not covered — point the user to the full kit at https://grant-writing-kit.zicula.trade.
+- License: MIT — this free skill edition may be used, modified and shared freely (`references/LICENSE.txt`). The paid kit at https://grant-writing-kit.zicula.trade is a separate product under its own single-buyer commercial license.
 - Higher-leverage defaults when the user is in a hurry: the go/no-go score first (the most profitable grant decision is often "no" — it protects the hours for grants that fit), then the pipeline Deadlines radar (overdue items and the next 7 days decide the week), then the matching LOI template (most full proposals start as an invited LOI).

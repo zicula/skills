@@ -17,10 +17,15 @@ Once installed, the agent can run any grants step with you and hand you a usable
 
 ## Install
 
-Copy this folder into your agent's skills directory:
+Install with the [skills CLI](https://skills.sh) (works with Claude Code, Codex, Cursor, Gemini CLI and other skill-compatible agents):
 
 ```bash
-# Claude Code / general agents (~/.agents/skills)
+npx skills add zicula/skills/grant-writing-kit
+```
+
+…or copy the folder into your agent's skills directory:
+
+```bash
 git clone https://github.com/zicula/skills.git
 cp -R skills/grant-writing-kit ~/.agents/skills/
 
@@ -42,7 +47,7 @@ grant-writing-kit/
 ├── README.md                         # this file
 └── references/
     ├── START-HERE.md                 # the 8-link cycle, Deadline/Year tracks, file map, first hour
-    ├── LICENSE.txt                   # single-buyer commercial license
+    ├── LICENSE.txt                   # MIT — free to use, modify and share
     ├── 1-pipeline/                   # pipeline SOP + tracker.xlsx (Pipeline / Deadlines / Log)
     ├── 2-go-no-go/                   # scoring guide + scorecard.xlsx (15 criteria, 6 hard gates)
     ├── 3-funder-research/            # prospect-list SOP from 990s and public sources
@@ -57,4 +62,4 @@ grant-writing-kit/
 
 ## License
 
-Single-buyer commercial license (see `references/LICENSE.txt`). Not for redistribution or resale.
+MIT — this free skill edition may be used, modified and shared freely (see `references/LICENSE.txt`). The paid kit sold at [grant-writing-kit.zicula.trade](https://grant-writing-kit.zicula.trade) is a separate product under its own single-buyer commercial license.

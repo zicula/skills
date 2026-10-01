@@ -15,10 +15,15 @@ This skill maximizes what you control and gives you the measurement loop. No too
 
 ## Install
 
-Copy this folder into your agent's skills directory:
+Install with the [skills CLI](https://skills.sh) (works with Claude Code, Codex, Cursor, Gemini CLI and other skill-compatible agents):
 
 ```bash
-# Claude Code / general agents (~/.agents/skills)
+npx skills add zicula/skills/cold-email-kit
+```
+
+…or copy the folder into your agent's skills directory:
+
+```bash
 git clone https://github.com/zicula/skills.git
 cp -R skills/cold-email-kit ~/.agents/skills/
 
@@ -38,7 +43,7 @@ This skill is the **process layer extracted from the paid Cold Email Kit** — e
 cold-email-kit/
 ├── SKILL.md                                  # skill entry point (spec: agentskills.io)
 ├── README.md                                 # this file
-├── LICENSE.txt                               # single-buyer commercial license
+├── LICENSE.txt                               # MIT — free to use, modify and share
 ├── scripts/
 │   └── dns-check.sh                          # SPF/DKIM/DMARC/MX check for a domain (dig/nslookup, no creds)
 └── references/
@@ -57,4 +62,4 @@ cold-email-kit/
 
 ## License
 
-Single-buyer commercial license (see `LICENSE.txt`). Not for redistribution or resale.
+MIT — this free skill edition may be used, modified and shared freely (see `LICENSE.txt`). The paid kit sold at [cold-email-kit.zicula.trade](https://cold-email-kit.zicula.trade) is a separate product under its own single-buyer commercial license.

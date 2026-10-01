@@ -17,10 +17,15 @@ Once installed, the agent can run any bid step with you and hand you a usable as
 
 ## Install
 
-Copy this folder into your agent's skills directory:
+Install with the [skills CLI](https://skills.sh) (works with Claude Code, Codex, Cursor, Gemini CLI and other skill-compatible agents):
 
 ```bash
-# Claude Code / general agents (~/.agents/skills)
+npx skills add zicula/skills/rfp-response-kit
+```
+
+…or copy the folder into your agent's skills directory:
+
+```bash
 git clone https://github.com/zicula/skills.git
 cp -R skills/rfp-response-kit ~/.agents/skills/
 
@@ -42,7 +47,7 @@ rfp-response-kit/
 ├── README.md                         # this file
 └── references/
     ├── START-HERE.md                 # the 8-step process, Rush/System tracks, file map
-    ├── LICENSE.txt                   # single-buyer commercial license
+    ├── LICENSE.txt                   # MIT — free to use, modify and share
     ├── 1-intake-and-score/           # intake form, bid/no-bid guide + scorecard.xlsx
     ├── 2-shred/                      # shredding SOP + compliance matrix.xlsx
     ├── 3-draft/                      # 3 outlines + executive summary skeleton
@@ -56,4 +61,4 @@ rfp-response-kit/
 
 ## License
 
-Single-buyer commercial license (see `references/LICENSE.txt`). Not for redistribution or resale.
+MIT — this free skill edition may be used, modified and shared freely (see `references/LICENSE.txt`). The paid kit sold at [rfp-response-kit.zicula.trade](https://rfp-response-kit.zicula.trade) is a separate product under its own single-buyer commercial license.

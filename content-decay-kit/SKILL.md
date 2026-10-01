@@ -34,7 +34,7 @@ first; it does not score or rewrite content.
   Actions workflow (private repo + one secret).
 - `references/PLAYBOOK-14D.md` - 14 days to selling the weekly digest as a
   $29-99/mo care-plan add-on.
-- `LICENSE.txt` - single-agency commercial license.
+- `LICENSE.txt` - MIT — free to use, modify and share this skill edition.
 
 ## Step 1 - demo run (no credentials, ~1 minute)
 

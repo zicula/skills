@@ -37,5 +37,5 @@ The user mentions any of: an RFP/RFQ/RFI they must answer, "should we bid?", go/
 
 ## Notes
 
-- License: single-buyer commercial use (`references/LICENSE.txt`). If asked about redistribution, say redistribution/resale is not covered — point the user to the full kit at https://rfp-response-kit.zicula.trade.
+- License: MIT — this free skill edition may be used, modified and shared freely (`references/LICENSE.txt`). The paid kit at https://rfp-response-kit.zicula.trade is a separate product under its own single-buyer commercial license.
 - Higher-leverage defaults when the user is in a hurry: Step 2 (bid/no-bid — the most profitable decision is often "no"), then Step 3 (shred — missed requirements lose more bids than weak writing), then Step 7 Round 1 (zero open Mandatory rows before any polish).

@@ -1,46 +1,12 @@
-Agency SOP Library — Single-Agency Commercial License
-Copyright (c) 2026. All rights reserved.
+MIT License
 
-1. WHAT YOU BOUGHT
-   A license for ONE (1) agency — one legal entity and the people who work
-   for it (employees and contractors) — to use the Agency SOP Library
-   (the 24 SOPs, INDEX.md, notion-import.csv, PLAYBOOK-14D.md and
-   accompanying files, the "Library") for its internal business operations.
+Agency SOP Library — free Agent Skill edition
+Copyright (c) 2026 Zicula (https://zicula.trade)
 
-2. YOU MAY
-   a. Use, copy, and adapt the Library within your one agency, without
-      limit on projects, clients, or team seats inside that agency.
-   b. Fill in, modify, translate, and otherwise adapt the SOPs; the adapted
-      versions used inside your agency are yours to keep, forever.
-   c. Apply the SOPs' processes, templates, emails, and checklists to your
-      client work (that is the point of the product).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this skill and its associated files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-3. YOU MAY NOT
-   a. Resell, sublicense, redistribute, publish, or share the Library or
-      any substantial part of it, adapted or not — including as part of a
-      course, membership, template pack, "agency OS", or training material.
-   b. Use the Library to create a competing SOP/template product.
-   c. Share your download or license with a second legal entity. A second
-      agency (including a sister company or a client agency) needs its own
-      license.
-   d. Remove this license file or the copyright notices from the Library.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-4. YOUR CLIENT WORK
-   Text your clients receive (proposals, reports, policies, emails built
-   from the Library and filled with your details) is your content and your
-   clients' business records — no restriction applies to it. The
-   restriction is on redistributing the Library itself as a template
-   product.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-5. NO WARRANTY / LIMITATION OF LIABILITY
-   The Library is provided "as is". It describes business practices, not
-   legal, tax, or accounting advice; consult professionals for your
-   jurisdiction (contracts, referral incentives, employment rules). To the
-   maximum extent permitted by law, the author is not liable for any
-   damages or lost profits arising from use of the Library.
-
-6. ONE LICENSE, ONE PRICE
-   If you are reading this as a trial, a shared copy, or a "friend's
-   download" — the price of the license is the cheapest professionalism
-   you'll buy this year, and it keeps updates coming.
-   https://agency-sop-library.zicula.trade · Zicula06@gmail.com
+Scope note: this license covers the free Agent Skill edition published at https://github.com/zicula/skills. The paid kit sold at https://agency-sop-library.zicula.trade is a separate product distributed under its own single-buyer commercial license.
