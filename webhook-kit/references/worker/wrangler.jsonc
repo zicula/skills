@@ -1,0 +1,34 @@
+// wrangler.jsonc — deploy config for the Webhook Inbox worker.
+// Two marked values to edit (see SETUP.md step 3):
+//   [1] "name"  — your worker's hostname: <name>.<account>.workers.dev
+//   [2] database_id — paste the id printed by `npx wrangler d1 create webhook-inbox`
+//
+// Everything else can stay as shipped. Secrets (ADMIN_TOKEN, provider secrets)
+// are NOT stored here — set them with `npx wrangler secret put <NAME>` (SETUP.md).
+
+{
+  "name": "webhook-inbox", // [1] edit: becomes https://webhook-inbox.<your-subdomain>.workers.dev
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+
+  // Nightly retention sweep: deletes events older than RETENTION_DAYS and orphans.
+  "triggers": {
+    "crons": ["17 3 * * *"]
+  },
+
+  "vars": {
+    "RETENTION_DAYS": "7",
+    "MAX_INBOXES": "20",
+    "MAX_EVENTS_PER_INBOX": "500",
+    "BODY_LIMIT": "65536"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "webhook-inbox",
+      "database_id": "PASTE_YOUR_D1_DATABASE_ID_HERE" // [2] edit
+    }
+  ]
+}
