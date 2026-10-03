@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search Performance — Monthly Performance Report</title>
+<!-- AI CLIENT REPORT KIT · Template 4/5 · Search performance (Search Console)
+     Source: GSC → Performance → Search results (Web), report month vs previous month.
+     Draft interpretation with Prompt 5; page-2 climber actions with Prompt 6. Print to PDF when done. -->
+<style>
+  :root{
+    --navy:#17324D; --ink:#1F2937; --accent:#2F6FED;
+    --soft:#F1F5F9; --line:#D8E0EA; --muted:#64748B; --fill:#B23A48;
+    --good:#0E7C4A; --bad:#B23A48;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#2B3440;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);font-size:12px;}
+  .fill{color:var(--fill);background:#FDF2F4;border-bottom:1px dashed #E4A9B4;padding:0 2px;}
+  .toolbar{max-width:210mm;margin:24px auto 18px;background:#FFF8E6;border:2px solid #E2B93B;border-radius:10px;padding:14px 18px;font-size:13.5px;line-height:1.5;color:#5C4A12;}
+  .toolbar b{color:#3D3210;}
+  .page{width:210mm;min-height:296mm;margin:0 auto 24px;background:#fff;padding:14mm 14mm;display:flex;flex-direction:column;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+  @page{size:A4;margin:0;}
+  @media print{
+    body{background:#fff;font-size:10.6px;}
+    .toolbar{display:none;}
+    .page{width:auto;min-height:auto;margin:0;box-shadow:none;page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+    .fill{color:#8A94A6;background:transparent;border-bottom:1px dashed #C3CBD8;}
+  }
+  header{border-bottom:3px solid var(--navy);padding-bottom:4mm;margin-bottom:6mm;display:flex;justify-content:space-between;align-items:flex-end;}
+  header h1{font-size:21px;color:var(--navy);letter-spacing:-.3px;}
+  header .who{font-size:10.5px;color:var(--muted);text-align:right;line-height:1.6;}
+  h2{font-size:12px;color:var(--navy);text-transform:uppercase;letter-spacing:.14em;margin:5.5mm 0 2.5mm;}
+  h2 .n{color:var(--accent);}
+  /* headline tiles */
+  .tiles{display:flex;gap:4mm;margin-top:1.5mm;}
+  .tile{flex:1;border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:6px;padding:3.5mm 4mm;background:#FBFCFE;}
+  .tile .lbl{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+  .tile .val{font-size:19px;font-weight:800;color:var(--navy);margin-top:1mm;font-variant-numeric:tabular-nums;}
+  .tile .delta{font-size:10px;margin-top:.5mm;}
+  .up{color:var(--good);font-weight:600;} .down{color:var(--bad);font-weight:600;}
+  table{width:100%;border-collapse:collapse;margin-top:1.5mm;}
+  th{background:var(--navy);color:#fff;font-size:9.8px;text-align:left;padding:1.9mm 2.4mm;font-weight:600;}
+  td{padding:1.7mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:nth-child(even) td{background:#FAFBFD;}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .narr{background:var(--soft);border-left:3px solid var(--accent);padding:4mm 5mm;border-radius:0 6px 6px 0;line-height:1.75;margin-top:1.5mm;}
+  .src{font-size:9.5px;color:var(--muted);margin-top:2mm;line-height:1.6;}
+  footer{margin-top:auto;padding-top:3.5mm;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:9.5px;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <b>Template 4 of 5 — Search performance (Search Console).</b> Avg. position: lower is better — say so plainly if it worsened.
+  CTR on under ~100 impressions is noise; annotate instead of explaining.
+</div>
+
+<div class="page">
+  <header>
+    <h1>Search Performance</h1>
+    <div class="who"><span class="fill">[CLIENT NAME]</span> · <span class="fill">[MONTH YYYY]</span><br>Source: Google Search Console (Web)</div>
+  </header>
+
+  <h2><span class="n">01</span> — Headline numbers</h2>
+  <div class="tiles">
+    <div class="tile"><div class="lbl">Clicks</div><div class="val"><span class="fill">[ ]</span></div><div class="delta"><span class="fill up">[+x.x%]</span> vs last month</div></div>
+    <div class="tile"><div class="lbl">Impressions</div><div class="val"><span class="fill">[ ]</span></div><div class="delta"><span class="fill up">[+x.x%]</span> vs last month</div></div>
+    <div class="tile"><div class="lbl">Avg. CTR</div><div class="val"><span class="fill">[x.xx%]</span></div><div class="delta"><span class="fill up">[+x.xx pp]</span> vs last month</div></div>
+    <div class="tile"><div class="lbl">Avg. position</div><div class="val"><span class="fill">[x.x]</span></div><div class="delta"><span class="fill up">[−x.x better]</span> vs last month</div></div>
+  </div>
+  <p class="src">Google Search Console, property <span class="fill">[DOMAIN]</span>, search type "Web",
+  <span class="fill">[MONTH YYYY]</span> vs <span class="fill">[PREVIOUS MONTH YYYY]</span>. Minor daily discrepancies vs GA4 are normal — different systems.</p>
+
+  <h2><span class="n">02</span> — Top 10 queries (by clicks)</h2>
+  <table>
+    <thead><tr><th style="width:5%;">#</th><th>Query</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">CTR</th><th class="num">Pos.</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[holding / rising / falling]</span></td></tr>
+      <tr><td>2</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>3</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>4</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>5</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>6</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>7</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>8</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>9</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+      <tr><td>10</td><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x%]</span></td><td class="num"><span class="fill">[x.x]</span></td><td><span class="fill">[ ]</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="two" style="display:flex;gap:6mm;align-items:flex-start;">
+    <div style="flex:1.25;">
+      <h2><span class="n">03</span> — Top pages by clicks</h2>
+      <table>
+        <thead><tr><th style="width:5%;">#</th><th>Page</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">Pos.</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><span class="fill">[/path]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x]</span></td></tr>
+          <tr><td>2</td><td><span class="fill">[/path]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x]</span></td></tr>
+          <tr><td>3</td><td><span class="fill">[/path]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x]</span></td></tr>
+          <tr><td>4</td><td><span class="fill">[/path]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x]</span></td></tr>
+          <tr><td>5</td><td><span class="fill">[/path]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[ ]</span></td><td class="num"><span class="fill">[x.x]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="flex:1;">
+      <h2><span class="n">04</span> — Page-2 climbers (pos. 11–20)</h2>
+      <table>
+        <thead><tr><th>Query</th><th class="num">Pos.</th><th class="num">Impr.</th><th>Planned action</th></tr></thead>
+        <tbody>
+          <tr><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[xx.x]</span></td><td class="num"><span class="fill">[ ]</span></td><td><span class="fill">[action]</span></td></tr>
+          <tr><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[xx.x]</span></td><td class="num"><span class="fill">[ ]</span></td><td><span class="fill">[action]</span></td></tr>
+          <tr><td><span class="fill">[query]</span></td><td class="num"><span class="fill">[xx.x]</span></td><td class="num"><span class="fill">[ ]</span></td><td><span class="fill">[action]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2><span class="n">05</span> — What the search data means this month</h2>
+  <div class="narr">
+    <span class="fill">[4–8 sentences. Interpret, don't restate: did clicks move because impressions
+    grew (more demand covered) or because CTR improved (titles winning)? Name the query or page that
+    explains most of the change, and pair any position loss with the climber plan above.
+    Draft with Prompt 5; opportunities with Prompt 6.]</span>
+  </div>
+
+  <footer>
+    <div>AI Client Report Kit · Search Performance (4/5)</div>
+    <div><span class="fill">[AGENCY NAME]</span> · confidential</div>
+  </footer>
+</div>
+
+</body>
+</html>

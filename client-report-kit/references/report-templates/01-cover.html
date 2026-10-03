@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover — Monthly Performance Report</title>
+<!-- AI CLIENT REPORT KIT · Template 1/5 · Cover page
+     HOW TO USE: open in a browser, replace every [PLACEHOLDER] (shown in rose), then
+     Ctrl/Cmd+P → "Save as PDF" → A4 · margins: None · background graphics: ON.
+     The gray toolbar is screen-only and disappears in print. -->
+<style>
+  :root{
+    --navy:#17324D; --ink:#1F2937; --accent:#2F6FED;
+    --soft:#F1F5F9; --line:#D8E0EA; --muted:#64748B; --fill:#B23A48;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#2B3440;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);}
+  .fill{color:var(--fill);background:#FDF2F4;border-bottom:1px dashed #E4A9B4;padding:0 2px;}
+  .toolbar{max-width:210mm;margin:24px auto 18px;background:#FFF8E6;border:2px solid #E2B93B;border-radius:10px;padding:14px 18px;font-size:13.5px;line-height:1.5;color:#5C4A12;}
+  .toolbar b{color:#3D3210;}
+  .page{width:210mm;min-height:296mm;margin:0 auto 24px;background:#fff;padding:22mm 20mm;display:flex;flex-direction:column;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+  @page{size:A4;margin:0;}
+  @media print{
+    body{background:#fff;}
+    .toolbar{display:none;}
+    .page{width:auto;min-height:auto;margin:0;box-shadow:none;page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+    .fill{color:#8A94A6;background:transparent;border-bottom:1px dashed #C3CBD8;}
+  }
+  /* cover layout */
+  .cover{border-top:6px solid var(--navy);flex:1;display:flex;flex-direction:column;}
+  .kicker{margin-top:30mm;text-align:center;letter-spacing:.42em;font-size:12px;color:var(--muted);text-transform:uppercase;}
+  .title{margin-top:8mm;text-align:center;font-size:40px;font-weight:800;color:var(--navy);letter-spacing:-.5px;}
+  .rule{width:26mm;height:3px;background:var(--accent);margin:10mm auto;}
+  .client{text-align:center;font-size:27px;font-weight:700;color:var(--ink);}
+  .sub{margin-top:3mm;text-align:center;font-size:14px;color:var(--muted);letter-spacing:.08em;}
+  .period-box{margin:16mm auto 0;width:120mm;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7mm 8mm;text-align:center;}
+  .period-box .lbl{font-size:11px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;}
+  .period-box .val{margin-top:2mm;font-size:19px;font-weight:700;color:var(--navy);}
+  .meta{margin-top:auto;padding-top:12mm;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);line-height:1.7;}
+  .meta b{color:var(--ink);font-weight:600;}
+  .conf{margin-top:8mm;padding:5mm 6mm;background:#FBFCFE;border:1px solid var(--line);border-radius:6px;font-size:10.5px;color:var(--muted);line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <b>Template 1 of 5 — Cover.</b> Replace every <span class="fill">[placeholder]</span>, then print to PDF (A4, margins None, background graphics ON).
+  Data window should be the 1st to the last day of the month in the client's time zone. Keep the confidentiality block.
+</div>
+
+<div class="page">
+  <div class="cover">
+    <div class="kicker">Monthly Performance Report</div>
+    <div class="title">Website &amp; Organic<br>Search Performance</div>
+    <div class="rule"></div>
+    <div class="client"><span class="fill">[CLIENT NAME]</span></div>
+    <div class="sub">GA4 · Google Search Console</div>
+
+    <div class="period-box">
+      <div class="lbl">Reporting period</div>
+      <div class="val"><span class="fill">[MONTH YYYY]</span></div>
+    </div>
+
+    <div class="meta">
+      <div>
+        <b>Prepared by</b><br>
+        <span class="fill">[AGENCY NAME]</span><br>
+        <span class="fill">[CONTACT NAME], [ROLE]</span><br>
+        <span class="fill">[EMAIL]</span>
+      </div>
+      <div style="text-align:right;">
+        <b>Delivered</b><br>
+        <span class="fill">[DD MONTH YYYY]</span><br>
+        Report 1 of 5 · Cover · Summary · Traffic · Search · Conversions
+      </div>
+    </div>
+
+    <div class="conf">
+      This report contains confidential performance data prepared exclusively for <span class="fill">[CLIENT NAME]</span>.
+      Figures are drawn from Google Analytics 4 and Google Search Console for the stated period. Please do not redistribute without written permission.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
