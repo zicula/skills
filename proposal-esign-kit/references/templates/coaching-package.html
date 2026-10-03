@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{proposal_title}}</title>
+<!--
+  Template: coaching-package.html — 90-day 1:1 coaching package proposal
+  Placeholders are filled by: node tools/new-proposal.mjs
+  The <body> of this file becomes the signed document content.
+  Edit copy freely — keep the placeholder tokens you want filled.
+-->
+<style>
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; color:#1F2A3A; line-height:1.6; margin:0; }
+  .pdoc { max-width:760px; margin:0 auto; padding:8px 6px; }
+  .pdoc h1 { font-size:30px; color:#16243D; line-height:1.25; margin:0 0 6px; }
+  .pdoc .meta { color:#55627A; font-size:14px; margin:2px 0 22px; }
+  .pdoc h2 { font-size:19px; color:#16243D; margin:30px 0 8px; }
+  .pdoc p { margin:10px 0; }
+  .pdoc ul { margin:10px 0 10px 22px; }
+  .pdoc li { margin:5px 0; }
+  .pdoc table { border-collapse:collapse; width:100%; margin:14px 0; font-size:14.5px; }
+  .pdoc th,.pdoc td { border:1px solid #DCE3EE; padding:8px 10px; text-align:left; vertical-align:top; }
+  .pdoc th { background:#EEF2F7; color:#16243D; }
+  .pdoc .total td { font-weight:800; color:#16243D; }
+  .pdoc .fineprint { color:#55627A; font-size:13.5px; }
+  .pdoc hr { border:none; border-top:1px solid #DCE3EE; margin:22px 0; }
+</style>
+</head>
+<body>
+<div class="pdoc">
+
+  <h1>{{proposal_title}}</h1>
+  <p class="meta">
+    Prepared for <strong>{{client_name}}</strong> &nbsp;·&nbsp; by <strong>{{sender_name}}</strong>
+    &nbsp;·&nbsp; {{date}} &nbsp;·&nbsp; Ref {{proposal_id}}
+  </p>
+
+  <p>This proposal outlines a 90-day one-to-one coaching engagement. It covers what you get, how we work together, the investment, and the terms. Acceptance is one click at the end of this page.</p>
+
+  <h2>1. Where you are now</h2>
+  <p>You are stepping into a bigger role — more people looking to you, more decisions that matter, and less time to think. The gap is rarely information; it is focus, accountability, and a sounding board that is fully in your corner. That is what this engagement provides.</p>
+
+  <h2>2. What the engagement includes</h2>
+  <ul>
+    <li><strong>Twelve 60-minute private sessions</strong> — weekly for weeks 1–6, bi-weekly for weeks 7–12, scheduled at fixed times that survive calendars.</li>
+    <li><strong>A written session summary after every call</strong> — decisions made, commitments taken, and what we watch for next — so progress compounds instead of evaporating.</li>
+    <li><strong>Unlimited between-session support by email or voice notes</strong> — responses within one business day, for the moments a decision cannot wait for the next call.</li>
+    <li><strong>One 360° stakeholder check-in</strong> (week 5) — a short, structured input from 3–5 colleagues so your development is grounded in how others experience you.</li>
+    <li><strong>A closing review</strong> (week 12) — what changed, what to keep building, and a 6-month self-management plan.</li>
+  </ul>
+
+  <h2>3. How we work</h2>
+  <p>Sessions run by video call. You set the agenda; I bring structure, honest observation, and the questions you have been avoiding. Between sessions you run small experiments in the real work — the unit of progress is a decision shipped, not an insight admired. Everything you share stays confidential; the only exceptions are the ones law and professional ethics require.</p>
+
+  <h2>4. Schedule and commitment</h2>
+  <p>The engagement runs for <strong>90 days from our first session</strong>. Sessions can be rescheduled with 24 hours' notice; unused sessions expire 30 days after the engagement ends. The commitment works in both directions — I hold your slots exclusively for you.</p>
+
+  <h2>5. Investment</h2>
+  <table>
+    <tr><th>Component</th><th>Detail</th><th>Investment</th></tr>
+    <tr><td>90-day 1:1 coaching package</td><td>12 sessions · summaries · between-session support · 360° check-in · closing review</td><td>{{currency}} {{amount}}</td></tr>
+    <tr class="total"><td colspan="2">Total (payable per the schedule below)</td><td>{{currency}} {{amount}}</td></tr>
+  </table>
+  <p><strong>Payment schedule:</strong> a deposit of <strong>30–50%</strong> confirms your slots and starts the engagement; the balance is due by week 6. Payment instructions are included in the acceptance email — or pay the deposit directly from the payment link you receive after acceptance.</p>
+
+  <h2>6. Terms</h2>
+  <ul>
+    <li><strong>Validity:</strong> this proposal and its pricing are held for you for {{valid_days}} days from {{date}}.</li>
+    <li><strong>Cancellation:</strong> you may end the engagement any time before week 3 for a pro-rata refund of unused sessions; after week 3, fees are non-refundable but sessions remain usable until expiry.</li>
+    <li><strong>Confidentiality:</strong> what is said in sessions stays between us. With your written permission, I reference only role and industry — never content — in any context.</li>
+    <li><strong>Independence:</strong> coaching is a professional service, not therapy, legal advice, or financial advice.</li>
+  </ul>
+
+  <hr>
+
+  <p class="fineprint">
+    Acceptance: type your name and accept on this page. The page records your consent, your typed name, and the exact document content (by cryptographic hash) into an audit-trail file — a clear, tamper-evident record of the offer you accepted. Electronic-acceptance practice varies by country and document type; if your organization requires wet-ink or a specific signature form, print this proposal, sign it, and send a scan — the terms are identical.
+  </p>
+  <p class="fineprint">Questions before you accept? Reply to {{sender_email}} — happy to walk through any part of it.</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposal — review &amp; accept</title>
+<!--
+  accept-template.html — Proposal Esign Kit (self-host, static, zero dependencies)
+
+  This file is a TEMPLATE. Run `node tools/new-proposal.mjs` to produce a
+  filled proposal page: the generator injects a signed payload into the
+  <script id="pek-data"> block below and the page becomes self-contained.
+  Host the generated folder anywhere static (Cloudflare Pages, any CDN),
+  and send the client the link WITH its ?t= token.
+
+  What the page verifies before allowing an acceptance:
+    1. the ?t= link token must equal the token the generator embedded
+       (an HMAC-SHA256 of the proposal payload, computed with YOUR secret —
+       the secret itself is never placed in this file),
+    2. the rendered document content must still hash (SHA-256) to the
+       content digest recorded at generation time.
+
+  What acceptance produces: an audit-trail JSON with a SHA-256 hash chain
+  (consent event -> acceptance event), the typed name, timestamps,
+  user agent, language and timezone. It records intent and a clear evidence
+  trail; it does NOT certify a particular legal signature type — e-signature
+  law differs by country and document type (see README.md).
+-->
+<style>
+  :root {
+    --paper:#F7F8FA; --card:#FFFFFF; --deep:#16243D; --ink:#1F2A3A;
+    --muted:#55627A; --line:#DCE3EE; --accent:#0E7C66; --accent-dark:#0A5F4E;
+    --amber:#F2B33D; --bad:#B42318; --alt:#EEF2F7;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Noto Sans Thai","Leelawadee UI",sans-serif;
+    line-height:1.6; font-size:16px;
+  }
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
+    outline:3px solid var(--amber); outline-offset:2px;
+  }
+  .wrap { max-width:860px; margin:0 auto; padding:0 20px; }
+  header.bar { background:var(--deep); color:#E8EDF6; padding:14px 0; }
+  header.bar .wrap { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .brand { font-weight:800; font-size:17px; }
+  .badge { font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--amber); border:1px solid rgba(242,179,61,.55); border-radius:99px; padding:5px 12px; }
+  main { padding:34px 0 60px; }
+  .doc {
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:clamp(26px,5vw,52px); box-shadow:0 8px 28px rgba(22,36,61,.06);
+  }
+  /* proposal document typography (rendered from the template content) */
+  .doc article h1 { font-size:clamp(24px,3.4vw,32px); color:var(--deep); line-height:1.25; margin:0 0 6px; }
+  .doc article h2 { font-size:19px; color:var(--deep); margin:30px 0 8px; }
+  .doc article h3 { font-size:16.5px; color:var(--deep); margin:20px 0 6px; }
+  .doc article p { margin:10px 0; color:var(--ink); }
+  .doc article ul,.doc article ol { margin:10px 0 10px 22px; }
+  .doc article li { margin:5px 0; }
+  .doc article table { border-collapse:collapse; width:100%; margin:14px 0; font-size:14.5px; }
+  .doc article th,.doc article td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  .doc article th { background:var(--alt); color:var(--deep); }
+  .doc article .total td { font-weight:800; color:var(--deep); }
+  .doc article .meta { color:var(--muted); font-size:14px; margin:2px 0 18px; }
+  .doc article .fineprint { color:var(--muted); font-size:13.5px; }
+  .doc article hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
+
+  .signbox {
+    margin-top:26px; background:var(--card); border:1px solid var(--line);
+    border-top:4px solid var(--accent); border-radius:14px;
+    padding:clamp(24px,4.5vw,40px); box-shadow:0 8px 28px rgba(22,36,61,.06);
+  }
+  .signbox h2 { font-size:20px; color:var(--deep); margin-bottom:6px; }
+  .signbox .sub { color:var(--muted); font-size:14.5px; margin-bottom:20px; }
+  .field { margin-bottom:18px; }
+  .field label { display:block; font-weight:700; font-size:14px; color:var(--deep); margin-bottom:6px; }
+  .field input[type=text],.field input[type=email] {
+    width:100%; min-height:46px; font-size:16px; color:var(--ink);
+    border:1px solid var(--line); border-radius:10px; padding:10px 14px; background:#FFF;
+  }
+  .consent { display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--ink); }
+  .consent input { width:20px; height:20px; margin-top:2px; flex:0 0 auto; accent-color:var(--accent); }
+  .btn {
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    min-height:48px; background:var(--accent); color:#FFF; font-weight:700; font-size:16px;
+    padding:12px 30px; border-radius:10px; border:none; cursor:pointer;
+    transition:background-color .18s ease;
+  }
+  .btn:hover { background:var(--accent-dark); }
+  .btn[disabled] { background:#9DB3AC; cursor:not-allowed; }
+  .btn.ghost { background:transparent; color:var(--accent); border:1.5px solid var(--accent); }
+  .btn.ghost:hover { background:rgba(14,124,102,.08); }
+  .note { font-size:13px; color:var(--muted); margin-top:14px; }
+  .err { color:var(--bad); font-weight:700; font-size:14.5px; margin-top:12px; display:none; }
+
+  #done { display:none; }
+  .done-card {
+    margin-top:26px; background:var(--card); border:1px solid var(--line);
+    border-top:4px solid var(--accent); border-radius:14px; padding:clamp(24px,4.5vw,40px);
+  }
+  .done-card h2 { color:var(--deep); font-size:22px; margin-bottom:8px; display:flex; gap:10px; align-items:center; }
+  .hashline { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px;
+    background:var(--alt); border:1px solid var(--line); border-radius:8px; padding:10px 12px;
+    word-break:break-all; color:var(--ink); margin:14px 0; }
+  .done-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+  textarea#trailbox { width:100%; min-height:180px; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:12px; border:1px solid var(--line); border-radius:10px; padding:12px; color:var(--ink); background:#FFF; margin-top:14px; }
+
+  #bad { display:none; }
+  .bad-card { margin-top:26px; background:var(--card); border:1px solid var(--line);
+    border-left:6px solid var(--bad); border-radius:14px; padding:clamp(24px,4.5vw,40px); }
+  .bad-card h2 { color:var(--bad); font-size:20px; margin-bottom:8px; }
+  .bad-card p { color:var(--ink); font-size:15px; }
+
+  footer { border-top:1px solid var(--line); padding:22px 0 40px; color:var(--muted); font-size:13px; }
+  @media print {
+    header.bar,.signbox,footer,.done-actions,textarea#trailbox { display:none !important; }
+    body { background:#FFF; }
+    .doc { border:none; box-shadow:none; padding:0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    *,*::before,*::after { animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand" id="brandname">Proposal</div>
+    <span class="badge" id="statusbadge">Awaiting acceptance</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="doc">
+      <article id="doccontent"></article>
+    </div>
+
+    <section class="signbox" id="signbox" aria-labelledby="signh">
+      <h2 id="signh">Accept this proposal</h2>
+      <p class="sub" id="signsub">Type your full legal name exactly as you would sign a paper document, confirm consent, then accept.</p>
+      <div class="field">
+        <label for="fullname" id="namelabel">Your full name (typed signature)</label>
+        <input type="text" id="fullname" autocomplete="name" spellcheck="false" placeholder="e.g. Jordan A. Rivera">
+      </div>
+      <div class="field">
+        <label for="email" id="emaillabel">Your email (kept in the audit trail only)</label>
+        <input type="email" id="email" autocomplete="email" placeholder="you@company.com">
+      </div>
+      <div class="field consent">
+        <input type="checkbox" id="consent">
+        <label for="consent" id="consenttext" style="font-weight:400"></label>
+      </div>
+      <button class="btn" id="acceptbtn" type="button">Accept proposal</button>
+      <p class="err" id="signerr"></p>
+      <p class="note" id="auditnote">On acceptance your browser builds a hash-chained audit trail (consent + typed name + timestamps + device context) and offers it as a JSON file to send back. Nothing is transmitted anywhere from this page — you stay the data controller.</p>
+    </section>
+
+    <section id="done" aria-labelledby="doneh">
+      <div class="done-card">
+        <h2 id="doneh"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.2" fill="none" stroke="#0E7C66" stroke-width="1.6"/><path d="M4.8 8.4l2.2 2.2 4.4-5" fill="none" stroke="#0E7C66" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Proposal accepted</span></h2>
+        <p class="sub" id="donefor"></p>
+        <p style="font-size:14.5px;color:var(--ink)" id="donedesc"></p>
+        <div class="hashline" id="finalhash"></div>
+        <div class="done-actions">
+          <button class="btn" type="button" id="dljson">Download audit-trail.json</button>
+          <button class="btn ghost" type="button" id="copyjson">Copy audit trail JSON</button>
+          <a class="btn ghost" id="mailto" href="#">Email it back</a>
+        </div>
+        <textarea id="trailbox" readonly aria-label="Audit trail JSON"></textarea>
+      </div>
+    </section>
+
+    <section id="bad" aria-labelledby="badh">
+      <div class="bad-card">
+        <h2 id="badh">This signing link is not valid</h2>
+        <p id="badreason"></p>
+        <p style="margin-top:10px">Please ask the sender for a fresh link to this proposal. This page never accepted anything.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" id="footnote">
+    Audit trail records consent and intent with a SHA-256 evidence chain. E-signature law differs by country and document type — this page is not legal advice. Keep the JSON with your records.
+  </div>
+</footer>
+
+<script id="pek-data" type="application/json">{{PEK_DATA}}</script>
+<script>
+(function () {
+  "use strict";
+
+  var CONSENT_EN = "I have read the proposal above and I agree to it. I consent to use an electronic record of my acceptance and to sign by typing my name.";
+
+  function $(id) { return document.getElementById(id); }
+
+  function getData() {
+    try {
+      var raw = $("pek-data").textContent;
+      return JSON.parse(raw);
+    } catch (e) { return null; }
+  }
+
+  function canonical(obj) {
+    // stable JSON: sorted keys, recursive
+    if (obj === null || typeof obj !== "object") return JSON.stringify(obj);
+    if (Array.isArray(obj)) return "[" + obj.map(canonical).join(",") + "]";
+    var keys = Object.keys(obj).sort();
+    var parts = [];
+    for (var i = 0; i < keys.length; i++) parts.push(JSON.stringify(keys[i]) + ":" + canonical(obj[keys[i]]));
+    return "{" + parts.join(",") + "}";
+  }
+
+  function sha256hex(s) {
+    var enc = new TextEncoder().encode(s);
+    return crypto.subtle.digest("SHA-256", enc).then(function (buf) {
+      var arr = new Uint8Array(buf), out = "";
+      for (var i = 0; i < arr.length; i++) out += ("0" + arr[i].toString(16)).slice(-2);
+      return out;
+    });
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function show(el) { el.style.display = "block"; }
+  function hide(el) { el.style.display = "none"; }
+
+  var data = getData();
+  var params = new URLSearchParams(location.search);
+  var linkToken = params.get("t") || "";
+
+  if (!data || !data.payload || !data.token) {
+    $("badreason").textContent = "The page is missing its signed payload. Re-generate the proposal with tools/new-proposal.mjs.";
+    show($("bad"));
+    hide($("signbox"));
+    return;
+  }
+
+  var p = data.payload;
+
+  // 1) link token gate — token in URL must equal the generator-embedded token
+  var tokenConstantTime = linkToken.length === data.token.length;
+  if (tokenConstantTime) {
+    var diff = 0;
+    for (var i = 0; i < linkToken.length; i++) diff |= linkToken.charCodeAt(i) ^ data.token.charCodeAt(i);
+    tokenConstantTime = diff === 0;
+  }
+  if (!tokenConstantTime) {
+    $("badreason").textContent = "The link is missing its access token (?t=…) or the token does not match this document.";
+    show($("bad"));
+    hide($("signbox"));
+    return;
+  }
+
+  // 2) render the document, then verify the content digest
+  $("doccontent").innerHTML = p.content;
+  $("brandname").textContent = p.sender_name || "Proposal";
+  document.title = (p.title || "Proposal") + " — review & accept";
+
+  sha256hex(p.content).then(function (live) {
+    if (live !== p.content_sha256) {
+      $("badreason").textContent = "The document content does not match the digest recorded when this page was generated (expected " + p.content_sha256 + ", found " + live + "). Do not accept.";
+      show($("bad"));
+      hide($("signbox"));
+      return null;
+    }
+    enableSigning(live);
+    return true;
+  }).catch(function () {
+    $("badreason").textContent = "This browser blocked the Web Crypto API (an HTTPS context is required). Open the page over https://.";
+    show($("bad"));
+    hide($("signbox"));
+  });
+
+  function enableSigning(contentHash) {
+    $("consenttext").textContent = CONSENT_EN;
+    $("signsub").textContent = "Proposal \u201C" + (p.title || p.id) + "\u201D for " + (p.client_name || "your review") + ". Type your full name, confirm consent, then accept.";
+
+    var btn = $("acceptbtn"), nameInput = $("fullname"), emailInput = $("email"), consentBox = $("consent"), err = $("signerr");
+
+    btn.addEventListener("click", function () {
+      err.style.display = "none";
+      var name = nameInput.value.trim().replace(/\s+/g, " ");
+      var email = emailInput.value.trim();
+      if (name.split(" ").length < 2 || name.length < 3) {
+        err.textContent = "Please type your first and last name — that is the signature.";
+        err.style.display = "block"; nameInput.focus(); return;
+      }
+      if (!consentBox.checked) {
+        err.textContent = "Please tick the consent box first.";
+        err.style.display = "block"; consentBox.focus(); return;
+      }
+
+      var now = new Date().toISOString();
+      var events = [
+        { seq: 1, type: "consent_given", ts: now,
+          data: { consent_text: CONSENT_EN } },
+        { seq: 2, type: "accepted", ts: now,
+          data: {
+            typed_name: name,
+            email: email || "",
+            user_agent: navigator.userAgent,
+            language: navigator.language || "",
+            timezone: (Intl.DateTimeFormat && Intl.DateTimeFormat().resolvedOptions().timeZone) || "",
+            screen: window.screen ? (window.screen.width + "x" + window.screen.height) : ""
+          } }
+      ];
+
+      var chain = Promise.resolve(contentHash);
+      events.forEach(function (ev) {
+        chain = chain.then(function (prev) {
+          ev.prev = prev;
+          return sha256hex(canonical(ev)).then(function (h) { ev.hash = h; return h; });
+        });
+      });
+
+      chain.then(function (finalHash) {
+        var trail = {
+          version: 1,
+          format: "proposal-esign-kit/audit-trail",
+          generated_by: "accept page (static, in-browser)",
+          proposal: {
+            id: p.id, title: p.title, client_name: p.client_name, sender_name: p.sender_name,
+            currency: p.currency, amount: p.amount, created: p.created,
+            content_sha256: p.content_sha256
+          },
+          verification: { link_token_match: true, content_hash_match: true },
+          token_fingerprint: null,
+          events: events,
+          final_hash: finalHash
+        };
+        sha256hex(data.token).then(function (tf) {
+          trail.token_fingerprint = tf.slice(0, 16); // identifies which link was used, without revealing the token
+          var json = JSON.stringify(trail, null, 2);
+          $("trailbox").value = json;
+          $("finalhash").textContent = "content_sha256 " + contentHash + "  ·  final_hash " + finalHash;
+          $("donefor").textContent = "Accepted as \u201C" + name + "\u201D on " + now + ".";
+          $("donedesc").textContent = "The audit trail below is your evidence file: a SHA-256 hash chain over the consent and acceptance events, bound to the exact document digest. Download it and send it back — it is the record you both keep.";
+          $("mailto").href = "mailto:" + (p.sender_email || "") + "?subject=" +
+            encodeURIComponent("Accepted: " + (p.title || p.id) + " [" + p.id + "]") +
+            "&body=" + encodeURIComponent("I accept the proposal \u201C" + (p.title || p.id) + "\u201D.\n\nTyped name: " + name + "\nAccepted at: " + now + "\ncontent_sha256: " + contentHash + "\nfinal_hash: " + finalHash + "\n\nThe signed audit trail (audit-trail.json) is attached to this email.\n");
+          hide($("signbox"));
+          show($("done"));
+          $("statusbadge").textContent = "Accepted";
+          $("done").scrollIntoView({ behavior: "smooth", block: "start" });
+
+          function download() {
+            var blob = new Blob([json], { type: "application/json" });
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "audit-trail-" + p.id + ".json";
+            document.body.appendChild(a); a.click();
+            setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 400);
+          }
+          function copy() {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(json).then(function () {
+                $("copyjson").textContent = "Copied";
+                setTimeout(function () { $("copyjson").textContent = "Copy audit trail JSON"; }, 1600);
+              });
+            } else { $("trailbox").select(); document.execCommand("copy"); }
+          }
+          $("dljson").addEventListener("click", download);
+          $("copyjson").addEventListener("click", copy);
+        });
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

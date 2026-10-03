@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{proposal_title}}</title>
+<!--
+  Template: consulting-retainer.html — monthly consulting retainer proposal
+  Placeholders are filled by: node tools/new-proposal.mjs
+  The <body> of this file becomes the signed document content.
+-->
+<style>
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; color:#1F2A3A; line-height:1.6; margin:0; }
+  .pdoc { max-width:760px; margin:0 auto; padding:8px 6px; }
+  .pdoc h1 { font-size:30px; color:#16243D; line-height:1.25; margin:0 0 6px; }
+  .pdoc .meta { color:#55627A; font-size:14px; margin:2px 0 22px; }
+  .pdoc h2 { font-size:19px; color:#16243D; margin:30px 0 8px; }
+  .pdoc h3 { font-size:16px; color:#16243D; margin:18px 0 6px; }
+  .pdoc p { margin:10px 0; }
+  .pdoc ul { margin:10px 0 10px 22px; }
+  .pdoc li { margin:5px 0; }
+  .pdoc table { border-collapse:collapse; width:100%; margin:14px 0; font-size:14.5px; }
+  .pdoc th,.pdoc td { border:1px solid #DCE3EE; padding:8px 10px; text-align:left; vertical-align:top; }
+  .pdoc th { background:#EEF2F7; color:#16243D; }
+  .pdoc .total td { font-weight:800; color:#16243D; }
+  .pdoc .fineprint { color:#55627A; font-size:13.5px; }
+  .pdoc hr { border:none; border-top:1px solid #DCE3EE; margin:22px 0; }
+</style>
+</head>
+<body>
+<div class="pdoc">
+
+  <h1>{{proposal_title}}</h1>
+  <p class="meta">
+    Prepared for <strong>{{client_name}}</strong> &nbsp;·&nbsp; by <strong>{{sender_name}}</strong>
+    &nbsp;·&nbsp; {{date}} &nbsp;·&nbsp; Ref {{proposal_id}}
+  </p>
+
+  <p>This proposal sets out a monthly consulting retainer: what you can expect from me each month, how we will work, and what it costs. The goal is simple — senior-level firepower on your problems without the overhead of a full-time hire or a big-firm engagement.</p>
+
+  <h2>1. The situation</h2>
+  <p>You do not need another report; you need decisions made and shipped. The recurring work on your desk — prioritization, vendor and tooling choices, the occasional fire — needs an experienced operator who already knows your context. A retainer buys exactly that: me, on call, inside your business, month after month.</p>
+
+  <h2>2. Scope of the retainer</h2>
+  <h3>Every month, the retainer includes</h3>
+  <ul>
+    <li><strong>Two strategy working sessions</strong> (90 minutes each) — structured working meetings with written decisions and owners, not slideware.</li>
+    <li><strong>On-call advisory</strong> — direct access by email/Slack/voice notes on business days, answers within one business day, urgent items same day.</li>
+    <li><strong>One deep-dive deliverable</strong> — a focused piece of work you choose monthly: a build-vs-buy analysis, a pricing review, a process redesign, a vendor negotiation brief, or equivalent.</li>
+    <li><strong>Monthly written review</strong> — what moved, what stalled, and the three highest-leverage moves for next month.</li>
+  </ul>
+  <h3>Out of scope (available as separate projects)</h3>
+  <ul>
+    <li>Implementation and hands-on build work beyond scoping and specs.</li>
+    <li>Full-time on-site presence, or being exclusive to your company.</li>
+    <li>Regulated professional services (legal, accounting, tax filings).</li>
+  </ul>
+
+  <h2>3. How we work</h2>
+  <p>Work happens in your tools, visible to your team from day one — no parallel universe of documents nobody reads. Sessions are booked at fixed recurring times so they actually happen. Requests land in a shared queue; anything urgent jumps the queue with a short written note so trade-offs stay visible.</p>
+
+  <h2>4. Term and cadence</h2>
+  <p>The retainer starts on acceptance and renews monthly. Minimum initial term: <strong>3 months</strong> — the first month is setup and context-loading; the value compounds from month two. Either side may end the retainer with 30 days' written notice after the minimum term.</p>
+
+  <h2>5. Investment</h2>
+  <table>
+    <tr><th>Item</th><th>Detail</th><th>Monthly</th></tr>
+    <tr><td>Consulting retainer</td><td>2 working sessions · on-call advisory · 1 deep-dive deliverable · monthly written review</td><td>{{currency}} {{amount}}</td></tr>
+    <tr class="total"><td colspan="2">Total per month (invoiced on the 1st)</td><td>{{currency}} {{amount}}</td></tr>
+  </table>
+  <p><strong>To start:</strong> the first month is invoiced as a deposit on acceptance — it confirms your standing slots. Payment details accompany the acceptance confirmation, or use the payment link provided after you accept.</p>
+
+  <h2>6. Terms</h2>
+  <ul>
+    <li><strong>Validity:</strong> this proposal holds for {{valid_days}} days from {{date}}.</li>
+    <li><strong>Conflicts:</strong> I will not take on a competing client in your direct niche for the duration of the retainer, and 3 months after it ends.</li>
+    <li><strong>Confidentiality:</strong> everything I learn about your business is confidential during and after the retainer, indefinitely.</li>
+    <li><strong>Ownership:</strong> deliverables produced under the retainer are yours, fully and irrevocably, upon payment.</li>
+    <li><strong>Independence:</strong> consulting advice is not legal, tax, or accounting advice.</li>
+  </ul>
+
+  <hr>
+
+  <p class="fineprint">
+    Acceptance: type your name and accept on this page. The page records your consent, your typed name, and the exact document content (by cryptographic hash) into an audit-trail file — a clear, tamper-evident record of the offer you accepted. Electronic-acceptance practice varies by country and document type; if your organization requires wet-ink or a specific signature form, print this proposal, sign it, and send a scan — the terms are identical.
+  </p>
+  <p class="fineprint">Questions before you accept? Reply to {{sender_email}}.</p>
+
+</div>
+</body>
+</html>

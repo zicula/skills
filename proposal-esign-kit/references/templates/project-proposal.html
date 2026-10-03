@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{proposal_title}}</title>
+<!--
+  Template: project-proposal.html — fixed-scope one-off project proposal
+  Placeholders are filled by: node tools/new-proposal.mjs
+  The <body> of this file becomes the signed document content.
+  Edit the phase rows and deliverables to match each real project.
+-->
+<style>
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; color:#1F2A3A; line-height:1.6; margin:0; }
+  .pdoc { max-width:760px; margin:0 auto; padding:8px 6px; }
+  .pdoc h1 { font-size:30px; color:#16243D; line-height:1.25; margin:0 0 6px; }
+  .pdoc .meta { color:#55627A; font-size:14px; margin:2px 0 22px; }
+  .pdoc h2 { font-size:19px; color:#16243D; margin:30px 0 8px; }
+  .pdoc p { margin:10px 0; }
+  .pdoc ul,.pdoc ol { margin:10px 0 10px 22px; }
+  .pdoc li { margin:5px 0; }
+  .pdoc table { border-collapse:collapse; width:100%; margin:14px 0; font-size:14.5px; }
+  .pdoc th,.pdoc td { border:1px solid #DCE3EE; padding:8px 10px; text-align:left; vertical-align:top; }
+  .pdoc th { background:#EEF2F7; color:#16243D; }
+  .pdoc .total td { font-weight:800; color:#16243D; }
+  .pdoc .fineprint { color:#55627A; font-size:13.5px; }
+  .pdoc hr { border:none; border-top:1px solid #DCE3EE; margin:22px 0; }
+</style>
+</head>
+<body>
+<div class="pdoc">
+
+  <h1>{{proposal_title}}</h1>
+  <p class="meta">
+    Prepared for <strong>{{client_name}}</strong> &nbsp;·&nbsp; by <strong>{{sender_name}}</strong>
+    &nbsp;·&nbsp; {{date}} &nbsp;·&nbsp; Ref {{proposal_id}}
+  </p>
+
+  <p>This is a fixed-scope, fixed-price proposal for the work we discussed. It defines what will be delivered, in which order, at what price, and what each side commits to — so there are no surprises in either direction.</p>
+
+  <h2>1. Objective</h2>
+  <p>Deliver a working, production-ready outcome you own outright — not a consulting conversation. The success test we will use: the deliverables in section 3 are live, documented, and your team can operate them without me.</p>
+
+  <h2>2. Approach and timeline</h2>
+  <table>
+    <tr><th>Phase</th><th>What happens</th><th>Duration</th></tr>
+    <tr><td><strong>1. Discovery</strong></td><td>Kick-off workshop, access and constraints inventory, written success criteria you sign off</td><td>Week 1</td></tr>
+    <tr><td><strong>2. Build</strong></td><td>Core implementation in weekly demos — you see working software every Friday, not a big reveal at the end</td><td>Weeks 2–5</td></tr>
+    <tr><td><strong>3. Hardening</strong></td><td>Edge cases, documentation, a runbook for your team, and a handover session</td><td>Week 6</td></tr>
+    <tr><td><strong>4. Handover</strong></td><td>Final review against success criteria, knowledge transfer, project closed</td><td>Week 6</td></tr>
+  </table>
+  <p>Total elapsed time: <strong>approximately 6 weeks</strong> from kickoff, assuming inputs in section 4 arrive on schedule.</p>
+
+  <h2>3. Deliverables (what you receive)</h2>
+  <ul>
+    <li>The working implementation, deployed and verified in your environment.</li>
+    <li>Documentation: architecture overview, runbook, and a written handover so your team can operate it.</li>
+    <li>All source files and credentials — full ownership transfers to you on final payment.</li>
+    <li><strong>30 days of post-handover support</strong> for defects (new scope is quoted separately).</li>
+  </ul>
+
+  <h2>4. What I need from you</h2>
+  <ol>
+    <li>One decision-maker with authority to accept milestones.</li>
+    <li>Access to the systems and people listed at kick-off, within 5 business days of request.</li>
+    <li>Feedback within 3 business days at each weekly demo — silence is not approval, so a named deputy if you travel.</li>
+  </ol>
+
+  <h2>5. Investment and payment schedule</h2>
+  <table>
+    <tr><th>Milestone</th><th>Trigger</th><th>Payment</th></tr>
+    <tr><td>Deposit — reserves the start date</td><td>On acceptance of this proposal</td><td>40% of {{currency}} {{amount}}</td></tr>
+    <tr><td>Midpoint</td><td>Phase 2 demo, week 3</td><td>30% of {{currency}} {{amount}}</td></tr>
+    <tr><td>Completion</td><td>Handover accepted</td><td>30% of {{currency}} {{amount}}</td></tr>
+    <tr class="total"><td colspan="2">Total fixed price</td><td>{{currency}} {{amount}}</td></tr>
+  </table>
+  <p>The deposit invoice and a payment link accompany the acceptance confirmation. Work starts on the first business day after the deposit lands.</p>
+
+  <h2>6. Terms</h2>
+  <ul>
+    <li><strong>Fixed price:</strong> the total above is fixed for the defined scope. Scope changes are quoted in writing before work begins — no surprise invoices.</li>
+    <li><strong>Validity:</strong> pricing and the start date are held for {{valid_days}} days from {{date}}.</li>
+    <li><strong>Delays on inputs:</strong> if needed inputs (section 4) are late, the timeline shifts day-for-day and idle weeks may be invoiced after 14 days' written notice.</li>
+    <li><strong>Cancellation:</strong> you may cancel in writing at any time; work completed to date plus materials committed are invoiced, the rest is not.</li>
+    <li><strong>Warranty:</strong> defects reported within 30 days of handover are fixed free. This is the complete warranty; no others are given.</li>
+    <li><strong>Independence:</strong> technical services are not legal, financial, or accounting advice.</li>
+  </ul>
+
+  <hr>
+
+  <p class="fineprint">
+    Acceptance: type your name and accept on this page. The page records your consent, your typed name, and the exact document content (by cryptographic hash) into an audit-trail file — a clear, tamper-evident record of the offer you accepted. Electronic-acceptance practice varies by country and document type; if your organization requires wet-ink or a specific signature form, print this proposal, sign it, and send a scan — the terms are identical.
+  </p>
+  <p class="fineprint">Questions before you accept? Reply to {{sender_email}}.</p>
+
+</div>
+</body>
+</html>
