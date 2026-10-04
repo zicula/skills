@@ -1,0 +1,18 @@
+// wrangler.jsonc — Docs Portal Kit worker config
+// Fill in the three YOUR_* values, then follow SETUP.md.
+{
+  "name": "docs-portal-api",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-01-15",
+  "account_id": "YOUR_CLOUDFLARE_ACCOUNT_ID",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "docs-portal-db",
+      "database_id": "00000000-0000-0000-0000-000000000000" // replace with `wrangler d1 create docs-portal-db` output
+    }
+  ],
+  // Do NOT put ADMIN_TOKEN here — it would sit in plaintext in this file.
+  // Set it as a secret instead:  npx wrangler secret put ADMIN_TOKEN
+  "observability": { "enabled": true }
+}

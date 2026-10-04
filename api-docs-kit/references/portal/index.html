@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOUR API NAME — Docs &amp; API keys</title>
+<meta name="description" content="Official documentation for YOUR API NAME: quickstart, API reference, error codes, changelog and pricing. Get an API key in minutes.">
+<style>
+  :root {
+    --paper: #F8FAFC; --alt: #EEF2F7; --deep: #0F172A; --accent: #0E7C66;
+    --accent-dark: #0B5F4E; --ink: #1E293B; --muted: #52607A; --line: #D9E2EC;
+    --code-bg: #0F172A; --code-ink: #DCE7F5; --bad: #B42318; --warn: #8C6119;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.6; font-size: 16px;
+  }
+  h1, h2, h3 { line-height: 1.3; color: var(--deep); }
+  a { color: var(--accent-dark); }
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid var(--accent); outline-offset: 2px;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 22px; }
+  nav { background: var(--deep); color: #E2E8F0; padding: 13px 0; position: sticky; top: 0; z-index: 5; }
+  nav .wrap { display: flex; align-items: center; gap: 10px 22px; flex-wrap: wrap; justify-content: space-between; }
+  .brand { font-weight: 800; font-size: 18px; color: #FFFFFF; text-decoration: none; letter-spacing: 0.01em; }
+  .brand svg { vertical-align: -4px; margin-right: 8px; }
+  .nav-links { display: flex; gap: 4px 18px; flex-wrap: wrap; align-items: center; }
+  .nav-links a { color: #C9D5E5; text-decoration: none; font-size: 14.5px; font-weight: 600; padding: 8px 2px; }
+  .nav-links a:hover { color: #FFFFFF; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 46px; padding: 11px 24px; border-radius: 10px; text-decoration: none;
+    background: var(--accent); color: #FFFFFF; font-weight: 700; font-size: 15.5px;
+    border: none; cursor: pointer; transition: background-color 0.18s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .btn.ghost { background: transparent; border: 1.5px solid var(--line); color: var(--deep); }
+  .btn.ghost:hover { background: var(--alt); }
+  header.hero { padding: clamp(48px, 8vw, 84px) 0 clamp(36px, 6vw, 56px); }
+  .pill {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-dark);
+    background: #E4F2EE; border: 1px solid #BFDED5; border-radius: 99px; padding: 6px 12px;
+  }
+  .hero h1 { font-size: clamp(28px, 4.4vw, 44px); margin: 18px 0 14px; max-width: 760px; }
+  .hero .lead { font-size: clamp(16px, 2vw, 18px); color: var(--muted); max-width: 720px; margin-bottom: 28px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  section { padding: clamp(40px, 7vw, 72px) 0; }
+  section.alt { background: var(--alt); }
+  h2.sec { font-size: clamp(22px, 3vw, 30px); margin-bottom: 10px; }
+  .sec-sub { color: var(--muted); max-width: 760px; margin-bottom: 30px; }
+  .cols { display: grid; gap: 18px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .cols.c2 { grid-template-columns: repeat(2, minmax(0,1fr)); } .cols.c3 { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  .card { background: #FFFFFF; border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  .card h3 { font-size: 16.5px; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 14.5px; }
+  pre {
+    background: var(--code-bg); color: var(--code-ink); border-radius: 12px;
+    padding: 18px 20px; overflow-x: auto; font-size: 13.5px; line-height: 1.65;
+    margin: 14px 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  code.inline {
+    background: #E8EEF5; color: #0F2B4C; border-radius: 6px; padding: 2px 7px;
+    font-size: 0.88em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .endpoint { background: #FFFFFF; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 22px; overflow: hidden; }
+  .endpoint-head { display: flex; align-items: center; gap: 12px; padding: 14px 20px; background: var(--alt); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .method {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; font-size: 12.5px;
+    color: #FFFFFF; background: var(--accent-dark); border-radius: 6px; padding: 4px 9px; letter-spacing: 0.04em;
+  }
+  .method.get { background: #1D4ED8; }
+  .endpoint-path { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; color: var(--deep); font-size: 14.5px; }
+  .endpoint-body { padding: 16px 20px 20px; }
+  .endpoint-body h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 14px 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+  td code.inline { white-space: nowrap; }
+  .req { color: var(--bad); font-weight: 700; font-size: 12px; }
+  .opt { color: var(--muted); font-size: 12px; }
+  .errcode { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; }
+  .errcode.e401 { color: var(--bad); } .errcode.e403 { color: var(--warn); } .errcode.e429 { color: var(--warn); }
+  ol.log { list-style: none; display: grid; gap: 14px; }
+  ol.log li { background: #FFFFFF; border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+  .entry-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+  .entry-head code { font-weight: 700; color: var(--deep); font-size: 15px; }
+  .entry-head time { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .tag { font-size: 11.5px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 6px; padding: 3px 8px; }
+  .tag.new { background: #E4F2EE; color: var(--accent-dark); }
+  .tag.fix { background: #E8EEF5; color: #1D4ED8; }
+  .tag.breaking { background: #F9E3E0; color: var(--bad); }
+  ol.log p { color: var(--muted); font-size: 14.5px; }
+  .plans { display: grid; gap: 18px; grid-template-columns: 1fr; align-items: stretch; }
+  @media (min-width: 760px) { .plans { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  .plan { background: #FFFFFF; border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+  .plan.featured { border: 2px solid var(--accent); position: relative; }
+  .plan .pop { position: absolute; top: -12px; left: 20px; background: var(--accent); color: #FFFFFF; font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 6px; }
+  .plan h3 { font-size: 17px; }
+  .plan .amount { font-size: 34px; font-weight: 800; color: var(--deep); font-variant-numeric: tabular-nums; }
+  .plan .amount small { font-size: 14px; font-weight: 600; color: var(--muted); }
+  .plan ul { list-style: none; display: grid; gap: 8px; margin: 4px 0 8px; }
+  .plan li { display: flex; gap: 9px; align-items: flex-start; font-size: 14.5px; color: var(--ink); }
+  .plan li svg { flex: 0 0 auto; margin-top: 3px; }
+  .plan .btn { margin-top: auto; width: 100%; }
+  footer { border-top: 1px solid var(--line); padding: 26px 0 34px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 10px 24px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="#5EEAD4" stroke-width="2" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round"/></svg>YOUR API NAME</a>
+    <div class="nav-links">
+      <a href="#quickstart">Quickstart</a>
+      <a href="#reference">API Reference</a>
+      <a href="#changelog">Changelog</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <a class="btn" href="#pricing" style="min-height:40px;padding:8px 18px;font-size:14px">Get an API key</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Official documentation</span>
+    <h1>YOUR API NAME</h1>
+    <p class="lead">One-line tagline for your API. This portal carries the quickstart, full reference, error codes, changelog and pricing — and the API key you get here works in your first request within a minute.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#pricing">Get an API key</a>
+      <a class="btn ghost" href="#quickstart">Read the quickstart</a>
+    </div>
+  </div>
+</header>
+
+<section class="alt" id="quickstart">
+  <div class="wrap">
+    <h2 class="sec">Quickstart</h2>
+    <p class="sec-sub">Three steps from key to first successful call. Base URL: <code class="inline">https://yourdomain.com</code></p>
+    <div class="cols c3">
+      <div class="card"><h3>1 · Get a key</h3><p>Pick a plan below. Keys look like <code class="inline">dpk_live_…</code> and are shown once — store them safely.</p></div>
+      <div class="card"><h3>2 · Send it</h3><p>Pass the key as a Bearer token on every request. One header, no SDK required.</p></div>
+      <div class="card"><h3>3 · Watch usage</h3><p><code class="inline">GET /v1/usage</code> returns quota, consumed credits and the last 14 days per day.</p></div>
+    </div>
+    <pre><code>curl https://YOUR-WORKER.workers.dev/v1/validate \
+  -H "Authorization: Bearer dpk_live_YOUR_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"meter":true}'
+
+# HTTP 200
+# {"valid":true,"plan":"pro","quota":50000,"used":1,"remaining":49999}</code></pre>
+  </div>
+</section>
+
+<section id="reference">
+  <div class="wrap">
+    <h2 class="sec">API Reference</h2>
+    <p class="sec-sub">The key endpoints every integration uses. Add your own endpoints below them — see CUSTOMIZE.md.</p>
+
+    <article class="endpoint">
+      <div class="endpoint-head"><span class="method">POST</span><span class="endpoint-path">/v1/validate</span></div>
+      <div class="endpoint-body">
+        <p>Validates a key, meters one credit (unless <code class="inline">meter:false</code>) and returns the live quota state. Call it at the top of your own API handlers to enforce access.</p>
+        <h4>Headers</h4>
+        <table>
+          <tr><th>Header</th><th>Required</th><th>Description</th></tr>
+          <tr><td><code class="inline">Authorization</code></td><td><span class="req">required</span></td><td><code class="inline">Bearer dpk_live_…</code> — the customer key</td></tr>
+          <tr><td><code class="inline">Content-Type</code></td><td><span class="opt">optional</span></td><td><code class="inline">application/json</code></td></tr>
+        </table>
+        <h4>Body</h4>
+        <table>
+          <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+          <tr><td><code class="inline">meter</code></td><td>boolean</td><td>Default <code class="inline">true</code>. Set <code class="inline">false</code> to check a key without consuming a credit.</td></tr>
+        </table>
+        <h4>Responses</h4>
+<pre><code>200 {"valid":true,"plan":"pro","quota":50000,"used":42,"remaining":49958}
+401 {"error":"invalid_key"}          — missing or unknown key
+403 {"error":"key_revoked","key_id":"k_…"}
+429 {"error":"quota_exceeded","quota":1000,"used":1000}</code></pre>
+      </div>
+    </article>
+
+    <article class="endpoint">
+      <div class="endpoint-head"><span class="method get">GET</span><span class="endpoint-path">/v1/usage</span></div>
+      <div class="endpoint-body">
+        <p>Returns the key's plan, quota, total usage and the last 14 days per day — the data behind your customers' usage dashboards.</p>
+        <h4>Headers</h4>
+        <table>
+          <tr><th>Header</th><th>Required</th><th>Description</th></tr>
+          <tr><td><code class="inline">Authorization</code></td><td><span class="req">required</span></td><td><code class="inline">Bearer dpk_live_…</code></td></tr>
+        </table>
+        <h4>Responses</h4>
+<pre><code>200 {"plan":"pro","quota":50000,"used":512,"remaining":49488,
+     "days":[{"day":"2026-09-18","count":87},{"day":"2026-09-17","count":64}]}</code></pre>
+      </div>
+    </article>
+
+    <h3 style="margin:26px 0 10px">Error codes</h3>
+    <table>
+      <tr><th>Status</th><th>Code</th><th>Meaning</th><th>What to do</th></tr>
+      <tr><td><span class="errcode e401">401</span></td><td><code class="inline">invalid_key</code></td><td>Header missing or key unknown</td><td>Check the <code class="inline">Authorization</code> header; issue a new key</td></tr>
+      <tr><td><span class="errcode e403">403</span></td><td><code class="inline">key_revoked</code></td><td>Key was revoked by the seller</td><td>Contact support or buy a new plan</td></tr>
+      <tr><td><span class="errcode e429">429</span></td><td><code class="inline">quota_exceeded</code></td><td>Prepaid credits used up</td><td>Top up or upgrade the plan</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="alt" id="changelog">
+  <div class="wrap">
+    <h2 class="sec">Changelog</h2>
+    <p class="sec-sub">Every change to this API, newest first. Breaking changes are called out before they ship.</p>
+    <ol class="log">
+      <li>
+        <div class="entry-head"><code>v1.0.0</code> <time>2026-09-19</time> <span class="tag new">New</span></div>
+        <p>Launch: keys, prepaid credits, <code class="inline">/v1/validate</code> and <code class="inline">/v1/usage</code>, this documentation portal.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2 class="sec">Pricing</h2>
+    <p class="sec-sub">Prepaid credits — a credit is one metered call. No subscriptions, no surprise invoices: when credits run out, top up or stay on Free.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="amount">$0</div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1,000 credits</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Community support</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Full documentation</li>
+        </ul>
+        <a class="btn ghost" href="mailto:you@yourdomain.com?subject=Free%20API%20key">Request a free key</a>
+      </div>
+      <div class="plan featured">
+        <span class="pop">Most popular</span>
+        <h3>Pro</h3>
+        <div class="amount">$9 <small>one-time · 50,000 credits</small></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>50,000 metered calls</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Email support</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Credits never expire</li>
+        </ul>
+        <a class="btn" href="YOUR_PAYMENT_LINK_URL">Buy Pro — $9</a>
+      </div>
+      <div class="plan">
+        <h3>Scale</h3>
+        <div class="amount">$19 <small>one-time · 250,000 credits</small></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>250,000 metered calls</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 10 18 20 6" stroke="#0E7C66" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Credits never expire</li>
+        </ul>
+        <a class="btn ghost" href="YOUR_PAYMENT_LINK_URL">Buy Scale — $19</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 YOUR API NAME · <a href="#top">Docs</a></div>
+    <div>Powered by a self-hosted docs portal · <a href="#pricing">Get an API key</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

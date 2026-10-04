@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owner console — Docs Portal Kit</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --paper: #F6F8FA; --deep: #12233B; --accent: #0E7C66; --accent-dark: #0B5F4E;
+    --ink: #1F2A3A; --muted: #55627A; --line: #D9E2EC; --bad: #B42318; --amber: #B27B10;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink); min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.55; font-size: 15.5px;
+  }
+  a { color: var(--accent-dark); }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+    outline: 3px solid var(--accent); outline-offset: 2px;
+  }
+  header { background: var(--deep); color: #E5ECF5; padding: 16px 0; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 800; font-size: 17px; color: #FFFFFF; }
+  .brand small { display: block; font-weight: 600; font-size: 12px; color: #A9BAD2; }
+  .pill-ok { font-size: 12.5px; font-weight: 700; padding: 5px 11px; border-radius: 99px; background: #123F33; color: #7FE0C3; }
+  .pill-bad { font-size: 12.5px; font-weight: 700; padding: 5px 11px; border-radius: 99px; background: #47201B; color: #F2A69B; }
+  main { padding: 28px 0 60px; }
+  .panel { background: #FFFFFF; border: 1px solid var(--line); border-radius: 13px; padding: 22px 24px; margin-bottom: 20px; }
+  h1 { font-size: 21px; color: var(--deep); margin-bottom: 4px; }
+  h2 { font-size: 16.5px; color: var(--deep); margin-bottom: 12px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+  .grid2 { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+  label { display: block; font-size: 13px; font-weight: 700; color: var(--deep); margin: 0 0 5px; }
+  input, select {
+    width: 100%; min-height: 44px; padding: 9px 12px; font-size: 14.5px;
+    border: 1.5px solid #C6D2E2; border-radius: 9px; background: #FBFCFE; color: var(--ink);
+  }
+  button {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+    padding: 10px 20px; border-radius: 9px; border: none; cursor: pointer;
+    background: var(--accent); color: #FFFFFF; font-weight: 700; font-size: 14.5px;
+    transition: background-color 0.18s ease;
+  }
+  button:hover { background: var(--accent-dark); }
+  button.ghost { background: #FFFFFF; color: var(--deep); border: 1.5px solid var(--line); }
+  button.ghost:hover { background: #EEF2F7; }
+  button.danger { background: #FFFFFF; color: var(--bad); border: 1.5px solid #E3B4AE; }
+  button.danger:hover { background: #FBF0EE; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .row > div { flex: 1 1 160px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .status { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .status.active { color: var(--accent-dark); } .status.revoked { color: var(--bad); }
+  .bar { height: 6px; min-width: 70px; background: #E8EEF5; border-radius: 99px; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--accent); }
+  .bar span.hot { background: var(--amber); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .keybox {
+    background: #0F172A; color: #D9E6F7; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 13.5px; border-radius: 9px; padding: 13px 15px; margin: 10px 0;
+    overflow-wrap: anywhere; display: none;
+  }
+  .msg { display: none; font-size: 14px; font-weight: 600; margin-top: 10px; }
+  .msg.ok { color: var(--accent-dark); } .msg.err { color: var(--bad); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Owner console<small>Docs Portal Kit v1.0 — keys, quotas, usage</small></div>
+    <span id="conn" class="pill-bad">not connected</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="panel">
+    <h2>Connect your worker</h2>
+    <p class="sub">Stored only in this browser's localStorage — never sent anywhere except your own worker. Deployed at a quiet path, this page is safe: without your ADMIN_TOKEN the buttons answer 401.</p>
+    <form id="cfg-form">
+      <div class="grid2">
+        <div><label for="base">Worker base URL</label>
+          <input id="base" type="url" placeholder="https://docs-portal-api.your-subdomain.workers.dev" required></div>
+        <div><label for="token">ADMIN_TOKEN</label>
+          <input id="token" type="password" placeholder="paste once — stays in this browser" autocomplete="off" required></div>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <button type="submit">Save and connect</button>
+        <button type="button" class="ghost" id="forget">Forget token in this browser</button>
+      </div>
+      <p class="msg" id="cfg-msg" role="status"></p>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2>Issue a new key</h2>
+    <p class="sub">The plain key is shown exactly once after creation — copy it and hand it to your customer. Only its SHA-256 hash is stored.</p>
+    <form id="mk-form">
+      <div class="row">
+        <div><label for="mk-label">Label</label>
+          <input id="mk-label" placeholder="customer@acme.io" maxlength="64"></div>
+        <div style="flex:0 1 150px"><label for="mk-plan">Plan</label>
+          <select id="mk-plan">
+            <option value="free">Free · 1,000</option>
+            <option value="pro" selected>Pro · 50,000</option>
+            <option value="scale">Scale · 250,000</option>
+          </select></div>
+        <div style="flex:0 1 150px"><label for="mk-quota">Credits (override)</label>
+          <input id="mk-quota" type="number" min="1" placeholder="default"></div>
+        <div style="flex:0 0 auto"><button type="submit">Create key</button></div>
+      </div>
+      <div class="keybox" id="new-key"></div>
+      <p class="msg" id="mk-msg" role="status"></p>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2>Keys &amp; usage</h2>
+    <p class="sub">Usage = metered credits since issuance. Revoke is idempotent; top-up adds prepaid credits.</p>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Label</th><th>Plan</th><th>Status</th><th>Credits used / quota</th><th>Created</th><th>Actions</th></tr></thead>
+        <tbody id="keys-rows"><tr><td colspan="6" class="muted">Connect first — then this table loads your keys.</td></tr></tbody>
+      </table>
+    </div>
+    <p class="msg" id="list-msg" role="status"></p>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var base = "", token = "";
+
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function msg(id, text, ok) {
+    var el = $(id);
+    el.textContent = text;
+    el.className = "msg " + (ok ? "ok" : "err");
+    el.style.display = "block";
+  }
+
+  function headers() {
+    return { "authorization": "Bearer " + token, "content-type": "application/json" };
+  }
+
+  function setConn(ok) {
+    var el = $("conn");
+    el.textContent = ok ? "connected" : "not connected";
+    el.className = ok ? "pill-ok" : "pill-bad";
+  }
+
+  async function api(path, opts) {
+    var r = await fetch(base + path, opts);
+    var data = null;
+    try { data = await r.json(); } catch (e) { /* non-JSON */ }
+    if (!r.ok) {
+      var err = new Error((data && data.error) || ("HTTP " + r.status));
+      err.status = r.status;
+      throw err;
+    }
+    return data;
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function fmtDate(iso) { return (iso || "").slice(0, 10); }
+
+  function renderKeys(keys) {
+    var tb = $("keys-rows");
+    if (!keys.length) {
+      tb.innerHTML = '<tr><td colspan="6" class="muted">No keys yet — create the first one above.</td></tr>';
+      return;
+    }
+    tb.innerHTML = keys.map(function (k) {
+      var pct = k.quota > 0 ? Math.min(100, Math.round((k.used / k.quota) * 100)) : 0;
+      return '<tr>' +
+        '<td>' + esc(k.label) + '</td>' +
+        '<td>' + esc(k.plan) + '</td>' +
+        '<td><span class="status ' + esc(k.status) + '">' + esc(k.status) + '</span></td>' +
+        '<td><div style="min-width:130px">' + k.used.toLocaleString() + " / " + k.quota.toLocaleString() +
+        '<div class="bar" style="margin-top:5px"><span class="' + (pct >= 80 ? "hot" : "") + '" style="width:' + pct + '%"></span></div></div></td>' +
+        '<td class="muted">' + esc(fmtDate(k.created_at)) + '</td>' +
+        '<td><div style="display:flex;gap:8px;flex-wrap:wrap">' +
+        '<button class="ghost" data-topup="' + esc(k.id) + '">+50k</button>' +
+        (k.status === "active" ? '<button class="danger" data-revoke="' + esc(k.id) + '">Revoke</button>' : "") +
+        "</div></td></tr>";
+    }).join("");
+  }
+
+  async function loadKeys() {
+    if (!base || !token) return;
+    try {
+      var data = await api("/admin/keys", { headers: headers() });
+      renderKeys(data.keys || []);
+      msg("list-msg", "", true);
+    } catch (e) {
+      msg("list-msg", "Load failed: " + e.message, false);
+    }
+  }
+
+  $("cfg-form").addEventListener("submit", async function (ev) {
+    ev.preventDefault();
+    base = $("base").value.trim().replace(/\/+$/, "");
+    token = $("token").value.trim();
+    store("dpk_base", base);
+    store("dpk_admin", token);
+    try {
+      var r = await fetch(base + "/healthz");
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      setConn(true);
+      msg("cfg-msg", "Connected — " + (await r.text()).trim(), true);
+      loadKeys();
+    } catch (e) {
+      setConn(false);
+      msg("cfg-msg", "Health check failed: " + e.message + " — check the URL and that the worker is deployed.", false);
+    }
+  });
+
+  $("forget").addEventListener("click", function () {
+    store("dpk_admin", "");
+    $("token").value = "";
+    setConn(false);
+    msg("cfg-msg", "Token removed from this browser.", true);
+  });
+
+  $("mk-form").addEventListener("submit", async function (ev) {
+    ev.preventDefault();
+    if (!base || !token) { msg("mk-msg", "Connect the worker first.", false); return; }
+    var body = { label: $("mk-label").value, plan: $("mk-plan").value };
+    var q = parseInt($("mk-quota").value, 10);
+    if (Number.isInteger(q) && q > 0) body.quota = q;
+    try {
+      var data = await api("/admin/keys", { method: "POST", headers: headers(), body: JSON.stringify(body) });
+      var box = $("new-key");
+      box.style.display = "block";
+      box.textContent = data.key;
+      msg("mk-msg", "Key created for “" + data.label + "” — shown this once. Copy it now.", true);
+      $("mk-label").value = ""; $("mk-quota").value = "";
+      loadKeys();
+    } catch (e) {
+      msg("mk-msg", "Create failed: " + e.message, false);
+    }
+  });
+
+  $("keys-rows").addEventListener("click", async function (ev) {
+    var btn = ev.target.closest("button");
+    if (!btn) return;
+    var id = btn.getAttribute("data-topup") || btn.getAttribute("data-revoke");
+    try {
+      if (btn.hasAttribute("data-topup")) {
+        await api("/admin/keys/" + encodeURIComponent(id) + "/topup", { method: "POST", headers: headers(), body: JSON.stringify({ add: 50000 }) });
+      } else {
+        await api("/admin/keys/" + encodeURIComponent(id) + "/revoke", { method: "POST", headers: headers() });
+      }
+      loadKeys();
+    } catch (e) {
+      msg("list-msg", "Action failed: " + e.message, false);
+    }
+  });
+
+  base = (read("dpk_base") || "");
+  token = (read("dpk_admin") || "");
+  if (base) $("base").value = base;
+  if (base && token) {
+    setConn(true);
+    loadKeys();
+  }
+})();
+</script>
+</body>
+</html>

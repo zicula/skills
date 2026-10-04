@@ -2,7 +2,7 @@
 
 Free, self-contained [Agent Skills](https://agentskills.io) extracted from Zicula's operating-system kits for agencies, nonprofits and freelancers. Every skill is the real process layer — SOPs, templates, working scripts — installable into Claude Code, Codex, Cursor, Gemini CLI or any skill-compatible agent.
 
-## Install all eight
+## Install all nine
 
 ```bash
 npx skills add zicula/skills
@@ -20,6 +20,7 @@ npx skills add zicula/skills
 | [client-report-kit](client-report-kit/) | The 30-minute monthly client-reporting workflow: GA4 + Search Console pulls, 5 fill-in report sections (Markdown + print-ready HTML), 12 AI narration prompts × 6 languages, pricing + 14-day playbook | `npx skills add zicula/skills/client-report-kit` |
 | [proposal-esign-kit](proposal-esign-kit/) | Self-hosted proposal acceptance: 3 proposal templates, a hash-signed accept page on your own domain (SHA-256 digest + HMAC-SHA256 link token), a hash-chained audit trail with an 8-check verifier, 4-touch follow-up SOP + deposits guide (working zero-dep Node tools) | `npx skills add zicula/skills/proposal-esign-kit` |
 | [webhook-kit](webhook-kit/) | Self-hosted webhook inspector on your own Cloudflare account: capture at `/w/<inbox>`, HMAC verification for Stripe/GitHub/Shopify with plain-language verdicts, one-click replay, Discord/Telegram alerts, retention sweep (dependency-free Worker + 2 D1 tables) | `npx skills add zicula/skills/webhook-kit` |
+| [api-docs-kit](api-docs-kit/) | Self-hosted storefront for an API you sell: docs portal template (quickstart, API reference, error codes, changelog, your own payment link), hashed API keys, prepaid usage metering with revoke/top-up, owner-only dashboard, 14-day first-customer playbook (dependency-free Worker + D1) | `npx skills add zicula/skills/api-docs-kit` |
 
 Each folder is a standard skill (`SKILL.md` + `references/` + `scripts/` where relevant) and validates against the [Agent Skills spec](https://agentskills.io). Browse them on [skills.sh](https://www.skills.sh/zicula/skills).
 
@@ -42,6 +43,7 @@ The skills are complete processes, not teasers: you can run them as-is and get t
 | [AI Client Report Kit](https://client-report-kit.zicula.trade) | from $49 (Basic / Pro $99 / Premium $199) |
 | [Proposal Esign Kit](https://proposal-esign-kit.zicula.trade) | from $49 (Basic / Pro $99 / Premium $199) |
 | [Webhook Kit](https://webhook-kit.zicula.trade) | $42 |
+| [Docs Portal Kit](https://docs-portal-kit.zicula.trade) | $42 |
 
 30-day money-back on every kit. If the free skill already covers you, use it with our blessing — that's what it's for.
 
